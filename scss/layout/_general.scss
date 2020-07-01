@@ -1,0 +1,42 @@
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	outline: none;
+	box-sizing: border-box;
+}
+
+html {
+	height: 100%;
+	scroll-behavior: smooth;
+}
+
+body, html {
+	min-height: 100%;
+	width: 100%;
+}
+
+.clear::after, .clear::before {
+	content: " ";
+	display: table;
+}
+
+.clear::after {
+	clear: both;
+}
+
+// Fonts
+
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@400;500&display=swap');
+
+// @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+
+body {
+	font: 18px $Mplus;
+	// font-family: $Lato;
+	// font-size: 18px;
+	background: #fff;
+	color: #363636;
+
+}

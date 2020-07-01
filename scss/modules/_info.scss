@@ -1,0 +1,43 @@
+.info {
+    background-repeat: no-repeat;
+    background-position: top, center;
+    height: 515px;
+
+    &__h2 {
+        color: #fff;
+        // font-weight: 400;
+        font-size: 30px;
+        line-height: 34px;
+        letter-spacing: 0.02em;
+
+        margin-top: 225px;
+    }
+
+    &__a {
+        text-decoration: none;
+        margin-top: 25px;
+
+        &--p {
+            margin-right: 10px;
+            font-size: 22px;
+            line-height: 20px;
+            /* or 91% */
+
+            display: flex;
+            align-items: center;
+            letter-spacing: 0.02em;
+
+            color: #FFFFFF;
+        }
+
+        &--arr {
+            margin: auto 0;
+            width: 22px;
+            height: 10px;
+        }
+    }
+
+    &__a:hover {
+        text-decoration: none;
+    }
+}
