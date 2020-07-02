@@ -1,0 +1,104 @@
+.clinics {
+    margin-top: 55px;
+    @media (max-width: 767px) {
+        margin-top: 30px;
+    }
+
+    &__h2 {
+        font-size: 22px;
+        line-height: 20px;
+        letter-spacing: 0.02em;
+        color: #090909;
+        @media (max-width: 767px) {
+            font-size: 14px;
+        }
+    }
+
+    .slide {
+
+        &__select {
+            position: absolute;
+            top: 55px;
+            right: 0;
+            width: 45px;
+            height: 35px;
+            background: #FFFFFF;
+            border-radius: 4px 0px 0px 4px;
+
+            &--a {
+
+            }
+
+            &--icon {
+                width: 28px;
+                height: 25px;
+                margin-top: 3px;
+            }
+        } 
+
+        &__text {
+
+            &--h {
+                font-size: 22px;
+                line-height: 0px;
+                letter-spacing: 0.02em;
+                color: #363636;
+                margin-top: 25px;
+                @media (max-width: 767px) {
+                    font-size: 12px;
+                    margin-top: 15px;
+
+                }
+            }
+
+            &--p {
+                font-size: 18px;
+                line-height: 0px;
+                letter-spacing: 0.02em;
+                color: #363636;
+                margin-top: 23px;
+                @media (max-width: 767px) {
+                    font-size: 10px;
+                    margin-top: 13px;
+                }
+                
+            }
+        }
+    }
+
+    .swiper-container {
+        width: 100%;
+        height: 330px;
+    }
+  
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        // -webkit-align-items: center;
+        // align-items: center;
+    }
+
+    .swiper-pagination-bullet {
+        background: #CFFFFA;
+        opacity: 1;
+        margin: 0 10px!important;
+    }
+
+    .swiper-pagination-bullet-active {
+        background: #01ECD2;
+    }
+
+}

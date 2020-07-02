@@ -1,12 +1,39 @@
+.main-btn {
+    font-size: 24px;
+    line-height: 20px;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+
+    background: #01ECD2;
+    border-radius: 22.5px;
+
+    padding: 5px 40px;
+    
+    @media (max-width: 767px) {
+        font-size: 14px;
+    }
+}
+
+.main-btn:hover {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
 .find-doc {
 
     .kind {
-        top: -50px;
+        top: -65px;
         width: 140px;
         height: 140px;
 
         box-shadow: 0px 2px 4px rgba(211, 211, 211, 0.35);
         background: #fff;
+
+        @media (max-width: 767px) {
+            top: -30px;
+            width: 70px;
+            height: 70px;
+        }
         &__a {
             text-decoration: none;
 
@@ -15,6 +42,10 @@
                 height: 75px;
                 display: block;
                 margin: 10px auto 0 auto;
+                @media (max-width: 767px) {
+                    width: 30px;
+                    height: 30px;
+                }
             }
 
             &--p {
@@ -24,7 +55,16 @@
                 letter-spacing: 0.02em;
                 color: #363636;
                 margin-top: 25px;
+
+                @media (max-width: 767px) {
+                    font-size: 10px;
+                    letter-spacing: 0.02em;
+                    color: #363636;
+                    margin-top: 15px;
+                }
             }
         }
     }
+
+    
 }

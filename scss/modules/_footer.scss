@@ -1,0 +1,40 @@
+.footer {
+    background: #AAAFBE;
+
+    &__contact {
+        padding-top: 10px;
+        &--p {
+            font-size: 20px;
+            line-height: 22px;
+            letter-spacing: 0.01em;
+            color: #FAFAFA;
+        }
+
+        &--a {
+            font-size: 20px;
+            line-height: 22px;
+            letter-spacing: 0.01em;
+            color: #FAFAFA;
+            padding-top: 15px;
+            display: block;
+        }
+
+        &--a:hover {
+            text-decoration: none;
+            color: #FAFAFA;
+
+        }
+    }
+
+    &__span {
+        border-top: 1px solid #FFFFFF;
+        margin-top: 15px;
+
+        &--p {
+            font-size: 16px;
+            letter-spacing: 0.02em;
+            color: #FFFFFF;
+            padding: 5px 0;
+        }
+    }
+}
