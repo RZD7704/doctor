@@ -8,6 +8,9 @@
             line-height: 22px;
             letter-spacing: 0.01em;
             color: #FAFAFA;
+            @media (max-width: 767px) {
+                font-size: 14px;
+            }
         }
 
         &--a {
@@ -17,6 +20,11 @@
             color: #FAFAFA;
             padding-top: 15px;
             display: block;
+            @media (max-width: 767px) {
+                font-size: 14px;
+                padding-top: 10px;
+
+            }
         }
 
         &--a:hover {
@@ -30,11 +38,18 @@
         border-top: 1px solid #FFFFFF;
         margin-top: 15px;
 
+        @media (max-width: 767px) {
+            margin-top: 10px;
+        }
+
         &--p {
             font-size: 16px;
             letter-spacing: 0.02em;
             color: #FFFFFF;
             padding: 5px 0;
+            @media (max-width: 767px) {
+                font-size: 10px;
+            }
         }
     }
 }
