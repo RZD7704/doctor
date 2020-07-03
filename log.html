@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="description" content="Starter">
+	<meta name="author" content="Admin">
+	<title>Starter</title>
+
+	<link rel="icon" href="images/favicon.png">
+
+	<link rel="stylesheet" href="js/libs/slick/slick.css">
+	<link rel="stylesheet" href="js/libs/slick/slick-theme.css">
+	<link rel="stylesheet" href="css/libs/swiper.min.css">
+	<link rel="stylesheet" href="css/libs/bootstrap.min.css">
+	<link rel="stylesheet" href="css/styles.min.css">
+
+
+	<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<header class="header">
+		<div class="container d-flex justify-content-between">
+			<div class="message-icon">
+
+			</div>
+			<div class="logo">
+				<a class="logo__a" href="index.html">
+					<img class="logo__a--img" src="images/logo.png" alt="Logo">
+				</a>
+			</div>
+			<div class="persone">
+				<a class="persone__a" href="log.html">
+					<svg class="persone__a--icon">
+						<use xlink:href="images/sprite.svg#user-head"></use>
+					</svg>
+				</a>
+			</div>
+		</div>
+	</header>
+
+    <div class="wrapper">
+        <main class="main content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 m-auto">
+                        <div class="log">
+                            <ul class="nav nav-pills mb-3 justify-content-center" id="pills-tab" role="tablist">
+                                <li class="nav-item log__btn">
+                                    <a class="nav-link active tab-btn" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Пацієнт</a>
+                                </li>
+                                <li class="nav-item log__btn">
+                                    <a class="nav-link tab-btn" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Лікар</a>
+                                </li>
+                            </ul>
+                            <div class="tab-content" id="pills-tabContent">
+                                <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                                    <div class="patient">
+                                        <form action="#" method="post" class="wpcf7-form" novalidate="novalidate">
+
+                                            <div class="persone__file--download">
+                                                <input type="file" name="file" id="file" class="inputfile personefile" />
+                                                <label for="file">Бажано додати своє фото</label>	
+                                            </div>
+                                            <p><label class="">Ім’я та прізвище</label><br>
+                                                <span class="wpcf7-form-control-wrap your-name"><input name="your-name" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" type="text"></span></p>
+                                            <p><label class="">Your Email (required)</label><br>
+                                                <span class="wpcf7-form-control-wrap your-email"><input name="your-email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" type="email"></span></p>
+                                            <p><label class="">Subject</label><br>
+                                                <span class="wpcf7-form-control-wrap your-subject"><input name="your-subject" value="" size="40" class="wpcf7-form-control wpcf7-text" aria-invalid="false" type="text"></span></p>
+                                        </form>
+                                    </div>      
+                                </div>
+                                <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">...</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="push"></div>
+        </main>
+
+        <footer class="footer text-center">
+            <div class="container">
+                <div class="footer__contact">
+                    <p class="footer__contact--p">For callaboration email:</p>
+                    <a class="footer__contact--a" href="#">StomSearch20@gmail.com</a>
+                </div>
+
+                <div class="footer__span">
+                    <p class="footer__span--p">2020 Стоматолог Search</p>
+                </div>
+            </div>
+
+        </footer>
+    </div>
+
+
+	<!-- Scripts -->
+	<script src="js/libs/jquery-3.4.1.min.js"></script>
+	<script src="js/libs/slick/slick.min.js"></script>
+	<script src="js/libs/swiper.min.js"></script>
+	<script src="js/libs/bootstrap.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>

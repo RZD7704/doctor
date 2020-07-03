@@ -1,0 +1,144 @@
+// .log ul {
+//     @media (max-width: 575px) {
+//         display: flex;
+//         flex-direction: column;
+//         align-items: center;
+//     }
+// }
+
+.log {
+    padding-top: 90px;
+
+    &__btn {
+        // flex: 50;
+    }
+
+    &__btn:first-child {
+        margin-right: 15px;
+            
+        // @media (max-width: 575px) {
+        //     margin-right: 0;
+        // }
+
+    }
+
+    &__btn:last-child {
+        margin-left: 15px;
+            
+        // @media (max-width: 575px) {
+        //     margin-left: 0;
+        //     margin-top: 15px;
+        // }
+    }
+}
+
+.tab-btn {
+    width: 170px;
+    font-size: 24px;
+    line-height: 20px;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+
+    background: #E4E4E4!important;
+    border-radius: 22.5px!important;
+
+    padding: 7px 40px!important;
+    text-align: center;
+    transition: .3s ;
+    
+    @media (max-width: 767px) {
+        font-size: 14px;
+        padding: 5px 20px!important;
+        width: 130px;
+    }
+}
+
+.tab-btn:hover {
+    text-decoration: none;
+    color: #FFFFFF;
+    background: #01ECD2!important;
+}
+
+.tab-btn.active {
+    background: #01ECD2!important;
+}
+
+.wpcf7-form {
+	// wpcf7 adds these P tags, just use it as a wrapper
+	> p {
+		font-size: 16px;
+		font-family: sans-serif;
+		position: relative;
+		label {
+			position: absolute;
+			top: 63%;
+			transform: translateY(-50%);
+			pointer-events: none;
+			font-weight: normal;
+			transition: top .2s;
+            color: #858585;
+            padding-left: 10px;
+		}
+	}
+	input.wpcf7-text {
+		border: none;
+		border: 1px solid #E5E5E5;
+        border-radius: 5px;
+		padding: 20px 0px 5px 7px;
+		width: 100%;
+		background-color: transparent;
+		color: #363636;
+        font-size: 16px;
+        font-size: 18px;
+        line-height: 20px;
+        letter-spacing: 0.02em;
+	}
+	// fancy label function
+	label.has-value {
+		top: 30px;
+		font-size: 11px;
+	}
+}
+
+.wrapper {
+    display: flex;
+	flex-direction: column;
+	min-height: 100%;
+}
+
+.content {
+    flex: 1 0 auto;
+}
+
+.footer {
+    flex: 0 0 auto;
+}
+
+.inputfile {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+.inputfile + label {
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: 0.02em;
+    color: #363636;
+    background: #fff;
+    display: inline-block;
+    padding: 10px 55px;
+    border-radius: 5px;
+}
+
+.inputfile:focus + label,
+.inputfile + label:hover {
+    color: #DEBB00;
+}
+
+.inputfile + label {
+    cursor: pointer; /* "hand" cursor */
+}

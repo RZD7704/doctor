@@ -1,0 +1,19 @@
+.rules {
+    .points {
+        display: flex;
+        background: #01ECD2;
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        // margin: 0 30px;
+        &--p {
+            display: inline-block;
+            margin: auto;
+            font-size: 18px;
+            line-height: 20px;
+            letter-spacing: 0.02em;
+            color: #FFFFFF;
+
+        }
+    }
+}

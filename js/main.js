@@ -2,23 +2,19 @@
 
 (function($){
 	$(document).ready(function() {
-		// Code
-		// var mySwiper = $('.swiper-container').swiper({
-		// 	slidesPerView:4,
-		// 	spaceBetween: 30,
-		// 	pagination: {
-		// 	  el: '.swiper-pagination',
-		// 	  clickable: true,
-		// 	}
-		//   });
-		//   $(window).resize(function(){
-		// 	var ww = $(window).width()
-		// 	if (ww>1000) mySwiper.params.slidesPerView = 4;
-		// 	if (ww>468 && ww<=1000) mySwiper.params.slidesPerView = 3;
-		// 	if (ww<=468) mySwiper.params.slidesPerView = 3;
-		// 	mySwiper.reInit();
-		//   });
-		//   $(window).trigger('resize');
+
+		// on focus
+	$(".wpcf7-form input").focus(function() {
+		$(this).parent().siblings('label').addClass('has-value');
+		})
+		// blur input fields on unfocus + if has no value
+		.blur(function() {
+			var text_val = $(this).val();
+			if(text_val === "") {
+				$(this).parent().siblings('label').removeClass('has-value');
+			}
+		});
+
 	});
 })(jQuery);
 
@@ -54,4 +50,6 @@ var swiper = new Swiper('.swiper-container', {
     //     960: {
 	// 		slidesPerView: 3,
 	// },
-  });
+});
+
+
