@@ -1,0 +1,35 @@
+.news-open {
+    margin-top: 75px;
+
+    &--img {
+        // padding: 10px 15px 5px 0;
+        width: 100%;
+
+    }
+
+    &--h {
+        font-size: 20px;
+        letter-spacing: 0.02em;
+        color: #363636;
+        margin-top: 15px;
+        @media (max-width: 767px) {
+            font-size: 14px;
+        }
+
+    }
+
+    &--p {
+        font-size: 16px;
+        letter-spacing: 0.02em;
+        color: #858585;
+        margin-top: 10px;
+
+        @media (max-width: 767px) {
+            font-size: 12px;
+        }
+    }
+
+    &--p:last-child {
+        margin-top: 5px;
+    }
+}

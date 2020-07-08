@@ -12,7 +12,8 @@
 
 	<link rel="stylesheet" href="js/libs/slick/slick.css">
 	<link rel="stylesheet" href="js/libs/slick/slick-theme.css">
-	<link rel="stylesheet" href="css/libs/swiper.min.css">
+    <link rel="stylesheet" href="css/libs/swiper.min.css">
+    <link rel="stylesheet" href="css/libs/jquery.nselect.css">
 	<link rel="stylesheet" href="css/libs/bootstrap.min.css">
 	<link rel="stylesheet" href="css/styles.min.css">
 
@@ -25,19 +26,28 @@
 	<header class="header">
 		<div class="container d-flex justify-content-between">
 			<div class="message-icon">
-
+				<a class="message__a" href="index.html">
+					<svg class="message__a--icon">
+						<use xlink:href="images/sprite.svg#arr-back"></use>
+					</svg>
+				</a>
 			</div>
 			<div class="logo">
 				<a class="logo__a" href="index.html">
 					<img class="logo__a--img" src="images/logo.png" alt="Logo">
 				</a>
 			</div>
-			<div class="persone">
-				<a class="persone__a" href="log.html">
+			<div class="dropdown show persone">
+				<a class="btn btn-secondary dropdown-toggle persone__a" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 					<svg class="persone__a--icon">
 						<use xlink:href="images/sprite.svg#user-head"></use>
 					</svg>
 				</a>
+			  
+				<div class="dropdown-menu persone__menu" aria-labelledby="dropdownMenuLink">
+				  <a class="dropdown-item persone__menu--item" href="log.html">Увійти</a>
+				  <a class="dropdown-item persone__menu--item" href="reg.html">Зареєструватися</a>
+				</div>
 			</div>
 		</div>
 	</header>
@@ -61,20 +71,43 @@
                                     <div class="patient">
                                         <form action="#" method="post" class="wpcf7-form" novalidate="novalidate">
 
-                                            <div class="persone__file--download">
-                                                <input type="file" name="file" id="file" class="inputfile personefile" />
-                                                <label for="file">Бажано додати своє фото</label>	
-                                            </div>
-                                            <p><label class="">Ім’я та прізвище</label><br>
-                                                <span class="wpcf7-form-control-wrap your-name"><input name="your-name" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" type="text"></span></p>
-                                            <p><label class="">Your Email (required)</label><br>
+                                            <p><label class="">Введіть свою пошту</label><br>
                                                 <span class="wpcf7-form-control-wrap your-email"><input name="your-email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" type="email"></span></p>
-                                            <p><label class="">Subject</label><br>
-                                                <span class="wpcf7-form-control-wrap your-subject"><input name="your-subject" value="" size="40" class="wpcf7-form-control wpcf7-text" aria-invalid="false" type="text"></span></p>
+
+                                            <p><label class="">Придумайте пароль</label><br>
+                                                <span class="wpcf7-form-control-wrap your-subject"><input name="your-subject" value="" size="40" class="wpcf7-form-control wpcf7-text" aria-invalid="false" type="password"></span></p>
+
                                         </form>
+
+                                        <div class="text-center mt-4">
+                                            <a class="edit-btn " href="#">Увійти</a>
+                                        </div>
+                                        <div class="further d-flex justify-content-between mt-4 mb-4">
+                                            <a class="further__a d-block" href="recovery-num.html">Забули пароль?</a>
+                                            <a class="further__a d-block" href="reg.html">Зареєструватися</a>
+                                        </div>
                                     </div>      
                                 </div>
-                                <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">...</div>
+                                <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                                    <div class="doctor">
+                                        <form action="#" method="post" class="wpcf7-form" novalidate="novalidate">
+                                            <p><label class="">Введіть свою пошту</label><br>
+                                                <span class="wpcf7-form-control-wrap your-email"><input name="your-email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" type="email"></span></p>
+
+                                            <p><label class="">Придумайте пароль</label><br>
+                                                <span class="wpcf7-form-control-wrap your-subject"><input name="your-subject" value="" size="40" class="wpcf7-form-control wpcf7-text" aria-invalid="false" type="password"></span></p>
+
+                                        </form>
+
+                                        <div class="text-center mt-4">
+                                            <a class="edit-btn " href="#">Увійти</a>
+                                        </div>
+                                        <div class="further d-flex justify-content-between mt-4 mb-4">
+                                            <a class="further__a d-block" href="recovery-num.html">Забули пароль?</a>
+                                            <a class="further__a d-block" href="reg.html">Зареєструватися</a>
+                                        </div>
+                                    </div>  
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -83,18 +116,18 @@
             <div class="push"></div>
         </main>
 
-        <footer class="footer text-center">
+        <footer class="footer text-left mt-5">
             <div class="container">
                 <div class="footer__contact">
-                    <p class="footer__contact--p">For callaboration email:</p>
+                    <p class="footer__contact--p">For callaboration:</p>
+                    <a class="footer__contact--a" href="tel:+30(225) 555-01-18">+30(225) 555-0118</a>
                     <a class="footer__contact--a" href="#">StomSearch20@gmail.com</a>
                 </div>
-
-                <div class="footer__span">
+    
+                <div class="footer__span text-center">
                     <p class="footer__span--p">2020 Стоматолог Search</p>
                 </div>
             </div>
-
         </footer>
     </div>
 
@@ -102,7 +135,9 @@
 	<!-- Scripts -->
 	<script src="js/libs/jquery-3.4.1.min.js"></script>
 	<script src="js/libs/slick/slick.min.js"></script>
-	<script src="js/libs/swiper.min.js"></script>
+    <script src="js/libs/swiper.min.js"></script>
+    <script src="js/libs/jquery.nselect.min.js"></script>
+    <script src="js/libs/popper.min.js"></script>
 	<script src="js/libs/bootstrap.min.js"></script>
 	<script src="js/main.js"></script>
 </body>

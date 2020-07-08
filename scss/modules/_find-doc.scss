@@ -5,13 +5,17 @@
     letter-spacing: 0.02em;
     color: #FFFFFF;
 
-    background: #01ECD2!important;
-    border-radius: 22.5px!important;
+    background: #01ECD2;
+    border-radius: 22.5px;
 
-    padding: 5px 40px!important;
+    padding: 10px 0 10px 0;
+
+    display: block;
+    margin: 0 auto;
     
     @media (max-width: 767px) {
         font-size: 14px;
+        padding: 7px 0 7px 0;
     }
 }
 
@@ -19,6 +23,7 @@
     color: #FFFFFF;
     text-decoration: none;
 }
+
 
 .find-doc {
 

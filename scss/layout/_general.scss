@@ -50,5 +50,61 @@ body {
         margin-bottom: 20px;
         margin-top: 50px;
         
-    }
+	}
+	
+	&__a {
+		display: inline-flex;
+		background: #fff!important;
+		border: none;
+		box-shadow: none;
+		padding: 0;
+
+		&--icon {
+			width: 22px;
+			height: 22px;
+		}
+
+		&--p {
+			font-size: 14px;
+			line-height: 20px;
+			letter-spacing: 0.02em;
+			color: #858585;
+		}
+	}
+
+	&__a::after {
+		content: none;
+	}
+
+	&__a:focus {
+		box-shadow: none!important;
+	}
+
+	&__a:hover {
+		text-decoration: none;
+	}
+}
+
+.return {
+	margin-top: 15px;
+	&__a:hover {
+		text-decoration: none;
+	}
+
+	&__a {
+		width: 120px;
+		margin-left: auto;
+
+		&--icon {
+			width: 15px;
+			height: 15px;
+			margin: auto 15px;
+		}
+
+		&--p {
+			font-size: 12px;
+			letter-spacing: 0.02em;
+			color: #858585;
+		}
+	}
 }

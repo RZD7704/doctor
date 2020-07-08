@@ -5,6 +5,10 @@
         width: 25px;
         height: 25px;
         border-radius: 50%;
+        @media (max-width: 767px) {
+            width: 20px;
+            height: 20px;
+        }  
         // margin: 0 30px;
         &--p {
             display: inline-block;
@@ -13,6 +17,40 @@
             line-height: 20px;
             letter-spacing: 0.02em;
             color: #FFFFFF;
+            @media (max-width: 767px) {
+                font-size: 12px;
+            }  
+        }
+    }
+
+    .rules-content {
+
+        &--p {
+            font-size: 20px;
+            line-height: 24px;
+            letter-spacing: 0.02em;
+            color: #858585;
+            @media (max-width: 767px) {
+                font-size: 12px;
+            }  
+        }
+    }
+
+    &__other {
+
+        &--a {
+            font-size: 18px;
+            line-height: 16px;
+            letter-spacing: 0.02em;
+            color: #858585;
+            @media (max-width: 767px) {
+                font-size: 12px;
+            }   
+        }
+
+        &--a:hover {
+            text-decoration: none;
+            color: #858585;
 
         }
     }

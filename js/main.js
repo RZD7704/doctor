@@ -15,6 +15,9 @@
 			}
 		});
 
+	// Select
+	$('.nselect-1, .nselect-2').nSelect();
+	
 	});
 })(jQuery);
 

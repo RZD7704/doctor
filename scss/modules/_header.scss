@@ -9,6 +9,26 @@
         width: 50px;
     }
 
+    .message {
+        &__a {
+            margin-top: 7px;
+            display: block;
+            @media (max-width: 767px) {
+                margin-top: 5px;
+            }
+            
+            &--icon {
+                width: 35px;
+                height: 35px;
+
+                @media (max-width: 767px) {
+                    width: 25px;
+                    height: 25px;
+                }
+            }
+        }
+    }
+
     .logo {
         margin-top: 5px;
         margin-bottom: 5px;
@@ -26,11 +46,19 @@
     }
 
     .persone {
-        padding-top: 5px;
+        padding-top: 7px;
         @media (max-width: 767px) {
             padding-top: 7px;
         }
+
         &__a {
+            background: #fff;
+            // display: inline-flex;
+            background: #fff!important;
+            border: none;
+            box-shadow: none;
+            padding: 0;
+
             &--icon {
                 width: 42px;
                 height: 42px;
@@ -38,6 +66,33 @@
                     width: 28px;
                     height: 28px;
                 }
+            }
+        }
+    
+        &__a::after {
+            content: none;
+        }
+    
+        &__a:focus {
+            box-shadow: none!important;
+        }
+    
+        &__a:hover {
+            text-decoration: none;
+        }
+
+        &__menu {
+
+            &--item {
+                font-size: 14px;
+                line-height: 24px;
+                letter-spacing: 0.25px;
+                color: #01ECD2;
+            }
+
+            &--item:hover {
+                background: #01ECD2;
+                color: #fff;
             }
         }
     }

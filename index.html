@@ -13,6 +13,7 @@
 	<link rel="stylesheet" href="js/libs/slick/slick.css">
 	<link rel="stylesheet" href="js/libs/slick/slick-theme.css">
 	<link rel="stylesheet" href="css/libs/swiper.min.css">
+	<link rel="stylesheet" href="css/libs/jquery.nselect.css">
 	<link rel="stylesheet" href="css/libs/bootstrap.min.css">
 	<link rel="stylesheet" href="css/styles.min.css">
 
@@ -32,12 +33,18 @@
 					<img class="logo__a--img" src="images/logo.png" alt="Logo">
 				</a>
 			</div>
-			<div class="persone">
-				<a class="persone__a" href="log.html	">
+
+			<div class="dropdown show persone">
+				<a class="btn btn-secondary dropdown-toggle persone__a" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 					<svg class="persone__a--icon">
 						<use xlink:href="images/sprite.svg#user-head"></use>
 					</svg>
 				</a>
+			  
+				<div class="dropdown-menu persone__menu" aria-labelledby="dropdownMenuLink">
+				  <a class="dropdown-item persone__menu--item" href="log.html">Увійти</a>
+				  <a class="dropdown-item persone__menu--item" href="reg.html">Зареєструватися</a>
+				</div>
 			</div>
 		</div>
 	</header>
@@ -228,60 +235,58 @@
 					<h2 class="head__h">Новини</h2>
 				</div>
 				<div class="row">
-					<div class="news-block col-12 col-lg-6">	
-						<div class="news-block__container">
+					<div class="news-page__block col-12 col-lg-6">
+						<div class="news-page__container">
 							<div class="row">
-								<div class="col-12 col-sm-6">
-									<div class="news-block__image" style="background-image: url(images/clinic-slider-2.png);">
-										<a class="news-block__image--a" href="#"></a>
+								<div class=" col-6">
+									<div class="overflow-hidden">
+										<a class="news-page__a" href="news-open.html">
+											<img class="news-page__img" src="images/clinic-slider-2.png" alt="News">
+										</a>
 									</div>
-									<!-- <a class="news-block__a" href="news.html">
-										<img class="news-block__img" src="images/news-img.png" alt="News">
-									</a> -->
 								</div>
-								<div class="col-12 col-sm-6">
-									<div class="news-block__info">
-										<a class="news-block__a" href="#">
-											<h3 class="news-block__info--h">Одонтопрактика</h3>
+								<div class="col-6">
+									<div class="news-page__info">
+										<a class="news-page__a" href="news-open.html">
+											<h3 class="news-page__info--h">Одонтопрактика</h3>
 										</a>
-										<p class="news-block__info--p">Идейные соображения высшего порядка, а также широким активом влечет за собой процесс внедрения и модернизации...</p>
-										<a class="news-block__a" href="#">
-											<p class="news-block__info--a" href="#">Читати новину</p>
-										</a>
+										<p class="news-page__info--p">Идейные соображения высшего порядка, а также сложившаяся структура...</p>
+										<div class="news-page__more">
+											<a href="news-open.html" class="news-page__info--a">Читати новину</a>
+										</div>
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
 
-					<div class="news-block col-12 col-lg-6">	
-						<div class="news-block__container">
+					<div class="news-page__block col-12 col-lg-6">
+						<div class="news-page__container">
 							<div class="row">
-								<div class="col-12 col-sm-6">
-									<div class="news-block__image" style="background-image: url(images/clinic-slider-2.png);">
-										<a class="news-block__image--a" href="#"></a>
+								<div class=" col-6">
+									<div class="overflow-hidden">
+										<a class="news-page__a" href="news-open.html">
+											<img class="news-page__img" src="images/clinic-slider.png" alt="News">
+										</a>
 									</div>
-									<!-- <a class="news-block__a" href="news.html">
-										<img class="news-block__img" src="images/news-img.png" alt="News">
-									</a> -->
 								</div>
-								<div class="col-12 col-sm-6">
-									<div class="news-block__info">
-										<a class="news-block__a" href="#">
-											<h3 class="news-block__info--h">Одонтопрактика</h3>
+								<div class="col-6">
+									<div class="news-page__info">
+										<a class="news-page__a" href="news-open.html">
+											<h3 class="news-page__info--h">Одонтопрактика</h3>
 										</a>
-										<p class="news-block__info--p">Идейные соображения высшего порядка, а также широким активом влечет за собой процесс внедрения и модернизации...</p>
-										<a class="news-block__a" href="#">
-											<p class="news-block__info--a" href="#">Читати новину</p>
-										</a>
+										<p class="news-page__info--p">Идейные соображения высшего порядка, а также сложившаяся структура...</p>
+										<div class="news-page__more">
+											<a href="news-open.html" class="news-page__info--a">Читати новину</a>
+										</div>
 									</div>
 								</div>
 							</div>
 						</div>
-					</div>	
+					</div>
 				</div>
 				<div class="text-center mt-5">
-					<a class="main-btn" href="#">Інші новини</a>
+					<a class="main-btn" href="news-page.html">Інші новини</a>
 				</div>
 			</div>
 		</section>
@@ -342,7 +347,9 @@
 						</div>
 
 					</div>
-
+				</div>
+				<div class="rules__other text-center mt-3">
+					<a class="rules__other--a" href="#">Інші правила</a>
 				</div>
 			</div>
 		</section>
@@ -366,7 +373,9 @@
 	<!-- Scripts -->
 	<script src="js/libs/jquery-3.4.1.min.js"></script>
 	<script src="js/libs/slick/slick.min.js"></script>
-	<script src="js/libs/swiper.min.js"></script>
+    <script src="js/libs/swiper.min.js"></script>
+    <script src="js/libs/jquery.nselect.min.js"></script>
+    <script src="js/libs/popper.min.js"></script>
 	<script src="js/libs/bootstrap.min.js"></script>
 	<script src="js/main.js"></script>
 </body>

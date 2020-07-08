@@ -1,34 +1,51 @@
-// .log ul {
-//     @media (max-width: 575px) {
-//         display: flex;
-//         flex-direction: column;
-//         align-items: center;
-//     }
-// }
+.doctor__h {
+    margin-top: 20px;
+    font-size: 22px;
+    letter-spacing: 0.02em;
+    color: #090909;
+
+    @media (max-width: 767px) {
+        font-size: 14px;
+
+    }
+}
+
+.edit-btn {
+    display: inline-block!important;
+    // width: 235px;
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+
+    background: #01ECD2;
+    border-radius: 22.5px;
+
+    padding: 10px 30px 10px 30px;
+
+    display: block;
+    margin: 10px auto;
+    
+    @media (max-width: 767px) {
+        font-size: 14px;
+        padding: 7px 25px 7px 25px;
+    }
+}
+
+.edit-btn:hover {
+    color: #FFFFFF;
+    text-decoration: none;
+}
 
 .log {
     padding-top: 90px;
 
-    &__btn {
-        // flex: 50;
-    }
-
     &__btn:first-child {
         margin-right: 15px;
-            
-        // @media (max-width: 575px) {
-        //     margin-right: 0;
-        // }
-
     }
 
     &__btn:last-child {
         margin-left: 15px;
-            
-        // @media (max-width: 575px) {
-        //     margin-left: 0;
-        //     margin-top: 15px;
-        // }
     }
 }
 
@@ -67,7 +84,7 @@
 	// wpcf7 adds these P tags, just use it as a wrapper
 	> p {
 		font-size: 16px;
-		font-family: sans-serif;
+		// font-family: sans-serif;
 		position: relative;
 		label {
 			position: absolute;
@@ -114,6 +131,32 @@
     flex: 0 0 auto;
 }
 
+.persone__file--download {
+    margin-top: 20px;
+}
+
+.upload-icon {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.upload-text {
+    &--head {
+        font-size: 16px;
+        line-height: 20px;
+        letter-spacing: 0.02em;
+        color: #858585;
+    }
+
+    &--foot {
+        font-size: 18px;
+        line-height: 20px;
+        letter-spacing: 0.02em;
+        color: #363636;
+    }
+}
+
 .inputfile {
     width: 0.1px;
     height: 0.1px;
@@ -141,4 +184,64 @@
 
 .inputfile + label {
     cursor: pointer; /* "hand" cursor */
+}
+
+.nselect {
+    width: 100%;
+
+    &__head {
+        width: 100%;
+        background: #fff!important;
+        font-size: 16px!important;
+        color: #858585!important;
+        border: 1px solid #E5E5E5!important;
+        border-radius: 5px;
+        padding: 10px 0 10px 7px!important;
+        height: none!important;
+        height: 100%!important;
+        margin-top: 20px!important;
+    }
+
+    &__head::after {
+        border-color: #858585 transparent transparent transparent!important;
+        margin-top: 2px;
+    }
+
+    &__inner {
+        margin-top: 20px!important;
+        width: 100%;
+    }
+} 
+
+.nselect__list {
+    width: 100%;
+} 
+
+.nselect__list LI._active SPAN {
+    color: #01ECD2!important; 
+}
+
+.nselect__list LI SPAN:hover {
+    background: #01ECD2!important;
+}
+
+.further {
+    margin-top: 20px;
+    &__p {
+        font-size: 14px;
+        letter-spacing: 0.02em;
+        color: #363636;
+    }
+
+    &__a {
+        font-size: 14px;
+        letter-spacing: 0.02em;
+        color: #01ECD2;
+    }
+
+    &__a:hover {
+        text-decoration: none;
+        color: #01ECD2;
+
+    }
 }
