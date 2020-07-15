@@ -43,12 +43,14 @@ body {
 
 .head {
 	&__h {
-        font-size: 22px;
+        font-size: 20px;
         line-height: 20px;
         letter-spacing: 0.02em;
         color: #090909;
         margin-bottom: 20px;
-        margin-top: 50px;
+		margin-top: 50px;
+		
+		
         
 	}
 	
@@ -92,8 +94,8 @@ body {
 	}
 
 	&__a {
-		width: 120px;
-		margin-left: auto;
+		// width: 120px;
+		// margin-left: auto;
 
 		&--icon {
 			width: 15px;
@@ -102,9 +104,17 @@ body {
 		}
 
 		&--p {
-			font-size: 12px;
+			font-size: 16px;
 			letter-spacing: 0.02em;
 			color: #858585;
+
+			@media (max-width: 767px) {
+				font-size: 14px;
+			}
 		}
 	}
+}
+
+.rotate {
+	transform: rotate(180deg);
 }

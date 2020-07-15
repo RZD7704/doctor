@@ -1,0 +1,117 @@
+.visits-open {
+    margin-top: 80px;
+}
+
+.content__h {
+
+    &--p {
+        font-size: 20px;
+        letter-spacing: 0.02em;
+        color: #363636;
+
+        @media (max-width: 767px) {
+            font-size: 16px;
+        }
+    }
+}
+
+.budget:last-child {
+    border-top: 5px solid #fff;
+
+}
+
+.budget.link:hover {
+    background: #fff;
+    transition: .3s all;
+}
+
+.budget {
+    background: rgba(207, 255, 250, 0.28);
+
+    &__h {
+        font-size: 18px;
+        letter-spacing: 0.02em;
+        color: #363636;
+    }
+
+    &__price {
+
+        &--p {
+            font-size: 16px;
+            letter-spacing: 0.02em;
+            color: #929292;
+        }
+    }
+}
+
+.route-info.desktop {
+    @media (max-width: 767px) {
+        display: none!important;
+    }
+}
+
+.route-info {
+
+    &__svg {
+        width: 28px;
+        height: 28px;
+        margin: auto 10px auto 0;
+
+        @media (max-width: 767px) {
+            width: 20px;
+            height: 20px;
+        }
+    }
+
+    &__svg:last-child {
+        width: 18px;
+        height: 18px;
+        
+    }
+    
+    &__text {
+
+        &--name {
+            font-size: 16px;
+            letter-spacing: 0.02em;
+            color: #858585;
+
+            @media (max-width: 767px) {
+                font-size: 12px;
+            }
+        }
+
+        &--mean {
+            font-size: 18px;
+            line-height: 1;
+            letter-spacing: 0.02em;
+            color: #363636;
+
+            @media (max-width: 767px) {
+                font-size: 14px;
+            }
+        }
+
+        &--mean:hover {
+            color: #363636;
+            text-decoration: none;
+        }
+    }
+
+}
+
+.btn__num {
+    margin-left: auto;
+    font-size: 16px;
+    letter-spacing: 0.02em;
+    color: #01ECD2;
+
+    @media (min-width: 768px) {
+        display: none!important;
+    }
+}
+
+.btn__num:hover {
+    text-decoration: none;
+    color: #01ECD2;
+}

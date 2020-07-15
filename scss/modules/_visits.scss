@@ -1,0 +1,124 @@
+.visits {
+    margin-top: 90px;
+
+    &__h {
+
+        &--svg {
+            width: 18px;
+            height: 18px;
+            margin-top: 4px; 
+            margin-right: 5px;
+        }
+    }
+}
+
+.visits-block {
+    &__info {
+        &--name {
+            font-size: 22px;
+            letter-spacing: 0.02em;
+            color: #363636;
+            font-weight: 500;
+
+            @media (max-width: 767px) {
+                font-size: 16px;    
+            }
+        }
+
+        &--type {
+            font-size: 18px;
+            letter-spacing: 0.02em;
+            color: #363636;
+            @media (max-width: 767px) {
+                font-size: 12px;    
+            }
+
+            &--svg {
+                width: 20px;
+                height: 20px;
+            }
+        }
+
+        &--more {
+            font-size: 18px;
+            letter-spacing: 0.02em;
+            color: #858585;
+
+            @media (max-width: 767px) {
+                font-size: 14px;    
+            }
+
+            &--arr {
+                width: 22px;
+                height: 15px;
+            }
+        }
+
+        &--more:hover {
+            text-decoration: none;
+            color: #858585;
+        }
+
+        &--rate {
+            &--info {
+                width: 20px;
+                height: 20px;
+
+                @media (max-width: 767px) {
+                    width: 14px;
+                    height: 14px;   
+                }
+            }
+        }
+    }
+
+    &__status {
+        background: #01ECD2;
+        border-radius: 19px;
+        display: inline-block;
+        max-height: 35px;
+        &--p {
+            font-size: 20px;
+            letter-spacing: 0.02em;
+            color: #FFFFFF;
+            padding: 2px 35px;
+
+            @media (max-width: 767px) {
+            font-size: 12px;    
+            padding: 0 15px;       
+            }
+        }
+    }
+
+    &__status.unconfirmed {
+        background: #E4E4E4;
+    }
+
+    &__status.desktop {
+        @media (max-width: 767px) {
+            display: none;
+        }
+    }
+
+    &__status.mobile {
+        @media (min-width: 768px) {
+            display: none;
+
+        }
+    }
+
+    &__status.mob-visit {
+        width: 125px;
+        display: block;
+        margin-left: auto;
+        @media (min-width: 768px) {
+            display: none;
+
+        }
+    }
+
+    &__status.mob-visit p {
+        font-size: 12px;
+        padding: 3px 25px;
+    }
+}

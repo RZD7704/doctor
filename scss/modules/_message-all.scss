@@ -1,0 +1,90 @@
+.message-all {
+    margin-top: 65px;
+}
+
+.message-block {
+
+    &__foto {
+
+        &--img {
+            width: 64px;
+            height: 64px;
+            // margin: 0 auto;
+
+
+            @media (max-width: 767px) {
+                width: 42px;
+                height: 42px;
+            }
+        }
+
+        
+    }
+
+    &__message {
+
+        &--name {
+
+            &--p {
+                font-size: 18px;
+                letter-spacing: 0.02em;
+                color: #363636;
+                @media (max-width: 767px) {
+                    font-size: 14px;
+
+                }
+            }
+        }
+
+        &--text {
+
+            &--p {
+                line-height: 14px;
+                line-height: 1;
+                letter-spacing: 0.02em;
+                color: #858585;
+                @media (max-width: 767px) {
+                    font-size: 12px;
+                }
+            }
+        }
+
+        &--time {
+
+            &--p {
+                font-size: 16px;
+                line-height: 14px;
+                letter-spacing: 0.02em;
+                color: #858585;
+                padding-top: 15px;
+
+                @media (max-width: 767px) {
+                    font-size: 12px;
+                    padding-top: 0;
+                    padding-left: 5px;
+
+                }
+            }
+        }
+    }
+
+    &__status {
+
+        &--icon {
+            width: 14px;
+            height: 14px;
+        }
+    }
+}
+
+.message-block a:hover {
+    text-decoration: none;
+}
+
+.message-block div {
+    padding: 5px 5px;
+}
+
+.message-block div.not-read {
+    background: rgba(207, 255, 250, 0.26);
+}

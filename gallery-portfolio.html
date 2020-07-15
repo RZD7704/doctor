@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="description" content="Starter">
+	<meta name="author" content="Admin">
+	<title>Starter</title>
+
+	<link rel="icon" href="images/favicon.png">
+
+	<link rel="stylesheet" href="js/libs/slick/slick.css">
+	<link rel="stylesheet" href="js/libs/slick/slick-theme.css">
+    <link rel="stylesheet" href="css/libs/swiper.min.css">
+    <link rel="stylesheet" href="css/libs/jquery.nselect.css">
+	<link rel="stylesheet" href="css/libs/bootstrap.min.css">
+	<link rel="stylesheet" href="css/styles.min.css">
+
+
+	<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<header class="header">
+		<div class="container d-flex justify-content-between">
+			<div class="message-icon">
+				<a class="message__a" href="doctor-prof.html">
+					<svg class="message__a--icon">
+						<use xlink:href="images/sprite.svg#arr-back"></use>
+                    </svg>
+				</a>
+			</div>
+			<div class="logo">
+				<a class="logo__a" href="index.html">
+					<img class="logo__a--img" src="images/logo.png" alt="Logo">
+				</a>
+			</div>
+			<div class="dropdown show persone">
+				<a class="btn btn-secondary dropdown-toggle persone__a" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <img class="persone__a--img" src="images/prifile-foto.png" alt="Profile">
+				</a>
+			  
+				<div class="dropdown-menu persone__menu" aria-labelledby="dropdownMenuLink">
+				  <a class="dropdown-item persone__menu--item" href="log.html">Вийти</a>
+				  <a class="dropdown-item persone__menu--item" href="reg.html">Змінити профіль</a>
+				</div>
+			</div>
+		</div>
+	</header>
+
+    <div class="wrapper">
+        <main class="main content">
+            <section class="profile">
+                <div class="container">
+                    <div class="profile-head">
+                        <div class="row">
+                            <div class="col-4">
+                                <div class="profile-head__left">
+                                    <img class="profile-head__left--img" src="images/prifile-foto.png" alt="Profile">
+                                </div>
+                            </div>
+                            <div class="col-8">
+                                <div class="profile-head__right">
+
+                                    <h2 class="profile-head__right--name">Гвізджинська Катерина</h2>
+                                    <p class="profile-head__right--points mt-2">
+                                        <svg class="profile-head__right--points--status offline">
+                                            <use xlink:href="images/sprite.svg#ellipse-status"></use>
+                                        </svg>
+                                        Була в мережі 10 годин тому
+                                    </p>
+                                    <a class="d-md-flex profile-head__right--points mt-2" href="profile-editing.html">
+                                        <svg class="profile-head__right--points--svg">
+                                            <use xlink:href="images/sprite.svg#message-btn"></use>
+                                        </svg>
+                                        Написати повідомлення
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="gallery-photos mt-3">
+                <div class="container">
+                    <div class="head-text mt-5">
+                        <h2 class="head-text__h2">Альбом (кабінет)</h2>
+                    </div>
+                    <div class="row mt-4">
+                        <div class="col-6 col-md-4">
+                            <img class="img-fluid" src="images/portfolio.png" alt="clinic">
+                        </div>
+                        <div class="col-6 col-md-4">
+                            <img class="img-fluid" src="images/portfolio.png" alt="clinic">
+                        </div>
+                        <div class="col-6 col-md-4">
+                            <img class="img-fluid" src="images/portfolio.png" alt="clinic">
+                        </div>
+                        <div class="col-6 col-md-4">
+                            <img class="img-fluid" src="images/portfolio.png" alt="clinic">
+                        </div>
+                        <div class="col-6 col-md-4">
+                            <img class="img-fluid" src="images/portfolio.png" alt="clinic">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="clinics portfolio">
+                <div class="container">
+                    <div class="portfolio-head">
+                        <h2 class="clinics__h2 mr-md-5">Альбом (кабінет)</h2>
+                    </div>
+                    <div class="swiper-container portfolio-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide  d-flex flex-column">
+                                <div class="slide position-relative">
+                                    <img class="img-fluid" src="images/clinic-slider.png" alt="clinic">
+                                </div>
+                            </div>
+    
+                            <div class="swiper-slide  d-flex flex-column">
+                                <div class="slide position-relative">
+                                    <img class="img-fluid" src="images/clinic-slider-2.png" alt="clinic">
+                                </div>
+                            </div>
+    
+                            <div class="swiper-slide  d-flex flex-column">
+                                <div class="slide position-relative">
+                                    <img class="img-fluid" src="images/clinic-slider.png" alt="clinic">
+                                </div>
+                            </div>
+    
+                            <div class="swiper-slide  d-flex flex-column">
+                                <div class="slide position-relative">
+                                    <img class="img-fluid" src="images/clinic-slider-2.png" alt="clinic">
+                                </div>
+                            </div>
+    
+                            <div class="swiper-slide  d-flex flex-column">
+                                <div class="slide position-relative">
+                                    <img class="img-fluid" src="images/clinic-slider.png" alt="clinic">
+                                </div>
+                            </div>
+    
+                            <div class="swiper-slide  d-flex flex-column">
+                                <div class="slide position-relative">
+                                    <img class="img-fluid" src="images/clinic-slider-2.png" alt="clinic">
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                </div>
+            </section>
+
+            <div class="push"></div>
+        </main>
+
+        <footer class="footer text-left mt-5">
+            <div class="container">
+                <div class="footer__contact">
+                    <p class="footer__contact--p">For callaboration:</p>
+                    <a class="footer__contact--a" href="tel:+30(225) 555-01-18">+30(225) 555-0118</a>
+                    <a class="footer__contact--a" href="#">StomSearch20@gmail.com</a>
+                </div>
+    
+                <div class="footer__span text-center">
+                    <p class="footer__span--p">2020 Стоматолог Search</p>
+                </div>
+            </div>
+    
+        </footer>
+    </div>
+
+
+	<!-- Scripts -->
+	<script src="js/libs/jquery-3.4.1.min.js"></script>
+	<script src="js/libs/slick/slick.min.js"></script>
+    <script src="js/libs/swiper.min.js"></script>
+    <script src="js/libs/jquery.nselect.min.js"></script>
+    <script src="js/libs/popper.min.js"></script>
+	<script src="js/libs/bootstrap.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
+

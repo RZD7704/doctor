@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="description" content="Starter">
+	<meta name="author" content="Admin">
+	<title>Starter</title>
+
+	<link rel="icon" href="images/favicon.png">
+
+	<link rel="stylesheet" href="js/libs/slick/slick.css">
+	<link rel="stylesheet" href="js/libs/slick/slick-theme.css">
+    <link rel="stylesheet" href="css/libs/swiper.min.css">
+    <link rel="stylesheet" href="css/libs/jquery.nselect.css">
+	<link rel="stylesheet" href="css/libs/bootstrap.min.css">
+	<link rel="stylesheet" href="css/styles.min.css">
+
+
+	<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<header class="header">
+		<div class="container d-flex justify-content-between">
+			<div class="message-icon">
+				<a class="message__a" href="index.html">
+					<svg class="message__a--icon">
+						<use xlink:href="images/sprite.svg#message-svg"></use>
+                    </svg>
+                    <span class="message__a--num">1</span>
+				</a>
+			</div>
+			<div class="logo">
+				<a class="logo__a" href="index.html">
+					<img class="logo__a--img" src="images/logo.png" alt="Logo">
+				</a>
+			</div>
+			<div class="dropdown show persone">
+				<a class="btn btn-secondary dropdown-toggle persone__a" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <img class="persone__a--img" src="images/prifile-foto.png" alt="">
+				</a>
+			  
+				<div class="dropdown-menu persone__menu" aria-labelledby="dropdownMenuLink">
+				  <a class="dropdown-item persone__menu--item" href="log.html">Вийти</a>
+				  <a class="dropdown-item persone__menu--item" href="reg.html">Змінити профіль</a>
+				</div>
+			</div>
+		</div>
+	</header>
+
+    <div class="wrapper">
+        <main class="main content">
+            <section class="profile">
+                <div class="container">
+                    <div class="profile-head">
+                        <div class="row">
+                            <div class="col-6 col-lg-4">
+                                <div class="profile-head__left">
+                                    <div class="profile-head__left--change">
+                                        <img class="profile-head__left--img" src="images/prifile-foto.png" alt="Profile">
+
+                                        <!-- <div class="profile-head__left--black"> -->
+                                            <div class="persone__file--download profile-head__left--download">
+                                                <input type="file" name="file" id="file" class="inputfile personefile" />
+                                                <label class="d-flex p-0" for="file">
+                                                    <div>+</div>
+                                                </label>
+                                            </div>
+                                        <!-- </div> -->
+                                    </div>
+
+
+                                </div>
+                            </div>
+                            <div class="col-6 col-lg-8">
+                                <div class="profile-head__right">
+
+                                    <h2 class="profile-head__right--name">Сергій Лядовий</h2>
+                                    <p class="profile-head__right--points mt-3">
+                                        <svg class="profile-head__right--points--status">
+                                            <use xlink:href="images/sprite.svg#ellipse-status"></use>
+                                        </svg>
+                                        В мережі
+                                    </p>
+
+                                    <div class="profile-head__contact desktop-block">
+                                        <form action="#" method="post" class="wpcf7-form" novalidate="novalidate">
+
+                                            <p><label class="">Ім’я та прізвище</label><br>
+                                                <span class="wpcf7-form-control-wrap your-name"><input name="your-name" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" type="text"></span></p>
+        
+                                            <p><label class="">Введіть номер телефону</label><br>
+                                                <span class="wpcf7-form-control-wrap your-subject"><input name="your-subject" value="" size="40" class="wpcf7-form-control wpcf7-text" aria-invalid="false" type="number"></span></p>
+        
+                                            <p><label class="">Введіть свою пошту</label><br>
+                                                <span class="wpcf7-form-control-wrap your-email"><input name="your-email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" type="email"></span></p>
+        
+                                            <select class="nselect-1 country" name="country" data-title="Країна">
+                                                <option value="1">Cat</option>
+                                                <option value="2">Dog</option>
+                                                <option value="3">Frog</option>
+                                                <option value="4">Duck</option>
+                                                <option value="5">Elephant</option>
+                                            </select>
+                                            
+                                            <select class="nselect-2 city" name="city" data-title="Місто">
+                                                <option value="1">Cat</option>
+                                                <option value="2">Dog</option>
+                                                <option value="3">Frog</option>
+                                                <option value="4">Duck</option>
+                                                <option value="5">Elephant</option>
+                                            </select>
+        
+                                            <p><label class="">Придумайте пароль</label><br>
+                                                <span class="wpcf7-form-control-wrap your-subject"><input name="your-subject" value="" size="40" class="wpcf7-form-control wpcf7-text" aria-invalid="false" type="password"></span></p>
+        
+                                            <p><label class="">Повторіть пароль</label><br>
+                                                <span class="wpcf7-form-control-wrap your-subject"><input name="your-subject" value="" size="40" class="wpcf7-form-control wpcf7-text" aria-invalid="false" type="password"></span></p>
+
+                                            <div class="text-center mt-4">
+                                                <button class="edit-btn">Зберегти</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div> 
+                            </div>
+
+                            <div class="profile-head__contact mobile-block col-lg-8 offset-lg-4">
+
+                                <form action="#" method="post" class="wpcf7-form" novalidate="novalidate">
+
+                                    <p><label class="">Ім’я та прізвище</label><br>
+                                        <span class="wpcf7-form-control-wrap your-name"><input name="your-name" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" type="text"></span></p>
+
+                                    <p><label class="">Введіть номер телефону</label><br>
+                                        <span class="wpcf7-form-control-wrap your-subject"><input name="your-subject" value="" size="40" class="wpcf7-form-control wpcf7-text" aria-invalid="false" type="number"></span></p>
+
+                                    <p><label class="">Введіть свою пошту</label><br>
+                                        <span class="wpcf7-form-control-wrap your-email"><input name="your-email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" type="email"></span></p>
+
+                                    <select class="nselect-1 country" name="country" data-title="Країна">
+                                        <option value="1">Cat</option>
+                                        <option value="2">Dog</option>
+                                        <option value="3">Frog</option>
+                                        <option value="4">Duck</option>
+                                        <option value="5">Elephant</option>
+                                    </select>
+                                    
+                                    <select class="nselect-2 city" name="city" data-title="Місто">
+                                        <option value="1">Cat</option>
+                                        <option value="2">Dog</option>
+                                        <option value="3">Frog</option>
+                                        <option value="4">Duck</option>
+                                        <option value="5">Elephant</option>
+                                    </select>
+
+                                    <p><label class="">Придумайте пароль</label><br>
+                                        <span class="wpcf7-form-control-wrap your-subject"><input name="your-subject" value="" size="40" class="wpcf7-form-control wpcf7-text" aria-invalid="false" type="password"></span></p>
+
+                                    <p><label class="">Повторіть пароль</label><br>
+                                        <span class="wpcf7-form-control-wrap your-subject"><input name="your-subject" value="" size="40" class="wpcf7-form-control wpcf7-text" aria-invalid="false" type="password"></span></p>
+
+                                    <div class="text-center mt-4">
+                                        <button class="edit-btn">Зберегти</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+ 
+            <div class="push"></div>
+        </main>
+
+        <footer class="footer text-left mt-5">
+            <div class="container">
+                <div class="footer__contact">
+                    <p class="footer__contact--p">For callaboration:</p>
+                    <a class="footer__contact--a" href="tel:+30(225) 555-01-18">+30(225) 555-0118</a>
+                    <a class="footer__contact--a" href="#">StomSearch20@gmail.com</a>
+                </div>
+    
+                <div class="footer__span text-center">
+                    <p class="footer__span--p">2020 Стоматолог Search</p>
+                </div>
+            </div>
+    
+        </footer>
+    </div>
+
+
+	<!-- Scripts -->
+	<script src="js/libs/jquery-3.4.1.min.js"></script>
+	<script src="js/libs/slick/slick.min.js"></script>
+    <script src="js/libs/swiper.min.js"></script>
+    <script src="js/libs/jquery.nselect.min.js"></script>
+    <script src="js/libs/popper.min.js"></script>
+	<script src="js/libs/bootstrap.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
+

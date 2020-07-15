@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../scss/modules/profile-user.scss"
+    ],
+    "names": [],
+    "file": "profile-user.min.css"
+}

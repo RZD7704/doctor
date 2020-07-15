@@ -1,0 +1,72 @@
+.hotel-open {
+    margin-top: 90px;
+
+    .top-img {
+        height: 400px!important;
+        @media (max-width: 767px) {
+            height: 200px!important;
+        }
+    }
+
+    .bottom-img {
+        height: 200px!important;
+        @media (max-width: 767px) {
+            height: 100px!important;
+        }
+    }
+
+    .swiper-container {
+        width: 100%!important;
+        height: 300px;
+        margin-left: auto!important;
+        margin-right: auto!important;
+    }
+  
+    .swiper-slide {
+    background-size: cover;
+    background-position: center;
+    }
+
+    .gallery-top {
+    height: 100%;
+    width: 100%;
+    }
+
+    .gallery-thumbs {
+    height: 20%;
+    box-sizing: border-box;
+    padding: 10px 0;
+    }
+
+    .gallery-thumbs .swiper-slide {
+    height: 100%;
+    opacity: 0.4;
+    }
+
+    .gallery-thumbs .swiper-slide-thumb-active {
+    opacity: 1;
+    }
+
+    &__price {
+
+        &--h {
+            font-size: 18px;
+            line-height: 20px;
+            letter-spacing: 0.02em;
+            color: #363636;
+            @media (max-width: 767px) {
+                font-size: 16px;
+            }
+        }
+
+        &--p {
+            font-size: 18px;
+            line-height: 20px;
+            letter-spacing: 0.02em;
+            color: #929292;
+            @media (max-width: 767px) {
+                font-size: 16px;
+            }
+        }
+    }
+}

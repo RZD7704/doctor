@@ -1,0 +1,36 @@
+.search-container {
+
+    &__form {
+        border: 1px solid #E5E5E5;
+        border-radius: 5px;
+        // padding: 5px;
+
+        &--btn {
+            background: #fff;
+            padding: 5px;
+
+            &--svg {
+                width: 20px;
+                height: 20px;
+                margin-bottom: 4px;
+            }
+        }
+
+        &--btn:active {
+            border: none;
+        }
+
+        &--input {
+            padding: 5px;
+        }
+    }
+}
+
+.sort-menu {
+    left: auto!important;
+    right: 0!important;
+
+    @media (max-width: 767px) {
+        right: 0!important;
+    }
+}

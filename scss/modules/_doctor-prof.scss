@@ -1,0 +1,47 @@
+.portfolio {
+    margin-top: 20px;
+}
+
+.portfolio-container {
+    height: 225px!important;
+
+    @media (max-width: 575px) {
+        height: 260px!important;
+    }
+}
+
+.budget {
+
+    &__a {
+
+        &--points {
+            width: 10px;
+            height: 10px;
+            fill: #01ECD2;
+        }
+    }
+
+    &__a:hover {
+        text-decoration: none;
+    }
+}
+
+.sign-form {
+
+    &__time {
+
+        &--btn {
+            background: #fff;
+            border: 1px solid #E5E5E5;
+            border-radius: 5px;
+            padding: 5px;
+        }
+    }
+
+    &__select div.nselect__inner {
+    }
+}
+
+.sign-form__select div.nselect__inner {
+    width: 100%!important;
+}

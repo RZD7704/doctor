@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="description" content="Starter">
+	<meta name="author" content="Admin">
+	<title>Starter</title>
+
+	<link rel="icon" href="images/favicon.png">
+
+	<link rel="stylesheet" href="js/libs/slick/slick.css">
+	<link rel="stylesheet" href="js/libs/slick/slick-theme.css">
+    <link rel="stylesheet" href="css/libs/swiper.min.css">
+    <link rel="stylesheet" href="css/libs/jquery.nselect.css">
+	<link rel="stylesheet" href="css/libs/bootstrap.min.css">
+	<link rel="stylesheet" href="css/styles.min.css">
+
+
+	<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<header class="header">
+		<div class="container d-flex justify-content-between">
+			<div class="message-icon">
+				<a class="message__a" href="message-all.html">
+					<svg class="message__a--icon">
+						<use xlink:href="images/sprite.svg#message-svg"></use>
+                    </svg>
+                    <span class="message__a--num">1</span>
+				</a>
+			</div>
+			<div class="logo">
+				<a class="logo__a" href="index.html">
+					<img class="logo__a--img" src="images/logo.png" alt="Logo">
+				</a>
+			</div>
+			<div class="dropdown show persone">
+				<a class="btn btn-secondary dropdown-toggle persone__a" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <img class="persone__a--img" src="images/prifile-foto.png" alt="Profile">
+				</a>
+			  
+				<div class="dropdown-menu persone__menu" aria-labelledby="dropdownMenuLink">
+				  <a class="dropdown-item persone__menu--item" href="log.html">Вийти</a>
+				  <a class="dropdown-item persone__menu--item" href="reg.html">Змінити профіль</a>
+				</div>
+			</div>
+		</div>
+	</header>
+
+    <div class="wrapper">
+        <main class="main content">
+            <section class="profile">
+                <div class="container">
+                    <div class="profile-head">
+                        <div class="row">
+                            <div class="col-4">
+                                <div class="profile-head__left">
+                                    <img class="profile-head__left--img" src="images/prifile-foto.png" alt="Profile">
+                                </div>
+                            </div>
+                            <div class="col-8">
+                                <div class="profile-head__right">
+
+                                    <h2 class="profile-head__right--name">Гвізджинська Катерина</h2>
+                                    <p class="profile-head__right--points mt-2">
+                                        <svg class="profile-head__right--points--status offline">
+                                            <use xlink:href="images/sprite.svg#ellipse-status"></use>
+                                        </svg>
+                                        Була в мережі 10 годин тому
+                                    </p>
+                                    <a class="d-md-flex profile-head__right--points mt-2" href="profile-editing.html">
+                                        <svg class="profile-head__right--points--svg">
+                                            <use xlink:href="images/sprite.svg#message-btn"></use>
+                                        </svg>
+                                        Написати повідомлення
+                                    </a>
+                                    <a class="d-flex profile-head__right--points mt-2 " href="profile-editing.html">
+                                        <svg class="profile-head__right--points--svg">
+                                            <use xlink:href="images/sprite.svg#error"></use>
+                                        </svg>
+                                        Поскаржитися  
+                                    </a>
+
+                                    <div class="profile-head__contact desktop-block">
+                                        <div class="mt-4">
+                                            <div class="d-flex row mt-2">
+                                                <p class="profile-head__right--type col-lg-4">Країна</p>
+                                                <p class="profile-head__right--info col-lg-6">Україна</p>
+                                            </div>
+                                            <div class="d-flex row mt-2">
+                                                <p class="profile-head__right--type col-lg-4">Адреса</p>
+                                                <p class="profile-head__right--info col-lg-6">Полтава</p>
+                                            </div>
+                                            <div class="d-flex row mt-2">
+                                                <p class="profile-head__right--type col-lg-4">Країна</p>
+                                                <p class="profile-head__right--info col-lg-6">Україна</p>
+                                            </div>
+                                            <div class="d-flex row mt-2">
+                                                <p class="profile-head__right--type col-lg-4">Місце роботи</p>
+                                                <p class="profile-head__right--info col-lg-6">Denta+</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+
+                            </div>
+                            <div class="profile-head__contact mobile-block col-lg-8 offset-lg-4">
+                                <div class="d-flex row mt-2">
+                                    <p class="profile-head__right--type col-lg-4">Країна</p>
+                                    <p class="profile-head__right--info col-lg-6">Україна</p>
+                                </div>
+                                <div class="d-flex row mt-2">
+                                    <p class="profile-head__right--type col-lg-4">Адреса</p>
+                                    <p class="profile-head__right--info col-lg-6">Полтава</p>
+                                </div>
+                                <div class="d-flex row mt-2">
+                                    <p class="profile-head__right--type col-lg-4">Місце роботи</p>
+                                    <p class="profile-head__right--info col-lg-6">Denta+</p>
+                                </div>
+                                <div class="d-flex row mt-2">
+                                    <p class="profile-head__right--type col-lg-4">Місто</p>
+                                    <p class="profile-head__right--info col-lg-6">Маямі</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="clinics portfolio">
+                <div class="container">
+                    <div class="portfolio-head d-flex justify-content-between justify-content-md-start">
+                        <h2 class="clinics__h2 mr-md-5">Обрані клініки</h2>
+                        <div class="return mt-0">
+                            <a class="return__a d-flex" href="gallery-portfolio.html">
+                                <p class="return__a--p">Більше фото</p>
+                                <svg class="return__a--icon rotate">
+                                    <use xlink:href="images/sprite.svg#return-back"></use>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-container portfolio-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide  d-flex flex-column">
+                                <div class="slide position-relative">
+                                    <img class="img-fluid" src="images/portfolio.png" alt="clinic">
+                                </div>
+                            </div>
+    
+                            <div class="swiper-slide  d-flex flex-column">
+                                <div class="slide position-relative">
+                                    <img class="img-fluid" src="images/portfolio.png" alt="clinic">
+                                </div>
+                            </div>
+    
+                            <div class="swiper-slide  d-flex flex-column">
+                                <div class="slide position-relative">
+                                    <img class="img-fluid" src="images/portfolio.png" alt="clinic">
+                                </div>
+                            </div>
+    
+                            <div class="swiper-slide  d-flex flex-column">
+                                <div class="slide position-relative">
+                                    <img class="img-fluid" src="images/portfolio.png" alt="clinic">
+                                </div>
+                            </div>
+    
+                            <div class="swiper-slide  d-flex flex-column">
+                                <div class="slide position-relative">
+                                    <img class="img-fluid" src="images/portfolio.png" alt="clinic">
+                                </div>
+                            </div>
+    
+                            <div class="swiper-slide  d-flex flex-column">
+                                <div class="slide position-relative">
+                                    <img class="img-fluid" src="images/portfolio.png" alt="clinic">
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                </div>
+            </section>
+
+            <section class="clinics portfolio">
+                <div class="container">
+                    <div class="portfolio-head d-flex justify-content-between justify-content-md-start">
+                        <h2 class="clinics__h2 mr-md-5">Кабінет</h2>
+                        <div class="return mt-0">
+                            <a class="return__a d-flex" href="gallery-cabinet.html">
+                                <p class="return__a--p">Більше фото</p>
+                                <svg class="return__a--icon rotate">
+                                    <use xlink:href="images/sprite.svg#return-back"></use>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-container portfolio-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide  d-flex flex-column">
+                                <div class="slide position-relative">
+                                    <img class="img-fluid" src="images/clinic-slider.png" alt="clinic">
+                                </div>
+                            </div>
+    
+                            <div class="swiper-slide  d-flex flex-column">
+                                <div class="slide position-relative">
+                                    <img class="img-fluid" src="images/clinic-slider-2.png" alt="clinic">
+                                </div>
+                            </div>
+    
+                            <div class="swiper-slide  d-flex flex-column">
+                                <div class="slide position-relative">
+                                    <img class="img-fluid" src="images/clinic-slider.png" alt="clinic">
+                                </div>
+                            </div>
+    
+                            <div class="swiper-slide  d-flex flex-column">
+                                <div class="slide position-relative">
+                                    <img class="img-fluid" src="images/clinic-slider-2.png" alt="clinic">
+                                </div>
+                            </div>
+    
+                            <div class="swiper-slide  d-flex flex-column">
+                                <div class="slide position-relative">
+                                    <img class="img-fluid" src="images/clinic-slider.png" alt="clinic">
+                                </div>
+                            </div>
+    
+                            <div class="swiper-slide  d-flex flex-column">
+                                <div class="slide position-relative">
+                                    <img class="img-fluid" src="images/clinic-slider-2.png" alt="clinic">
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                </div>
+            </section>
+
+            <section class="budget-price">
+                <div class="budget mt-3">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-10 offset-lg-1">
+                                <h3 class="budget__h mt-3">Список послуг</h3>
+                            </div>
+                        </div>
+    
+                    </div>
+                </div>
+    
+                <div class="budget link">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-10 offset-lg-1">
+                                <div class="budget__price mt-2 d-flex justify-content-between">
+                                    <p class="budget__price--p">Локальный рентген</p>
+                                    <p class="budget__price--p">20$</p>
+                                </div>
+                            </div>
+                        </div>
+    
+                    </div>
+                </div>
+    
+                <div class="budget link">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-10 offset-lg-1">
+                                <div class="budget__price mt-2 mb-2 d-flex justify-content-between">
+                                    <p class="budget__price--p">Ортопанорама</p>
+                                    <p class="budget__price--p">30$</p>
+                                </div>
+                            </div>
+                        </div>
+    
+                    </div>
+                </div>
+    
+                <div class="budget link">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-10 offset-lg-1">
+                                <div class="budget__price mt-2 mb-2 d-flex justify-content-between">
+                                    <p class="budget__price--p">Консультация хирурга-имплантолога</p>
+                                    <p class="budget__price--p">30$</p>
+                                </div>
+                            </div>
+                        </div>
+    
+                    </div>
+                </div>
+    
+                <div class="budget link">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-10 offset-lg-1">
+                                <div class="budget__price mt-2 mb-2 d-flex justify-content-between">
+                                    <p class="budget__price--p">Ортопанорама</p>
+                                    <p class="budget__price--p">30$</p>
+                                </div>
+                            </div>
+                        </div>
+    
+                    </div>
+                </div>
+
+                <div class="budget link">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-10 offset-lg-1">
+                                <div class="budget__price mt-2 mb-2 d-flex justify-content-between">
+                                    <p class="budget__price--p">Консультация хирурга-имплантолога</p>
+                                    <p class="budget__price--p">30$</p>
+                                </div>
+                            </div>
+                        </div>
+    
+                    </div>
+                </div>
+    
+                <div class="budget link">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-10 offset-lg-1">
+                                <div class="budget__price mt-2 mb-2 d-flex justify-content-between">
+                                    <p class="budget__price--p">Номер стандарт</p>
+                                    <p class="budget__price--p">50$</p>
+                                </div>
+                            </div>
+                        </div>
+    
+                    </div>
+                </div>
+
+                <div class="budget link">
+                    <div class="container d-flex justify-content-center">
+                        <a class="budget__a" href="#">
+                            <svg class="budget__a--points">
+                                <use xlink:href="images/sprite.svg#ellipse-status"></use>
+                            </svg>
+                            <svg class="budget__a--points">
+                                <use xlink:href="images/sprite.svg#ellipse-status"></use>
+                            </svg>
+                            <svg class="budget__a--points">
+                                <use xlink:href="images/sprite.svg#ellipse-status"></use>
+                            </svg>
+                        </a>
+    
+                    </div>
+                </div>
+
+                <div class="text-center mt-4">
+                    <a class="edit-btn " href="#">Написати повідомлення</a>
+                </div>
+            </section>
+
+
+            <div class="sign-form"> 
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 offset-md-3 col-lg-4 offset-lg-4">
+                            <form action="#" method="post" class="place-form desktop" novalidate="novalidate">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <div class="wpcf7-form sign-form__select">
+                                            <select class="nselect-4 city" name="city" data-title="Вид послуги">
+                                                <option value="1">Ортодонтія</option>
+                                                <option value="2">16:00</option>
+                                                <option value="3">18:00</option>
+                                                <option value="4">20:00</option>
+                                                <option value="5">22:00</option>
+                                            </select>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="col-6">
+                                        <div class="wpcf7-form sign-form__select">
+                                            <select class="nselect-3 city" name="city" data-title="Бажана дата">
+                                                <option value="1">22.04.2020</option>
+                                                <option value="2">23.04.2020</option>
+                                                <option value="3">24.04.2020</option>
+                                                <option value="4">25.04.2020</option>
+                                                <option value="5">26.04.2020</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12 mt-3 sign-form__time d-flex justify-content-between">
+                                        <button class="sign-form__time--btn">09:30</button>
+                                        <button class="sign-form__time--btn">10:30</button>
+                                        <button class="sign-form__time--btn">09:30</button>
+                                        <button class="sign-form__time--btn">10:30</button>
+                                    </div>
+            
+                                    <div class="col-12 text-center pt-4 m-auto">
+                                        <button class="edit-btn mt-6 d-block">Записатися</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="portfolio-head d-flex justify-content-between justify-content-md-start mt-3">
+                    <h2 class="clinics__h2 mr-md-5">Місце зупинки</h2>
+                    <div class="return mt-0">
+                        <a class="return__a d-flex" href="hotel-page.html">
+                            <p class="return__a--p">Інші місця</p>
+                            <svg class="return__a--icon rotate">
+                                <use xlink:href="images/sprite.svg#return-back"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="visits-block mt-3 position-relative">       
+                    <div class="row">
+                        <div class="col-6 col-md-4">
+                            <img class="img-fluid" src="images/stop-place.png" alt="Doctor">
+                        </div>
+                        <div class="col-6 d-md-none">
+                            <div class="visits-block__info">
+                                <h3 class="visits-block__info--name">Аристократ</h3>
+                                <p class="visits-block__info--type mt-sm-1 mt-md-0">вул. Небесної сотні</p>
+                                <a class="visits-block__info--more mt-md-3 d-block" href="hotel-open.html">
+                                    Детальніше
+                                    <svg class="visits-block__info--more--arr">
+                                        <use xlink:href="images/sprite.svg#more-arr"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-8">
+                            <div class="visits-block__info d-none d-md-block">
+                                <h3 class="visits-block__info--name">Аристократ</h3>
+                                <p class="visits-block__info--type mt-sm-1 mt-md-0">вул. Небесної сотні</p>
+                                <a class="visits-block__info--more mt-md-3 d-block" href="hotel-open.html">
+                                    Детальніше
+                                    <svg class="visits-block__info--more--arr">
+                                        <use xlink:href="images/sprite.svg#more-arr"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                            <div>
+                                <form action="#" method="post" class="place-form desktop" novalidate="novalidate">
+                                    <div class="row">
+                                        <div class="col-12 wpcf7-form">
+                                            <p><label class="">Ім’я та прізвище</label><br>
+                                                <span class="wpcf7-form-control-wrap your-name"><input name="your-name" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" type="text"></span></p>
+                                        </div>
+
+                                        <div class="col-12 wpcf7-form">
+                                            <p><label class="">Введіть номер телефону</label><br>
+                                                <span class="wpcf7-form-control-wrap your-subject"><input name="your-subject" value="" size="40" class="wpcf7-form-control wpcf7-text" aria-invalid="false" type="number"></span></p>
+                                        </div>  
+
+                                        <div class="col-6 wpcf7-form sign-form__select">
+                                            <select class="nselect-3 city" name="city" data-title="Бажана дата">
+                                                <option value="1">22.04.2020</option>
+                                                <option value="2">23.04.2020</option>
+                                                <option value="3">24.04.2020</option>
+                                                <option value="4">25.04.2020</option>
+                                                <option value="5">26.04.2020</option>
+                                            </select>
+                                        </div>
+
+                                        <div class="col-6 wpcf7-form sign-form__select">
+                                            <select class="nselect-4 city" name="city" data-title="Бажаний час">
+                                                <option value="1">14:00</option>
+                                                <option value="2">16:00</option>
+                                                <option value="3">18:00</option>
+                                                <option value="4">20:00</option>
+                                                <option value="5">22:00</option>
+                                            </select>
+                                        </div>
+
+                                        <div class="col-6 wpcf7-form sign-form__select">
+                                            <select class="nselect-5 city" name="city" data-title="Кількість осіб">
+                                                <option value="1">2 дорослий</option>
+                                                <option value="2">3 дорослий</option>
+                                                <option value="3">4 дорослий</option>
+                                                <option value="4">5 дорослий</option>
+                                                <option value="5">6 дорослий</option>
+                                            </select>
+                                        </div>
+
+                                        <div class="col-6 wpcf7-form sign-form__select">
+                                            <select class="nselect-6 city" name="city" data-title="Тип номеру">
+                                                <option value="1">Стандарт</option>
+                                                <option value="2">Dog</option>
+                                                <option value="3">Frog</option>
+                                                <option value="4">Duck</option>
+                                                <option value="5">Elephant</option>
+                                            </select>
+                                        </div>
+
+                                        <div class="text-center pt-4 m-auto">
+                                            <button class="edit-btn mt-6 d-block">Забронювати</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="push"></div>
+        </main>
+
+        <footer class="footer text-left mt-5">
+            <div class="container">
+                <div class="footer__contact">
+                    <p class="footer__contact--p">For callaboration:</p>
+                    <a class="footer__contact--a" href="tel:+30(225) 555-01-18">+30(225) 555-0118</a>
+                    <a class="footer__contact--a" href="#">StomSearch20@gmail.com</a>
+                </div>
+    
+                <div class="footer__span text-center">
+                    <p class="footer__span--p">2020 Стоматолог Search</p>
+                </div>
+            </div>
+    
+        </footer>
+    </div>
+
+
+	<!-- Scripts -->
+	<script src="js/libs/jquery-3.4.1.min.js"></script>
+	<script src="js/libs/slick/slick.min.js"></script>
+    <script src="js/libs/swiper.min.js"></script>
+    <script src="js/libs/jquery.nselect.min.js"></script>
+    <script src="js/libs/popper.min.js"></script>
+	<script src="js/libs/bootstrap.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
+

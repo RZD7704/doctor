@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="description" content="Starter">
+	<meta name="author" content="Admin">
+	<title>Starter</title>
+
+	<link rel="icon" href="images/favicon.png">
+
+	<link rel="stylesheet" href="js/libs/slick/slick.css">
+	<link rel="stylesheet" href="js/libs/slick/slick-theme.css">
+    <link rel="stylesheet" href="css/libs/swiper.min.css">
+    <link rel="stylesheet" href="css/libs/jquery.nselect.css">
+	<link rel="stylesheet" href="css/libs/bootstrap.min.css">
+	<link rel="stylesheet" href="css/styles.min.css">
+
+
+	<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<header class="header">
+		<div class="container d-flex justify-content-between">
+			<div class="message-icon">
+				<a class="message__a" href="visits.html">
+					<svg class="message__a--icon">
+						<use xlink:href="images/sprite.svg#arr-back"></use>
+					</svg>
+				</a>
+			</div>
+			<div class="logo">
+				<a class="logo__a" href="index.html">
+					<img class="logo__a--img" src="images/logo.png" alt="Logo">
+				</a>
+			</div>
+			<div class="dropdown show persone">
+				<a class="btn btn-secondary dropdown-toggle persone__a" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <img class="persone__a--img" src="images/prifile-foto.png" alt="">
+				</a>
+			  
+				<div class="dropdown-menu persone__menu" aria-labelledby="dropdownMenuLink">
+				  <a class="dropdown-item persone__menu--item" href="log.html">Вийти</a>
+				  <a class="dropdown-item persone__menu--item" href="reg.html">Змінити профіль</a>
+				</div>
+			</div>
+		</div>
+	</header>
+
+    <div class="wrapper">
+        <main class="main content">
+            <section class="visits-open">
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-10 offset-lg-1">
+                            <h2 class="visits__h d-flex">
+                                <svg class="visits__h--svg">
+                                    <use xlink:href="images/sprite.svg#clock-svg"></use>
+                                </svg>
+                                Мій візит
+                                <p>(2)</p>
+                            </h2>
+
+                            <div class="visits-block__status mob-visit">
+                                <p class="visits-block__status--p">Підтвержено</p>
+                            </div>
+
+                            <div class="visits-block mt-3">
+                                <div class="row">
+                                    <div class="col-6 col-md-4">
+                                        <img class="img-fluid" src="images/doctor-slider.png" alt="Doctor">
+                                    </div>
+                                    <div class="col-6 col-md-8 d-flex justify-content-between">
+                                        <div class="visits-block__info">
+                                            <h3 class="visits-block__info--name">Шамрій Дмитрій</h3>
+                                            <p class="visits-block__info--type mt-sm-1 mt-md-0">Видалення зуба</p>
+                                            <p class="visits-block__info--type mt-1 mt-sm-3">
+                                                <svg class="visits-block__info--type--svg">
+                                                    <use xlink:href="images/sprite.svg#calendar-svg"></use>
+                                                </svg>
+                                                23.07.2020
+                                            </p>
+                                            <p class="visits-block__info--type mt-1">
+                                                <svg class="visits-block__info--type--svg">
+                                                    <use xlink:href="images/sprite.svg#clock-svg"></use>
+                                                </svg>
+                                                14:00
+                                            </p>
+
+                                            <!-- <a class="visits-block__info--more mt-md-3 d-block" href="visits-open.html">
+                                                Детальніше
+                                                <svg class="visits-block__info--more--arr">
+                                                    <use xlink:href="images/sprite.svg#more-arr"></use>
+                                                </svg>
+                                            </a> -->
+                                        </div>
+
+                                        <div class="visits-block__status desktop">
+                                            <p class="visits-block__status--p">Підтвержено</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="content__h mt-3">
+                                <h2 class="content__h--p">Місце зупинки</h2>
+                            </div>
+
+                            <div class="visits-block mt-3">
+                                <div class="row">
+                                    <div class="col-6 col-md-4">
+                                        <img class="img-fluid" src="images/stop-place.png" alt="Doctor">
+                                    </div>
+                                    <div class="col-6 col-md-8 d-flex justify-content-between">
+                                        <div class="visits-block__info">
+                                            <h3 class="visits-block__info--name">Аристократ</h3>
+                                            <p class="visits-block__info--type mt-sm-1 mt-md-0">вул. Небесної сотні</p>
+                                            <p class="visits-block__info--type mt-1 mt-sm-3">
+                                                <svg class="visits-block__info--type--svg">
+                                                    <use xlink:href="images/sprite.svg#calendar-svg"></use>
+                                                </svg>
+                                                22.07.2020
+                                            </p>
+                                            <p class="visits-block__info--type mt-1">
+                                                <svg class="visits-block__info--type--svg">
+                                                    <use xlink:href="images/sprite.svg#clock-svg"></use>
+                                                </svg>
+                                                09:00
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <form action="#">
+                                <div class="persone__file--download d-inline-block">
+                                    <input type="file" name="file" id="file" class="inputfile personefile" />
+                                    <label class="d-flex p-0" for="file">
+                                        <svg class="upload-icon d-block">
+                                            <use xlink:href="images/sprite.svg#upload"></use>
+                                        </svg>
+                                        <span>
+                                            <span class="upload-text--head d-block">Бажано додати свій електронний квиток</span>
+                                            <span class="upload-text--foot d-block">Додайте квиток</span>
+                                        </span>
+
+                                    </label>	
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="budget mt-3">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-10 offset-lg-1">
+                                <h3 class="budget__h mt-3">Приблизний бюджет вашого візиту:</h3>
+                                <!-- <div class="budget__price mt-2 d-flex justify-content-between">
+                                    <p class="budget__price--p">Локальный рентген</p>
+                                    <p class="budget__price--p">20$</p>
+                                </div>
+                                <div class="budget__price mt-2 mb-2 d-flex justify-content-between">
+                                    <p class="budget__price--p">Ортопанорама</p>
+                                    <p class="budget__price--p">30$</p>
+                                </div> -->
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="budget link">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-10 offset-lg-1">
+                                <!-- <h3 class="budget__h mt-3">Приблизний бюджет вашого візиту:</h3> -->
+                                <div class="budget__price mt-2 d-flex justify-content-between">
+                                    <p class="budget__price--p">Локальный рентген</p>
+                                    <p class="budget__price--p">20$</p>
+                                </div>
+                                <!-- <div class="budget__price mt-2 mb-2 d-flex justify-content-between">
+                                    <p class="budget__price--p">Ортопанорама</p>
+                                    <p class="budget__price--p">30$</p>
+                                </div> -->
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="budget link">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-10 offset-lg-1">
+                                <!-- <h3 class="budget__h mt-3">Приблизний бюджет вашого візиту:</h3>
+                                <div class="budget__price mt-2 d-flex justify-content-between">
+                                    <p class="budget__price--p">Локальный рентген</p>
+                                    <p class="budget__price--p">20$</p>
+                                </div> -->
+                                <div class="budget__price mt-2 mb-2 d-flex justify-content-between">
+                                    <p class="budget__price--p">Ортопанорама</p>
+                                    <p class="budget__price--p">30$</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="budget link">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-10 offset-lg-1">
+                                <div class="budget__price mt-2 mb-2 d-flex justify-content-between">
+                                    <p class="budget__price--p">Номер стандарт</p>
+                                    <p class="budget__price--p">50$</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="route">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-10 offset-lg-1">
+                                <div class="content__h mt-3">
+                                    <h2 class="content__h--p">Місце зупинки</h2>
+                                </div>
+                                <div class="route-info mt-3 d-flex">
+                                    <svg class="route-info__svg">
+                                        <use xlink:href="images/sprite.svg#location-svg"></use>
+                                    </svg>
+                                    <div class="route-info__text">
+                                        <p class="route-info__text--name">Готель</p>
+                                        <p class="route-info__text--mean">вул. Небесної сотні 9а </p>
+                                    </div>
+                                </div>
+
+                                <div class="route-info mt-2 d-flex">
+                                    <svg class="route-info__svg">
+                                        <use xlink:href="images/sprite.svg#location-svg"></use>
+                                    </svg>
+                                    <div class="route-info__text">
+                                        <p class="route-info__text--name">Лікар</p>
+                                        <p class="route-info__text--mean">вул. Зигіна 3а</p>
+                                    </div>
+                                </div>
+
+                                <div class="route-info desktop mt-2 d-flex">
+                                    <svg class="route-info__svg">
+                                        <use xlink:href="images/sprite.svg#phone-svg"></use>
+                                    </svg>
+                                    <div class="route-info__text">
+                                        <p class="route-info__text--name">Таксі</p>
+                                        <a class="route-info__text--mean" href="tel:+38 066 67 89 990">+38 066 67 89 990</a>
+                                    </div>
+                                </div>
+
+                                <a class="d-table btn__num mt-3" href="tel:+38 066 67 89 990">Викликати таксі</a>
+
+                                <div class="return">
+                                    <a class="return__a d-flex" href="visits.html">
+                                        <svg class="return__a--icon">
+                                            <use xlink:href="images/sprite.svg#return-back"></use>
+                                        </svg>
+                                        <p class="return__a--p">Всі візити</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+
+            <div class="push"></div>
+        </main>
+
+        <footer class="footer text-left mt-5">
+            <div class="container">
+                <div class="footer__contact">
+                    <p class="footer__contact--p">For callaboration:</p>
+                    <a class="footer__contact--a" href="tel:+30(225) 555-01-18">+30(225) 555-0118</a>
+                    <a class="footer__contact--a" href="#">StomSearch20@gmail.com</a>
+                </div>
+    
+                <div class="footer__span text-center">
+                    <p class="footer__span--p">2020 Стоматолог Search</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+	<!-- Scripts -->
+	<script src="js/libs/jquery-3.4.1.min.js"></script>
+	<script src="js/libs/slick/slick.min.js"></script>
+    <script src="js/libs/swiper.min.js"></script>
+    <script src="js/libs/jquery.nselect.min.js"></script>
+    <script src="js/libs/popper.min.js"></script>
+	<script src="js/libs/bootstrap.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>

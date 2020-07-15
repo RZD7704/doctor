@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="description" content="Starter">
+	<meta name="author" content="Admin">
+	<title>Starter</title>
+
+	<link rel="icon" href="images/favicon.png">
+
+	<link rel="stylesheet" href="js/libs/slick/slick.css">
+	<link rel="stylesheet" href="js/libs/slick/slick-theme.css">
+    <link rel="stylesheet" href="css/libs/swiper.min.css">
+    <link rel="stylesheet" href="css/libs/jquery.nselect.css">
+	<link rel="stylesheet" href="css/libs/bootstrap.min.css">
+	<link rel="stylesheet" href="css/styles.min.css">
+
+
+	<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<header class="header">
+		<div class="container d-flex justify-content-between">
+			<div class="message-icon">
+				<a class="message__a" href="visits.html">
+					<svg class="message__a--icon">
+						<use xlink:href="images/sprite.svg#arr-back"></use>
+					</svg>
+				</a>
+			</div>
+			<div class="logo">
+				<a class="logo__a" href="index.html">
+					<img class="logo__a--img" src="images/logo.png" alt="Logo">
+				</a>
+			</div>
+			<div class="dropdown show persone">
+				<a class="btn btn-secondary dropdown-toggle persone__a" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <img class="persone__a--img" src="images/prifile-foto.png" alt="">
+				</a>
+			  
+				<div class="dropdown-menu persone__menu" aria-labelledby="dropdownMenuLink">
+				  <a class="dropdown-item persone__menu--item" href="log.html">Вийти</a>
+				  <a class="dropdown-item persone__menu--item" href="reg.html">Змінити профіль</a>
+				</div>
+			</div>
+		</div>
+	</header>
+
+    <div class="wrapper">
+        <main class="main content">
+            <section class="visits-open">
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-10 offset-lg-1">
+                            <h2 class="visits__h d-flex">
+                                <svg class="visits__h--svg">
+                                    <use xlink:href="images/sprite.svg#clock-svg"></use>
+                                </svg>
+                                Мій візит
+                                <p>(2)</p>
+                            </h2>
+
+                            <div class="visits-block__status mob-visit unconfirmed">
+                                <p class="visits-block__status--p">Підтвержено</p>
+                            </div>
+
+                            <div class="visits-block mt-3">
+                                <div class="row">
+                                    <div class="col-6 col-md-4">
+                                        <img class="img-fluid" src="images/doctor-slider.png" alt="Doctor">
+                                    </div>
+                                    <div class="col-6 col-md-8 d-flex justify-content-between">
+                                        <div class="visits-block__info">
+                                            <h3 class="visits-block__info--name">Шамрій Дмитрій</h3>
+                                            <p class="visits-block__info--type mt-sm-1 mt-md-0">Видалення зуба</p>
+                                            <p class="visits-block__info--type mt-1 mt-sm-3">
+                                                <svg class="visits-block__info--type--svg">
+                                                    <use xlink:href="images/sprite.svg#calendar-svg"></use>
+                                                </svg>
+                                                23.07.2020
+                                            </p>
+                                            <p class="visits-block__info--type mt-1">
+                                                <svg class="visits-block__info--type--svg">
+                                                    <use xlink:href="images/sprite.svg#clock-svg"></use>
+                                                </svg>
+                                                14:00
+                                            </p>
+                                        </div>
+
+                                        <div class="visits-block__status desktop unconfirmed">
+                                            <p class="visits-block__status--p">Підтвержено</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="content__h mt-3">
+                                <h2 class="content__h--p">Місце зупинки</h2>
+                            </div>
+
+                            <div class="visits-block mt-3 position-relative">
+                                <div class="row">
+                                    <div class="col-6 col-md-4">
+                                        <img class="img-fluid" src="images/stop-place.png" alt="Doctor">
+                                    </div>
+                                    <div class="col-6 d-md-none">
+                                        <div class="visits-block__info">
+                                            <h3 class="visits-block__info--name">Аристократ</h3>
+                                            <p class="visits-block__info--type mt-sm-1 mt-md-0">вул. Небесної сотні</p>
+                                            <a class="visits-block__info--more mt-md-3 d-block" href="#">
+                                                Детальніше
+                                                <svg class="visits-block__info--more--arr">
+                                                    <use xlink:href="images/sprite.svg#more-arr"></use>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-8">
+                                        <div class="visits-block__info d-none d-md-block">
+                                            <h3 class="visits-block__info--name">Аристократ</h3>
+                                            <p class="visits-block__info--type mt-sm-1 mt-md-0">вул. Небесної сотні</p>
+                                            <a class="visits-block__info--more mt-md-3 d-block" href="#">
+                                                Детальніше
+                                                <svg class="visits-block__info--more--arr">
+                                                    <use xlink:href="images/sprite.svg#more-arr"></use>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                        <div>
+                                            <form action="#" method="post" class="place-form desktop" novalidate="novalidate">
+                                                <div class="row">
+                                                    <div class="col-12 wpcf7-form">
+                                                        <p><label class="">Ім’я та прізвище</label><br>
+                                                            <span class="wpcf7-form-control-wrap your-name"><input name="your-name" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" type="text"></span></p>
+                                                    </div>
+
+                                                    <div class="col-12 wpcf7-form">
+                                                        <p><label class="">Введіть номер телефону</label><br>
+                                                            <span class="wpcf7-form-control-wrap your-subject"><input name="your-subject" value="" size="40" class="wpcf7-form-control wpcf7-text" aria-invalid="false" type="number"></span></p>
+                                                    </div>  
+
+                                                    <div class="col-6 wpcf7-form">
+                                                        <select class="nselect-3 city" name="city" data-title="Бажана дата">
+                                                            <option value="1">22.04.2020</option>
+                                                            <option value="2">23.04.2020</option>
+                                                            <option value="3">24.04.2020</option>
+                                                            <option value="4">25.04.2020</option>
+                                                            <option value="5">26.04.2020</option>
+                                                        </select>
+                                                    </div>
+
+                                                    <div class="col-6 wpcf7-form">
+                                                        <select class="nselect-4 city" name="city" data-title="Бажаний час">
+                                                            <option value="1">14:00</option>
+                                                            <option value="2">16:00</option>
+                                                            <option value="3">18:00</option>
+                                                            <option value="4">20:00</option>
+                                                            <option value="5">22:00</option>
+                                                        </select>
+                                                    </div>
+
+                                                    <div class="col-6 wpcf7-form">
+                                                        <select class="nselect-5 city" name="city" data-title="Кількість осіб">
+                                                            <option value="1">2 дорослий</option>
+                                                            <option value="2">3 дорослий</option>
+                                                            <option value="3">4 дорослий</option>
+                                                            <option value="4">5 дорослий</option>
+                                                            <option value="5">6 дорослий</option>
+                                                        </select>
+                                                    </div>
+
+                                                    <div class="col-6 wpcf7-form">
+                                                        <select class="nselect-6 city" name="city" data-title="Тип номеру">
+                                                            <option value="1">Стандарт</option>
+                                                            <option value="2">Dog</option>
+                                                            <option value="3">Frog</option>
+                                                            <option value="4">Duck</option>
+                                                            <option value="5">Elephant</option>
+                                                        </select>
+                                                    </div>
+
+                                                    <div class="text-center pt-4 m-auto">
+                                                        <button class="edit-btn mt-6 d-block">Забронювати</button>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="push"></div>
+        </main>
+
+        <footer class="footer text-left mt-5">
+            <div class="container">
+                <div class="footer__contact">
+                    <p class="footer__contact--p">For callaboration:</p>
+                    <a class="footer__contact--a" href="tel:+30(225) 555-01-18">+30(225) 555-0118</a>
+                    <a class="footer__contact--a" href="#">StomSearch20@gmail.com</a>
+                </div>
+    
+                <div class="footer__span text-center">
+                    <p class="footer__span--p">2020 Стоматолог Search</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+	<!-- Scripts -->
+	<script src="js/libs/jquery-3.4.1.min.js"></script>
+	<script src="js/libs/slick/slick.min.js"></script>
+    <script src="js/libs/swiper.min.js"></script>
+    <script src="js/libs/jquery.nselect.min.js"></script>
+    <script src="js/libs/popper.min.js"></script>
+	<script src="js/libs/bootstrap.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
