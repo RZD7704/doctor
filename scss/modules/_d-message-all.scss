@@ -1,0 +1,23 @@
+.d-message-all .tab-btn {
+    width: 100%;
+}
+
+.d-message-all {
+    margin-top: 65px;
+}
+
+.d-message  {
+    .edit-btn.edit {
+        background: #E4E4E4;
+    }
+
+    .edit-btn.edit:hover {
+        background: #01ECD2;
+        transition: all .3s;
+    }
+
+    .edit-btn.edit:active {
+        background: #01ECD2;
+        transition: all .3s;
+    }
+}

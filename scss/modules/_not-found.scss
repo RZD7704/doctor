@@ -1,0 +1,52 @@
+.not-found {
+    margin-top: 95px;
+    @media (max-width: 767px) {
+        margin-top: 75px;
+    }
+
+    &__text {
+
+        &--bold {
+            font-size: 18px;
+            line-height: 20px;
+            letter-spacing: 0.02em;
+            color: #363636;
+
+            @media (max-width: 767px) {
+                font-size: 14px;
+            }
+        }
+
+        &--p {
+            font-size: 18px;
+            line-height: 24px;
+            letter-spacing: 0.02em;
+            color: #858585;
+            @media (max-width: 767px) {
+                font-size: 14px;
+            }
+        }
+    }
+
+    &__number {
+        margin-top: 65px;
+
+        @media (max-width: 767px) {
+            margin-top: 55px;
+        }
+
+        &--p {
+            font-weight: 500;
+            font-size: 100px;
+            line-height: 14px;
+            letter-spacing: 0.02em;
+            color: #01ECD2;
+
+        }
+
+        &--svg {
+            width: 70px;
+            height: 70px;
+        }
+    }
+}

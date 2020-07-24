@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="description" content="Starter">
+	<meta name="author" content="Admin">
+	<title>Starter</title>
+
+	<link rel="icon" href="images/favicon.png">
+
+	<link rel="stylesheet" href="js/libs/slick/slick.css">
+	<link rel="stylesheet" href="js/libs/slick/slick-theme.css">
+    <link rel="stylesheet" href="css/libs/swiper.min.css">
+    <link rel="stylesheet" href="css/libs/jquery.nselect.css">
+	<link rel="stylesheet" href="css/libs/bootstrap.min.css">
+	<link rel="stylesheet" href="css/styles.min.css">
+
+
+	<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<header class="header">
+		<div class="container d-flex justify-content-between">
+			<div class="message-icon">
+				<a class="message__a" href="visits.html">
+					<svg class="message__a--icon">
+						<use xlink:href="images/sprite.svg#arr-back"></use>
+					</svg>
+				</a>
+			</div>
+			<div class="logo">
+				<a class="logo__a" href="index.html">
+					<img class="logo__a--img" src="images/logo.png" alt="Logo">
+				</a>
+			</div>
+			<div class="dropdown show persone">
+				<a class="btn btn-secondary dropdown-toggle persone__a" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <img class="persone__a--img" src="images/prifile-foto.png" alt="">
+				</a>
+			  
+				<div class="dropdown-menu persone__menu" aria-labelledby="dropdownMenuLink">
+				  <a class="dropdown-item persone__menu--item" href="log.html">Вийти</a>
+				  <a class="dropdown-item persone__menu--item" href="reg.html">Змінити профіль</a>
+				</div>
+			</div>
+		</div>
+	</header>
+
+    <div class="wrapper">
+        <main class="main content">
+            <section class="visits-open d-appeal">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-10 offset-lg-1">
+                            <h2 class="visits__h d-flex">
+                                <svg class="visits__h--svg">
+                                    <use xlink:href="images/sprite.svg#clock-svg"></use>
+                                </svg>
+                                Мій візит
+                                <p>(2)</p>
+                            </h2>
+                            <div class="visits-block__status mob-visit">
+                                <p class="visits-block__status--p">Підтвержено</p>
+                            </div>
+                            <div class="visits-block mt-3">
+                                <div class="row">
+                                    <div class="col-6 col-md-4">
+                                        <img class="img-fluid" src="images/doctor-slider.png" alt="Doctor">
+                                    </div>
+                                    <div class="col-6 col-md-8 d-flex justify-content-between">
+                                        <div class="visits-block__info">
+                                            <h3 class="visits-block__info--name">Шамрій Дмитрій</h3>
+                                            <p class="visits-block__info--type mt-sm-1 mt-md-0">Видалення зуба</p>
+                                            <p class="visits-block__info--type mt-1 mt-sm-3">
+                                                <svg class="visits-block__info--type--svg">
+                                                    <use xlink:href="images/sprite.svg#calendar-svg"></use>
+                                                </svg>
+                                                23.07.2020
+                                            </p>
+                                            <p class="visits-block__info--type mt-1">
+                                                <svg class="visits-block__info--type--svg">
+                                                    <use xlink:href="images/sprite.svg#clock-svg"></use>
+                                                </svg>
+                                                14:00
+                                            </p>
+                                        </div>
+
+                                        <div class="visits-block__status desktop">
+                                            <p class="visits-block__status--p">Підтвержено</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <form action="#" class="d-appeal__form">
+                                <button type="button" class="btn btn-primary d-appeal__form--btn d-flex mt-4" data-toggle="modal" data-target="#exampleModal">
+                                    <svg class="editiing-prof__svg d-block mr-2">
+                                        <use xlink:href="images/sprite.svg#edit-svg"></use>
+                                    </svg>
+                                    Редагування часу і процедури
+                                </button>
+                                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header shedule-popup-head">
+                                                <h5 class="modal-title" id="exampleModalLabel">Графік роботи</h5>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="row">
+                                                    <div class="col-12 m-auto">
+                                                        <div class="shedule-calendar  mt-4" id="calendarPopup">
+                                                            <div class="shedule-calendar__control d-flex justify-content-center">
+                                                                <button class="prevMonth shedule-calendar__control--btn mr-4" type="button">
+                                                                    <svg class="shedule-calendar__control--btn--svg d-block">
+                                                                        <use xlink:href="images/sprite.svg#calendar-arr"></use>
+                                                                    </svg>
+                                                                </button>
+                                                                <div>
+                                                                    <span class="month">Май</span>
+                                                                    <span class="year">2020</span>
+                                                                </div>
+                                                                <button class="nextMonth shedule-calendar__control--btn ml-4" type="button">
+                                                                    <svg class="shedule-calendar__control--btn--svg rotate d-block">
+                                                                        <use xlink:href="images/sprite.svg#calendar-arr"></use>
+                                                                    </svg>
+                                                                </button>
+                                                            </div>
+                    
+                                                            <table class="shedule-calendar__table shedule-calendar-popup__table w-100 mt-3">
+                                                                <tbody class="dates"></tbody>
+                                                            </table>
+                                                        </div>
+                                                        <div class="shedule-time">
+                                                            <div class="shedule-time__head budget__price mt-2 mb-2 d-flex">
+                                                                <p class="budget__price--p shedule-time__head--p mr-1">Години роботи</p>
+                                                                <span class="budget__price--span">11 мая</span>
+                                                            </div>
+
+                                                            <div class="shedule-time__status d-flex">
+                                                                <p class="shedule-time__status--points mt-3 d-flex mr-5 ">
+                                                                    <svg class="shedule-time__status--points--status free-place d-block mr-3">
+                                                                        <use xlink:href="images/sprite.svg#ellipse-status"></use>
+                                                                    </svg>
+                                                                    Вільні місця
+                                                                </p>
+
+                                                                <p class="shedule-time__status--points mt-3 d-flex">
+                                                                    <svg class="shedule-time__status--points--status d-block mr-3">
+                                                                        <use xlink:href="images/sprite.svg#ellipse-status"></use>
+                                                                    </svg>
+                                                                    Заброньовано
+                                                                </p>
+                                                            </div>
+
+
+                                                            <div class="shedule-time__body d-flex justify-content-center flex-wrap">
+                                                                <button  class="shedule-time__body--btn d-flex mr-3 mt-3">
+                                                                    09:00 
+                                                                    <span class="shedule-time__body--span d-md-block d-none ml-2">Видалити</span>
+                                                                    <svg class="shedule-time__body--svg d-block d-md-none ml-2">
+                                                                        <use xlink:href="images/sprite.svg#delete-btn"></use>
+                                                                    </svg>
+                                                                </button>
+                                                                <button  class="shedule-time__body--btn d-flex mr-3 mt-3">
+                                                                    09:00 
+                                                                    <span class="shedule-time__body--span d-md-block d-none ml-2">Видалити</span>
+                                                                    <svg class="shedule-time__body--svg d-block d-md-none ml-2">
+                                                                        <use xlink:href="images/sprite.svg#delete-btn"></use>
+                                                                    </svg>
+                                                                </button>
+                                                                <button  class="shedule-time__body--btn edit d-flex mr-3 mt-3">
+                                                                    09:00 
+                                                                    <span class="shedule-time__body--span edit d-md-block d-none ml-2">Видалити</span>
+                                                                    <svg class="shedule-time__body--svg edit d-block d-md-none ml-2">
+                                                                        <use xlink:href="images/sprite.svg#edit-svg"></use>
+                                                                    </svg>
+                                                                </button>
+                                                            </div>
+                                                            <div class="col-12 text-center pt-4 m-auto">
+                                                                <button class="edit-btn mt-6 d-block">Зберегти</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mt-3">
+                                    <div class="d-flex mt-2 col-12">
+                                        <button class="form-container__btn mr-3">18.07</button>
+                                        <button class="form-container__btn mr-3">18.07</button>
+                                        <button class="form-container__btn mr-3">18.07</button>
+                                        <button class="form-container__btn mr-3">18.07</button>
+                                    </div>
+
+                                    <div class="col-md-6 wpcf7-form sign-form__select">
+                                        <select class="nselect-3 city" name="city" data-title="Вид послуги">
+                                            <option value="1">Консультация хирурга-имплантолога</option>
+                                            <option value="2">23.04.2020</option>
+                                            <option value="3">24.04.2020</option>
+                                            <option value="4">25.04.2020</option>
+                                            <option value="5">26.04.2020</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-between mt-5">
+                                    <h2 class="d-appeal__form--h2">Візит відбувся?</h2>
+                                    <div class="return mt-0">
+                                        <a class="return__a d-flex" href="gallery-portfolio.html">
+                                            <svg class="return__a--icon">
+                                                <use xlink:href="images/sprite.svg#return-back"></use>
+                                            </svg>
+                                            <p class="return__a--p">Всі візити</p>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="confirm mt-3">
+                                    <a href="d-reviews.html" class="confirm__btn">Так</a>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+
+            <div class="push"></div>
+        </main>
+
+        <footer class="footer text-left mt-5">
+            <div class="container">
+                <div class="footer__contact">
+                    <p class="footer__contact--p">For callaboration:</p>
+                    <a class="footer__contact--a" href="tel:+30(225) 555-01-18">+30(225) 555-0118</a>
+                    <a class="footer__contact--a" href="#">StomSearch20@gmail.com</a>
+                </div>
+    
+                <div class="footer__span text-center">
+                    <p class="footer__span--p">2020 Стоматолог Search</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+	<!-- Scripts -->
+	<script src="js/libs/jquery-3.4.1.min.js"></script>
+	<script src="js/libs/slick/slick.min.js"></script>
+    <script src="js/libs/swiper.min.js"></script>
+    <script src="js/libs/jquery.nselect.min.js"></script>
+    <script src="js/libs/popper.min.js"></script>
+	<script src="js/libs/bootstrap.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>

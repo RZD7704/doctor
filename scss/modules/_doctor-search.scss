@@ -27,10 +27,11 @@
 }
 
 .sort-menu {
+    transform: translate3d(0, 27px, 0px)!important;
     left: auto!important;
     right: 0!important;
 
-    @media (max-width: 767px) {
-        right: 0!important;
-    }
+    // @media (max-width: 767px) {
+    //     right: 0!important;
+    // }
 }

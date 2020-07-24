@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="description" content="Starter">
+	<meta name="author" content="Admin">
+	<title>Starter</title>
+
+	<link rel="icon" href="images/favicon.png">
+
+	<link rel="stylesheet" href="js/libs/slick/slick.css">
+	<link rel="stylesheet" href="js/libs/slick/slick-theme.css">
+    <link rel="stylesheet" href="css/libs/swiper.min.css">
+    <link rel="stylesheet" href="css/libs/jquery.nselect.css">
+	<link rel="stylesheet" href="css/libs/bootstrap.min.css">
+	<link rel="stylesheet" href="css/styles.min.css">
+
+
+	<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<header class="header">
+		<div class="container d-flex justify-content-between">
+			<div class="message-icon">
+				<a class="message__a" href="profile-user.html">
+					<svg class="message__a--icon">
+						<use xlink:href="images/sprite.svg#arr-back"></use>
+					</svg>
+				</a>
+			</div>
+			<div class="logo">
+				<a class="logo__a" href="index.html">
+					<img class="logo__a--img" src="images/logo.png" alt="Logo">
+				</a>
+			</div>
+			<div class="dropdown show persone">
+				<a class="btn btn-secondary dropdown-toggle persone__a" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <img class="persone__a--img" src="images/prifile-foto.png" alt="">
+				</a>
+			  
+				<div class="dropdown-menu persone__menu" aria-labelledby="dropdownMenuLink">
+				  <a class="dropdown-item persone__menu--item" href="log.html">Вийти</a>
+				  <a class="dropdown-item persone__menu--item" href="reg.html">Змінити профіль</a>
+				</div>
+			</div>
+		</div>
+	</header>
+
+    <div class="wrapper">
+        <main class="main content">
+            <section class="message">
+
+                <div class="message-head">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-10 offset-lg-1">
+                                    <div class="row mt-4 mb-2">
+                                        <div class="col-3">
+                                            <div class="message-block__foto">
+                                                <img class="message-block__foto--img d-block m-auto" src="images/prifile-foto.png" alt="Profile">
+                                            </div>
+                                        </div>
+                                        <div class="col-9 d-flex justify-content-between flex-md-row flex-column ">
+                                            <div class="d-flex justify-content-between w-100">
+                                                <div class="message-block__message">
+                                                    <div class="message-block__message--name">
+                                                        <p class="message-block__message--name--p">Шамрій Дмитрій</p>
+                                                    </div>
+                                                    <div class="message-block__message--text mt-1">
+                                                        <p class="message-block__message--text--p d-flex align-items-center">
+                                                            <svg class="message-block__message--text--status offline">
+                                                                <use xlink:href="images/sprite.svg#ellipse-status"></use>
+                                                            </svg>
+                                                            Була в мережі 10 годин тому
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                             </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="message-body d-message mt-3">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-10 offset-lg-1">
+                                <div class="row">
+                                    <div class="col-10 col-lg-8 message-persone">
+                                        <div class="message-container">
+                                            <div class="message-container__head d-flex justify-content-between">
+                                                <h3 class="message-container__head--name">Сергій Лядовий</h3>
+
+                                                <a class="d-inline-flex" href="#">
+                                                    <svg class="message-container__head--svg">
+                                                        <use xlink:href="images/sprite.svg#edit-svg"></use>
+                                                    </svg>
+                                                </a>
+                                            </div>
+                                            <div class="message-container__body d-flex flex-column flex-md-row justify-content-md-between">
+                                                <p class="message-container__body--text">Доброго дня, хочу встановити керамічні вініри, підкажіть вартість?</p>
+
+                                                <div class="message-container__body--time mt-auto ml-auto">14:00</div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="col-10 col-lg-8 mt-4">
+                                        <div class="message-container">
+                                            <div class="message-container__head d-flex justify-content-between">
+                                                <h3 class="message-container__head--name">Гвізджинська Катерина</h3>
+
+                                                <a class="d-inline-flex" href="#">
+                                                    <svg class="message-container__head--svg edit">
+                                                        <use xlink:href="images/sprite.svg#edit-svg"></use>
+                                                    </svg>
+                                                </a>
+                                            </div>
+                                            <div class="message-container__body d-flex flex-column flex-md-row justify-content-md-between">
+                                                <p class="message-container__body--text">Доброго дня, Сергій, близько 4к, скільки у вас зубів?</p>
+
+                                                <div class="message-container__body--time mt-auto ml-auto">14:05</div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="col-10 col-lg-8 message-persone mt-4">
+                                        <div class="message-container">
+                                            <div class="message-container__head d-flex justify-content-between">
+                                                <h3 class="message-container__head--name">Сергій Лядовий</h3>
+
+                                                <a class="d-inline-flex" href="#">
+                                                    <svg class="message-container__head--svg">
+                                                        <use xlink:href="images/sprite.svg#edit-svg"></use>
+                                                    </svg>
+                                                </a>
+                                            </div>
+                                            <div class="message-container__body d-flex flex-column flex-md-row justify-content-md-between">
+                                                <p class="message-container__body--text">3 лишилося(</p>
+
+                                                <div class="message-container__body--time mt-auto ml-auto">14:00</div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="col-10 col-lg-8 mt-4">
+                                        <div class="message-container">
+                                            <div class="message-container__head d-flex justify-content-between">
+                                                <h3 class="message-container__head--name">Гвізджинська Катерина</h3>
+
+                                                <a class="d-inline-flex" href="#">
+                                                    <svg class="message-container__head--svg">
+                                                        <use xlink:href="images/sprite.svg#edit-svg"></use>
+                                                    </svg>
+                                                </a>
+                                            </div>
+                                            <div class="message-container__body d-flex flex-column flex-md-row justify-content-md-between">
+                                                <p class="message-container__body--text">Сергій, не зволікайте, скоріше приходьте на прийом!</p>
+
+                                                <div class="message-container__body--time mt-auto ml-auto">14:00</div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="col-10 col-lg-8 message-persone mt-4">
+                                        <div class="message-container">
+                                            <div class="message-container__head d-flex justify-content-between">
+                                                <h3 class="message-container__head--name">Сергій Лядовий</h3>
+
+                                                <a class="d-inline-flex" href="#">
+                                                    <svg class="message-container__head--svg">
+                                                        <use xlink:href="images/sprite.svg#edit-svg"></use>
+                                                    </svg>
+                                                </a>
+                                            </div>
+                                            <div class="message-container__body d-flex flex-column justify-content-md-between">
+                                                <p class="message-container__body--adv-name">Вид послуги</p>
+                                                <p class="message-container__body--adv-val">Консультация хирурга-имплантолога</p>
+                                                <p class="message-container__body--adv-name">Дата</p>
+                                                <p class="message-container__body--adv-val">29.07</p>
+                                                <p class="message-container__body--adv-name">Час</p>
+                                                <p class="message-container__body--adv-val">09:30</p>
+
+                                                <div class="message-container__body--time mt-auto ml-auto">14:00</div>
+
+                                                <div class="pt-4 m-auto d-flex flex-column flex-md-row">
+                                                    <button class="edit-btn mt-6 d-block pt-1 pt-md-2 pr-2 pr-md-3 pl-2 pl-md-3 pb-1 pb-md-2 mr-md-1">Підтвердити</button>
+                                                    <button class="edit-btn edit mt-6 d-block pt-1 pr-2 pr-md-3 pl-2 pb-1 pl-md-3 ml-md-1">Редагувати</button>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-container mt-4">
+                                    <form action="#" method="post" class="message-form desktop" novalidate="novalidate">
+                                        <div class="row">
+                                            <div class="col-12 mt-3">
+                                                <div class="position-relative">
+                                                    <div class="message-form__download d-inline-block">
+                                                        <input type="file" name="file" id="file" class="inputfile personefile" />
+                                                        <label class="d-flex p-0" for="file">
+                                                            <svg class="message-form__download--icon d-block">
+                                                                <use xlink:href="images/sprite.svg#upload"></use>
+                                                            </svg>
+                                                        </label>	
+                                                    </div>
+                                                    <textarea class="message-form__textarea d-block" name="message"></textarea>
+                                                    <label class="message-form__submit">
+                                                        <input class="message-form__submit--input" type="submit" value="Отправить">
+                                                        <svg class="message-form__submit--icon d-block">
+                                                            <use xlink:href="images/sprite.svg#arr-right"></use>
+                                                        </svg>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </section>
+
+
+            <div class="push"></div>
+        </main>
+
+        <footer class="footer text-left mt-5">
+            <div class="container">
+                <div class="footer__contact">
+                    <p class="footer__contact--p">For callaboration:</p>
+                    <a class="footer__contact--a" href="tel:+30(225) 555-01-18">+30(225) 555-0118</a>
+                    <a class="footer__contact--a" href="#">StomSearch20@gmail.com</a>
+                </div>
+    
+                <div class="footer__span text-center">
+                    <p class="footer__span--p">2020 Стоматолог Search</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+	<!-- Scripts -->
+	<script src="js/libs/jquery-3.4.1.min.js"></script>
+	<script src="js/libs/slick/slick.min.js"></script>
+    <script src="js/libs/swiper.min.js"></script>
+    <script src="js/libs/jquery.nselect.min.js"></script>
+    <script src="js/libs/popper.min.js"></script>
+	<script src="js/libs/bootstrap.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
+     

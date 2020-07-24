@@ -1,0 +1,176 @@
+.editiing-prof {
+    background-color: transparent;
+    border-color: #fff;
+    color: #858585;
+    padding: 0;
+    @media (max-width: 767px) {
+        font-size: 14px;
+    }
+
+    &__svg {
+        width: 15px;
+        height: 15px;
+        fill: #01ECD2;
+        margin: auto 0;
+
+    }
+}
+
+.editiing-prof:hover {
+    background: transparent;
+    color: #858585;
+    border-color: #fff;
+    text-decoration: none;
+}
+
+.editiing-prof:focus {
+    background-color: transparent!important;
+    border-color: #fff;
+    box-shadow: none!important;
+    color: #858585;
+
+}
+
+.editiing-prof:active {
+    text-decoration: none;
+    color: #858585!important;
+    border-color: #fff!important;
+
+}
+
+// .d-prof {
+    .portfolio-container {
+        height: auto!important;
+    
+        @media (max-width: 575px) {
+            height: auto!important;
+        }
+    }
+
+    .swiper-container {
+        height: auto!important;
+
+    }
+
+    .shedule-calendar-popup {
+        
+        &__table td {
+            margin: 3px!important;
+        }
+    } 
+
+    .shedule-calendar {
+
+        &__control {
+            &--btn {
+                background-color: #fff;
+
+                &--svg {
+                    width: 10px;
+                    height: 20px;
+                }
+            }
+        } 
+
+        &__table tr {
+            display: flex;
+            justify-content: center;
+        }
+
+        &__table td.active {
+            background: rgba(1, 236, 210, 0.29);
+        }
+
+        &__table td.editing {
+            background: #01ECD2;
+        }
+
+        &__table td {
+            font-size: 16px;
+            text-align: center;
+            letter-spacing: 0.02em;
+            color: #000000;
+            background-color: #fff;
+            display: block;
+            width: 30px;
+            height: 30px;
+            margin: 5px;
+            padding-top: 3px;
+            border-radius: 50%;
+        }
+
+        &__table td.weekend {
+            color: #00EFD1;
+        }
+    }
+
+    .shedule-time {
+
+        &__body {
+
+            &--btn {
+                border: 1px solid #E5E5E5;
+                border-radius: 5px;
+                background-color: #fff;
+                padding: 0 10px;
+            }
+
+            &--btn.edit {
+                color: #fff!important;
+                background: #01ECD2;
+            }
+
+            &--svg {
+                width: 14px;
+                height: 14px;
+                margin: auto;
+                fill: #01ECD2;
+            }
+
+            &--svg.edit {
+                fill: #fff;
+            }
+
+            &--span {
+                font-size: 16px;
+                line-height: 20px;
+                letter-spacing: 0.02em;
+                color: #01ECD2;
+                margin: auto;
+            }
+
+            &--span.edit {
+                color: #fff;
+            }
+        }
+
+        &__head {
+
+            &--p {
+                color: #000000;
+            }
+        }
+
+        &__status {
+
+            &--points {
+
+                &--status {
+                    width: 15px;
+                    height: 15px;
+                    margin: auto;
+                    fill: #01ECD2;
+                }
+
+                &--status.free-place {
+                    fill: #AAAFBE;
+                }
+            }
+        }
+    }
+
+    .shedule-popup-head {
+        border-bottom: none;
+    }
+// }
+

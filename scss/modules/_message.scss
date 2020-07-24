@@ -1,1 +1,137 @@
-    
+.message {
+    margin-top: 45px;
+}
+
+.message-head {
+    border: 1px solid rgba(146, 146, 146, 0.09);
+}
+
+.message-container {
+    background: rgba(207, 255, 250, 0.26);
+    border-radius: 5px;
+    padding: 10px 25px;
+
+    &__head {
+
+        &--name {
+            font-size: 16px;
+            line-height: 20px;
+            letter-spacing: 0.02em;
+            color: #363636;
+        }
+
+        &--svg {
+            width: 14px;
+            height: 14px;
+            fill: #01ECD2;
+        }
+
+        &--svg.edit {
+            fill: #AAAFBE;
+        } 
+    }
+
+    &__body {
+        margin-top: 10px;
+       
+        &--text {
+            font-size: 14px;
+            line-height: 14px;
+            letter-spacing: 0.02em;
+            color: #858585;
+        }
+
+        &--time {
+            font-size: 12px;
+            line-height: 14px;
+            letter-spacing: 0.02em;
+            color: #858585;
+
+        }
+
+        &--adv-name {
+            font-size: 12px;
+            line-height: 20px;
+            letter-spacing: 0.02em;
+            color: #858585;
+        } 
+
+        &--adv-val {
+            font-size: 14px;
+            line-height: 20px;
+            letter-spacing: 0.02em;
+            color: #363636;
+        }
+    }
+}
+
+.form-container {
+    &__btn {
+        background: #fff;
+        border: 1px solid #E5E5E5;
+        border-radius: 5px;
+        font-size: 16px;
+        line-height: 20px;
+        letter-spacing: 0.02em;
+        color: #363636;
+        padding: 5px;
+        @media (max-width: 767px) {
+            font-size: 12px;
+        }
+    }
+
+    .message-form {
+        position: relative;
+
+        &__download {
+            position: absolute;
+            z-index: 2;
+            margin-top: 5px;
+            margin-left: 5px;
+            &--icon {
+                width: 22px;
+                height: 22px;
+            }
+        }
+
+        &__textarea {
+            width: 100%;
+            border: 1px solid #DCDCDC;
+            border-radius: 5px;
+            min-height: 100px;
+            padding-left: 30px;
+            padding-right: 30px;
+            padding-top: 5px;
+            resize: none;
+
+            @media (max-width: 767px) {
+                min-height: 35px;
+            }
+        }
+
+        &__submit {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            background: #01ECD2;
+            border-radius: 5px;
+            cursor: pointer;
+
+            &--input {
+                display: none;
+            }
+
+            &--icon {
+                width: 30px;
+                height: 30px;
+                transform: rotate(270deg);
+                padding: 5px;
+            }
+        }
+    }
+}
+
+.message-persone {
+    margin-left: auto;
+}
+

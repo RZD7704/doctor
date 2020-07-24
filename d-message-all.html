@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="description" content="Starter">
+	<meta name="author" content="Admin">
+	<title>Starter</title>
+
+	<link rel="icon" href="images/favicon.png">
+
+	<link rel="stylesheet" href="js/libs/slick/slick.css">
+	<link rel="stylesheet" href="js/libs/slick/slick-theme.css">
+    <link rel="stylesheet" href="css/libs/swiper.min.css">
+    <link rel="stylesheet" href="css/libs/jquery.nselect.css">
+	<link rel="stylesheet" href="css/libs/bootstrap.min.css">
+	<link rel="stylesheet" href="css/styles.min.css">
+
+
+	<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<header class="header">
+		<div class="container d-flex justify-content-between">
+			<div class="message-icon">
+				<a class="message__a" href="profile-user.html">
+					<svg class="message__a--icon">
+						<use xlink:href="images/sprite.svg#arr-back"></use>
+					</svg>
+				</a>
+			</div>
+			<div class="logo">
+				<a class="logo__a" href="index.html">
+					<img class="logo__a--img" src="images/logo.png" alt="Logo">
+				</a>
+			</div>
+			<div class="dropdown show persone">
+				<a class="btn btn-secondary dropdown-toggle persone__a" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <img class="persone__a--img" src="images/prifile-foto.png" alt="">
+				</a>
+			  
+				<div class="dropdown-menu persone__menu" aria-labelledby="dropdownMenuLink">
+				  <a class="dropdown-item persone__menu--item" href="log.html">Вийти</a>
+				  <a class="dropdown-item persone__menu--item" href="reg.html">Змінити профіль</a>
+				</div>
+			</div>
+		</div>
+	</header>
+
+    <div class="wrapper">
+        <main class="main content">
+            <section class="d-message-all">
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-10 offset-lg-1">
+                            <div class="row">
+                                <div class="col-md-6 mt-2">
+                                    <h2 class="visits__h d-flex">
+                                        <svg class="visits__h--svg">
+                                            <use xlink:href="images/sprite.svg#clock-svg"></use>
+                                        </svg>
+                                        Мої повідомлення
+                                        <p>(2)</p>
+                                    </h2>
+                                </div>
+                                <div class="col-md-6 mt-3 mt-md-2">
+                                    <div class="search-container mt-auto w-100">
+                                        <form class="search-container__form d-flex" action="#">
+                                            <button class="search-container__form--btn" type="submit">
+                                                <svg class="search-container__form--btn--svg">
+                                                    <use xlink:href="images/sprite.svg#search-svg"></use>
+                                                </svg>
+                                            </button>
+                                            <input class="search-container__form--input w-100" type="text" placeholder="Шукати конкретного лікаря" name="search">
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="log pt-4">
+                                <ul class="nav nav-pills pb-0" id="pills-tab" role="tablist">
+                                    <li class="nav-item log__btn">
+                                        <a class="nav-link active tab-btn" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Повідомлення</a>
+                                    </li>
+                                    <li class="nav-item log__btn">
+                                        <a class="nav-link tab-btn" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Відгуки</a>
+                                    </li>
+                                </ul>
+                                <div class="tab-content" id="pills-tabContent">
+                                    <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                                        <div class="patient">
+                                            <div class="message-block">
+                                                <a href="d-message.html">
+                                                    <div class="row mt-5 not-read">
+                                                        <div class="col-3">
+                                                            <div class="message-block__foto">
+                                                                <img class="message-block__foto--img d-block m-auto" src="images/prifile-foto.png" alt="Profile">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-9 d-flex justify-content-between flex-md-row flex-column ">
+                                                            <div class="message-block__message">
+                                                                <div class="message-block__message--name">
+                                                                    <p class="message-block__message--name--p">Гвізджинська Катерина</p>
+                                                                </div>
+                                                                <div class="message-block__message--text mt-1">
+                                                                    <p class="message-block__message--text--p">Доброго дня, Сергій, близько 4к, скільки у вас зубів?</p>
+                                                                </div>
+                                                            </div>
+                    
+                                                            <div class="message-block__message--time">
+                                                                <p class="message-block__message--time--p">14:05</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                
+                                            <div class="message-block">
+                                                <a href="d-message.html">
+                                                    <div class="row mt-3">
+                                                        <div class="col-3">
+                                                            <div class="message-block__foto">
+                                                                <img class="message-block__foto--img d-block m-auto" src="images/prifile-foto.png" alt="Profile">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-9 d-flex justify-content-between flex-md-row flex-column ">
+                
+                                                            <div class="d-flex justify-content-between w-100">
+                                                                <div class="message-block__message">
+                                                                    <div class="message-block__message--name">
+                                                                        <p class="message-block__message--name--p">Шамрій Дмитрій</p>
+                                                                    </div>
+                                                                    <div class="message-block__message--text mt-1">
+                                                                        <p class="message-block__message--text--p">Я їв горішок і поламав зуб</p>
+                                                                    </div>
+                                                                </div>
+                    
+                                                                <div class="message-block__status">
+                                                                    <svg class="message-block__status--icon">
+                                                                        <use xlink:href="images/sprite.svg#message-status"></use>
+                                                                    </svg>
+                                                                </div>
+                                                            </div>
+                
+                    
+                                                            <div class="message-block__message--time">
+                                                                <p class="message-block__message--time--p">14:05</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>      
+                                    </div>
+                                    <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                                        <div class="doctor">
+                                            <div class="message-block">
+                                                <a href="#">
+                                                    <div class="row mt-3">
+                                                        <div class="col-3">
+                                                            <div class="message-block__foto">
+                                                                <img class="message-block__foto--img d-block m-auto" src="images/prifile-foto.png" alt="Profile">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-9 d-flex justify-content-between flex-md-row flex-column ">
+                
+                                                            <div class="d-flex justify-content-between w-100">
+                                                                <div class="message-block__message">
+                                                                    <div class="message-block__message--name">
+                                                                        <p class="message-block__message--name--p">Шамрій Дмитрій</p>
+                                                                    </div>
+                                                                    <div class="message-block__message--text mt-1">
+                                                                        <p class="message-block__message--text--p">Я їв горішок і поламав зуб</p>
+                                                                    </div>
+                                                                </div>
+                    
+                                                                <div class="message-block__status">
+                                                                    <svg class="message-block__status--icon">
+                                                                        <use xlink:href="images/sprite.svg#message-status"></use>
+                                                                    </svg>
+                                                                </div>
+                                                            </div>
+                
+                    
+                                                            <div class="message-block__message--time">
+                                                                <p class="message-block__message--time--p">14:05</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>  
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+
+
+
+            <div class="push"></div>
+        </main>
+
+        <footer class="footer text-left mt-5">
+            <div class="container">
+                <div class="footer__contact">
+                    <p class="footer__contact--p">For callaboration:</p>
+                    <a class="footer__contact--a" href="tel:+30(225) 555-01-18">+30(225) 555-0118</a>
+                    <a class="footer__contact--a" href="#">StomSearch20@gmail.com</a>
+                </div>
+    
+                <div class="footer__span text-center">
+                    <p class="footer__span--p">2020 Стоматолог Search</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+	<!-- Scripts -->
+	<script src="js/libs/jquery-3.4.1.min.js"></script>
+	<script src="js/libs/slick/slick.min.js"></script>
+    <script src="js/libs/swiper.min.js"></script>
+    <script src="js/libs/jquery.nselect.min.js"></script>
+    <script src="js/libs/popper.min.js"></script>
+	<script src="js/libs/bootstrap.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>

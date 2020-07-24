@@ -35,21 +35,21 @@
     &__a {
         text-decoration: none;
         margin-top: 25px;
+
+        margin-right: 10px;
+        font-size: 22px;
+        line-height: 20px;
+        letter-spacing: 0.02em;
+
+        color: #FFFFFF;
+
+        @media (max-width: 767px) {
+            font-size: 19px;
+        }
         @media (max-width: 767px) {
             margin-top: 15px;
         }
-        &--p {
-            margin-right: 10px;
-            font-size: 22px;
-            line-height: 20px;
-            letter-spacing: 0.02em;
-
-            color: #FFFFFF;
-
-            @media (max-width: 767px) {
-                font-size: 19px;
-            }
-        }
+        
 
         &--arr {
             margin: auto 0;
@@ -60,5 +60,7 @@
 
     &__a:hover {
         text-decoration: none;
+        color: #FFFFFF;
+
     }
 }

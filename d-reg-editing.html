@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="description" content="Starter">
+	<meta name="author" content="Admin">
+	<title>Starter</title>
+
+	<link rel="icon" href="images/favicon.png">
+
+	<link rel="stylesheet" href="js/libs/slick/slick.css">
+	<link rel="stylesheet" href="js/libs/slick/slick-theme.css">
+    <link rel="stylesheet" href="css/libs/swiper.min.css">
+    <link rel="stylesheet" href="css/libs/jquery.nselect.css">
+	<link rel="stylesheet" href="css/libs/bootstrap.min.css">
+	<link rel="stylesheet" href="css/styles.min.css">
+
+
+	<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<header class="header">
+		<div class="container d-flex justify-content-between">
+			<div class="message-icon">
+
+			</div>
+			<div class="logo">
+				<a class="logo__a" href="index.html">
+					<img class="logo__a--img" src="images/logo.png" alt="Logo">
+				</a>
+			</div>
+			<div class="dropdown show persone">
+				<a class="btn btn-secondary dropdown-toggle persone__a" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					<svg class="persone__a--icon">
+						<use xlink:href="images/sprite.svg#user-head"></use>
+					</svg>
+				</a>
+			  
+				<div class="dropdown-menu persone__menu" aria-labelledby="dropdownMenuLink">
+				  <a class="dropdown-item persone__menu--item" href="log.html">Увійти</a>
+				  <a class="dropdown-item persone__menu--item" href="reg.html">Зареєструватися</a>
+				</div>
+			</div>
+		</div>
+	</header>
+
+    <div class="wrapper">
+        <main class="main content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 m-auto">
+                        <div class="d-reg">
+                            <form action="#" method="post" class="wpcf7-form" novalidate="novalidate">
+                                <h2 class="doctor__h">Додайте карту</h2>
+                                <p><label class="">Напишіть назву карти</label><br>
+                                    <span class="wpcf7-form-control-wrap your-name"><input name="your-name" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" type="text"></span></p>
+                                <div class="d-reg__block mt-3">
+                                    <label class="d-block d-reg__block--label" for="name">Номер карти</label>
+                                    <input class="d-reg__block--num mt-2" type="text" id="name" name="name" required
+                                        minlength="4" maxlength="8" size="10">
+                                    <div class="d-flex justify-content-between mt-5">
+                                        <div class="input-block">
+                                            <label class="d-block d-reg__block--label" for="date">Термін дії</label>
+                                            <input class="d-reg__block--input mt-2" type="text" id="date" name="date" required
+                                                minlength="4" maxlength="8" size="10">
+                                        </div>
+                                        <div class="input-block">
+                                            <label class="d-block d-reg__block--label" for="cvv">СVV2/ CVC2</label>
+                                            <input class="d-reg__block--input mt-2" type="text" id="cvv" name="cvv" required
+                                                minlength="4" maxlength="8" size="10">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="d-reg__checkbox checkbox mt-3">
+                                    <input class="custom-checkbox" type="checkbox" id="color-8" name="color-8" value="indigo">
+                                    <label class="label d-reg__checkbox--label" for="color-8">Погоджусь з  <a class="d-reg__checkbox--a pl-1 pr-1" href="#"> правилами використання</a> сайту</label>
+                                </div>
+                                <div class="text-center">
+                                    <button class="edit-btn">Зберегти</button>
+                                </div>
+                            </form>
+
+                            <div class="further text-center mt-4 mb-4">
+                                <p class="further__p">Є аккаунт? <a class="further__a pl-1" href="log.html">Увійти</a></p>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+            <div class="push"></div>
+        </main>
+
+        <footer class="footer text-left mt-5">
+            <div class="container">
+                <div class="footer__contact">
+                    <p class="footer__contact--p">For callaboration:</p>
+                    <a class="footer__contact--a" href="tel:+30(225) 555-01-18">+30(225) 555-0118</a>
+                    <a class="footer__contact--a" href="#">StomSearch20@gmail.com</a>
+                </div>
+    
+                <div class="footer__span text-center">
+                    <p class="footer__span--p">2020 Стоматолог Search</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+	<!-- Scripts -->
+	<script src="js/libs/jquery-3.4.1.min.js"></script>
+	<script src="js/libs/slick/slick.min.js"></script>
+    <script src="js/libs/swiper.min.js"></script>
+    <script src="js/libs/jquery.nselect.min.js"></script>
+    <script src="js/libs/popper.min.js"></script>
+	<script src="js/libs/bootstrap.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
+ 

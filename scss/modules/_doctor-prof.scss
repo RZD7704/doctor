@@ -3,11 +3,11 @@
 }
 
 .portfolio-container {
-    height: 225px!important;
+    height: auto!important;
 
-    @media (max-width: 575px) {
-        height: 260px!important;
-    }
+    // @media (max-width: 575px) {
+    //     height: 260px!important;
+    // }
 }
 
 .budget {
@@ -44,4 +44,12 @@
 
 .sign-form__select div.nselect__inner {
     width: 100%!important;
+}
+
+.d-prof-slider {
+    line-height: 0;
+
+    &__block {
+        border: 1px dashed #929292;
+    }
 }

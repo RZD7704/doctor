@@ -1,0 +1,30 @@
+.visits-block {
+
+    &__left {
+
+        &--img {
+
+        }
+    }
+}
+
+.add-review {
+
+    &__h {
+        font-size: 18px;
+        line-height: 14px;
+        letter-spacing: 0.02em;
+        color: #000000;
+    }
+
+    .message-price {
+
+        &__textarea {
+            width: 100%;
+            border: 1px solid #DCDCDC;
+            border-radius: 5px;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+    }
+}

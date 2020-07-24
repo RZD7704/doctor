@@ -1,0 +1,142 @@
+#gallery-modal {
+    display: none;
+}
+
+#gallery-modal.active {
+    display: block;
+}
+
+.gallery-modal-style {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 7777;
+}
+
+.gallery-layout {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 9999;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-active {
+    overflow: hidden;
+}
+
+.gallery-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    @media (max-width: 767px) {
+        min-width: 100%;
+        padding: 15px;
+    }
+}
+
+.gallery-content img {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-top: 30px;
+}
+
+.gallery-num-items{
+    color: #fff;
+}
+
+.gallery-description{
+    color: #fff;
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: 0.02em;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-family: $Mplus;
+}
+
+.form-block {
+    position: relative;
+
+    &--svg {
+        width: 25px;
+        height: 45px;
+        transform: rotate(270deg);
+        margin-bottom: 10px;
+        display: block;
+        margin-top: 10px;
+    }
+}
+
+.form-block textarea::-webkit-input-placeholder { color: #fff; }
+.form-block textarea::-moz-placeholder { color: #fff; }
+
+
+.form-block textarea {
+    background: transparent;
+    width: 100%;
+    border: 1px solid #DCDCDC;
+    border-radius: 5px;
+    min-height: 100px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 5px;
+    resize: none;
+    color: #fff;
+
+
+    @media (max-width: 767px) {
+        min-height: 35px;
+    }
+}
+
+.form-block button {
+    position: absolute;
+    width: 50px;
+    height: 35px;
+    bottom: 6px;
+    right: 0;
+    background: #01ECD2;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slide-back {
+    position: absolute;
+    left: -75px;
+    top: 38%;
+    background: transparent;
+    @media (max-width: 767px) {
+        left: 40px;
+    }
+}
+
+.slide-back svg {
+    width: 15px;
+    height: 35px;
+}
+
+.slide-next {
+    position: absolute;
+    right: -75px;
+    top: 38%;
+    background: transparent;
+    @media (max-width: 767px) {
+        right: 40px;
+    }
+}
+
+.slide-next svg {
+    width: 15px;
+    height: 35px;
+    transform: rotate(180deg);
+}

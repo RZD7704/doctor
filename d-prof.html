@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="description" content="Starter">
+	<meta name="author" content="Admin">
+	<title>Starter</title>
+
+	<link rel="icon" href="images/favicon.png">
+
+	<link rel="stylesheet" href="js/libs/slick/slick.css">
+	<link rel="stylesheet" href="js/libs/slick/slick-theme.css">
+    <link rel="stylesheet" href="css/libs/swiper.min.css">
+    <link rel="stylesheet" href="css/libs/jquery.nselect.css">
+	<link rel="stylesheet" href="css/libs/bootstrap.min.css">
+	<link rel="stylesheet" href="css/styles.min.css">
+
+
+	<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<header class="header">
+		<div class="container d-flex justify-content-between">
+			<div class="message-icon">
+				<a class="message__a" href="d-message-all.html">
+					<svg class="message__a--icon">
+						<use xlink:href="images/sprite.svg#message-svg"></use>
+                    </svg>
+                    <span class="message__a--num">1</span>
+				</a>
+			</div>
+			<div class="logo">
+				<a class="logo__a" href="index.html">
+					<img class="logo__a--img" src="images/logo.png" alt="Logo">
+				</a>
+			</div>
+			<div class="dropdown show persone">
+				<a class="btn btn-secondary dropdown-toggle persone__a" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <img class="persone__a--img" src="images/prifile-foto.png" alt="">
+				</a>
+			  
+				<div class="dropdown-menu persone__menu" aria-labelledby="dropdownMenuLink">
+				  <a class="dropdown-item persone__menu--item" href="log.html">Вийти</a>
+				  <a class="dropdown-item persone__menu--item" href="reg.html">Змінити профіль</a>
+				</div>
+			</div>
+		</div>
+	</header>
+
+    <div class="wrapper">
+        <main class="main content d-prof">
+            <section class="profile">
+                <div class="container">
+                    <div class="profile-head">
+                        <div class="row">
+                            <div class="col-4">
+                                <div class="profile-head__left">
+                                    <img class="profile-head__left--img" src="images/prifile-foto.png" alt="Profile">
+                                    <a class="profile-head__right--points desktop d-flex mt-3 justify-content-center" href="profile-editing.html">
+                                        <svg class="profile-head__right--points--svg">
+                                            <use xlink:href="images/sprite.svg#edit-svg"></use>
+                                        </svg>
+                                        Редагувати профіль
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-8">
+                                <div class="profile-head__right">
+                                    <h2 class="profile-head__right--name">Сергій Лядовий</h2>
+                                    <a class="d-flex profile-head__right--points mr-5 mt-3" href="d-appeal-all.html">
+                                        <svg class="profile-head__right--points--svg">
+                                            <use xlink:href="images/sprite.svg#clock-svg"></use>
+                                        </svg>
+                                        Мої візити
+                                        <p>(2)</p>
+                                    </a>
+                                    <a class="d-flex profile-head__right--points mobile mt-3" href="profile-editing.html">
+                                        <svg class="profile-head__right--points--svg">
+                                            <use xlink:href="images/sprite.svg#edit-svg"></use>
+                                        </svg>
+                                        Редагувати профіль
+                                    </a>
+
+                                    <div class="profile-head__contact desktop-block">
+                                        <div class="mt-4">
+                                            <div class="d-flex row mt-2">
+                                                <p class="profile-head__right--type col-lg-4">Номер телефону</p>
+                                                <p class="profile-head__right--info col-lg-6">+38 066 656 78 98</p>
+                                            </div>
+                                            <div class="d-flex row mt-2">
+                                                <p class="profile-head__right--type col-lg-4">Email</p>
+                                                <p class="profile-head__right--info col-lg-6">lyadovoySer80@gmail.com</p>
+                                            </div>
+                                            <div class="d-flex row mt-2">
+                                                <p class="profile-head__right--type col-lg-4">Країна</p>
+                                                <p class="profile-head__right--info col-lg-6">Україна</p>
+                                            </div>
+                                            <div class="d-flex row mt-2">
+                                                <p class="profile-head__right--type col-lg-4">Місто</p>
+                                                <p class="profile-head__right--info col-lg-6">Маямі</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="profile-head__contact mobile-block col-lg-8 offset-lg-4">
+                                <div class="mt-4">
+                                    <div class="d-flex row mt-2">
+                                        <p class="profile-head__right--type col-lg-4">Номер телефону</p>
+                                        <p class="profile-head__right--info col-lg-6">+38 066 656 78 98</p>
+                                    </div>
+                                    <div class="d-flex row mt-2">
+                                        <p class="profile-head__right--type col-lg-4">Email</p>
+                                        <p class="profile-head__right--info col-lg-6">lyadovoySer80@gmail.com</p>
+                                    </div>
+                                    <div class="d-flex row mt-2">
+                                        <p class="profile-head__right--type col-lg-4">Країна</p>
+                                        <p class="profile-head__right--info col-lg-6">Україна</p>
+                                    </div>
+                                    <div class="d-flex row mt-2">
+                                        <p class="profile-head__right--type col-lg-4">Місто</p>
+                                        <p class="profile-head__right--info col-lg-6">Маямі</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="clinics portfolio">
+                <div class="container">
+                    <div class="portfolio-head d-flex justify-content-between justify-content-md-start mt-5">
+                        <h2 class="clinics__h2 mr-md-5">Портфоліо</h2>
+                        <div class="return mt-0">
+                            <a class="return__a d-flex" href="d-gallery.html">
+                                <p class="return__a--p">Більше фото</p>
+                                <svg class="return__a--icon rotate">
+                                    <use xlink:href="images/sprite.svg#return-back"></use>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-container portfolio-container mt-3">
+                        <div class="swiper-wrapper d-prof-slider">
+                            <div class="swiper-slide  d-flex flex-column h-auto">
+                                <div class="slide position-relative h-100 d-prof-slider__block">
+                                    <div class="profile-head__left--download h-100">
+                                        <input type="file" name="file" id="file" class="inputfile personefile" />
+                                        <label class="d-flex p-0 justify-content-center align-items-center h-100" for="file">
+                                            <svg class="upload-icon d-block mr-0">
+                                                <use xlink:href="images/sprite.svg#upload"></use>
+                                            </svg>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="swiper-slide  d-flex flex-column">
+                                <div class="slide position-relative">
+                                    <img class="img-fluid" src="images/portfolio.png" alt="clinic">
+                                </div>
+                            </div>
+    
+                            <div class="swiper-slide  d-flex flex-column">
+                                <div class="slide position-relative">
+                                    <img class="img-fluid" src="images/portfolio.png" alt="clinic">
+                                </div>
+                            </div>
+    
+                            <div class="swiper-slide  d-flex flex-column">
+                                <div class="slide position-relative">
+                                    <img class="img-fluid" src="images/portfolio.png" alt="clinic">
+                                </div>
+                            </div>
+    
+                            <div class="swiper-slide  d-flex flex-column">
+                                <div class="slide position-relative">
+                                    <img class="img-fluid" src="images/portfolio.png" alt="clinic">
+                                </div>
+                            </div>
+    
+                            <div class="swiper-slide  d-flex flex-column">
+                                <div class="slide position-relative">
+                                    <img class="img-fluid" src="images/portfolio.png" alt="clinic">
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                </div>
+            </section>
+
+            <section class="clinics portfolio">
+                <div class="container">
+                    <div class="portfolio-head d-flex justify-content-between justify-content-md-start">
+                        <h2 class="clinics__h2 mr-md-5">Кабінет</h2>
+                        <div class="return mt-0">
+                            <a class="return__a d-flex" href="d-gallery.html">
+                                <p class="return__a--p">Більше фото</p>
+                                <svg class="return__a--icon rotate">
+                                    <use xlink:href="images/sprite.svg#return-back"></use>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-container portfolio-container mt-3">
+                        <div class="swiper-wrapper  d-prof-slider">
+                            <div class="swiper-slide  d-flex flex-column h-auto">
+                                <div class="slide position-relative h-100 d-prof-slider__block">
+                                    <div class="profile-head__left--download h-100">
+                                        <input type="file" name="file" id="file" class="inputfile personefile" />
+                                        <label class="d-flex p-0 justify-content-center align-items-center h-100" for="file">
+                                            <svg class="upload-icon d-block mr-0">
+                                                <use xlink:href="images/sprite.svg#upload"></use>
+                                            </svg>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="swiper-slide  d-flex flex-column">
+                                <div class="slide position-relative">
+                                    <img class="img-fluid" src="images/clinic-slider-2.png" alt="clinic">
+                                </div>
+                            </div>
+    
+                            <div class="swiper-slide  d-flex flex-column">
+                                <div class="slide position-relative">
+                                    <img class="img-fluid" src="images/clinic-slider.png" alt="clinic">
+                                </div>
+                            </div>
+    
+                            <div class="swiper-slide  d-flex flex-column">
+                                <div class="slide position-relative">
+                                    <img class="img-fluid" src="images/clinic-slider-2.png" alt="clinic">
+                                </div>
+                            </div>
+    
+                            <div class="swiper-slide  d-flex flex-column">
+                                <div class="slide position-relative">
+                                    <img class="img-fluid" src="images/clinic-slider.png" alt="clinic">
+                                </div>
+                            </div>
+    
+                            <div class="swiper-slide  d-flex flex-column">
+                                <div class="slide position-relative">
+                                    <img class="img-fluid" src="images/clinic-slider-2.png" alt="clinic">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="budget-price">
+                <div class="budget mt-3">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-10 offset-lg-1 d-flex justify-content-between">
+                                <h3 class="budget__h mt-3">Список послуг</h3>
+                                <a class="editiing-prof d-flex mt-3 justify-content-center" href="d-list-edit.html">
+                                    <svg class="editiing-prof__svg d-block mr-2">
+                                        <use xlink:href="images/sprite.svg#edit-svg"></use>
+                                    </svg>
+                                    Редагувати профіль
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="budget link">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-10 offset-lg-1">
+                                <div class="budget__price mt-2 d-flex justify-content-between">
+                                    <p class="budget__price--p">Локальный рентген</p>
+                                    <p class="budget__price--p">20$</p>
+                                </div>
+                            </div>
+                        </div>
+    
+                    </div>
+                </div>
+    
+                <div class="budget link">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-10 offset-lg-1">
+                                <div class="budget__price mt-2 mb-2 d-flex justify-content-between">
+                                    <p class="budget__price--p">Ортопанорама</p>
+                                    <p class="budget__price--p">30$</p>
+                                </div>
+                            </div>
+                        </div>
+    
+                    </div>
+                </div>
+    
+                <div class="budget link">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-10 offset-lg-1">
+                                <div class="budget__price mt-2 mb-2 d-flex justify-content-between">
+                                    <p class="budget__price--p">Консультация хирурга-имплантолога</p>
+                                    <p class="budget__price--p">30$</p>
+                                </div>
+                            </div>
+                        </div>
+    
+                    </div>
+                </div>
+    
+                <div class="budget link">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-10 offset-lg-1">
+                                <div class="budget__price mt-2 mb-2 d-flex justify-content-between">
+                                    <p class="budget__price--p">Ортопанорама</p>
+                                    <p class="budget__price--p">30$</p>
+                                </div>
+                            </div>
+                        </div>
+    
+                    </div>
+                </div>
+
+                <div class="budget link">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-10 offset-lg-1">
+                                <div class="budget__price mt-2 mb-2 d-flex justify-content-between">
+                                    <p class="budget__price--p">Консультация хирурга-имплантолога</p>
+                                    <p class="budget__price--p">30$</p>
+                                </div>
+                            </div>
+                        </div>
+    
+                    </div>
+                </div>
+    
+                <div class="budget link">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-10 offset-lg-1">
+                                <div class="budget__price mt-2 mb-2 d-flex justify-content-between">
+                                    <p class="budget__price--p">Номер стандарт</p>
+                                    <p class="budget__price--p">50$</p>
+                                </div>
+                            </div>
+                        </div>
+    
+                    </div>
+                </div>
+
+                <div class="budget link">
+                    <div class="container d-flex justify-content-center">
+                        <a class="budget__a" href="#">
+                            <svg class="budget__a--points">
+                                <use xlink:href="images/sprite.svg#ellipse-status"></use>
+                            </svg>
+                            <svg class="budget__a--points">
+                                <use xlink:href="images/sprite.svg#ellipse-status"></use>
+                            </svg>
+                            <svg class="budget__a--points">
+                                <use xlink:href="images/sprite.svg#ellipse-status"></use>
+                            </svg>
+                        </a>
+    
+                    </div>
+                </div>
+            </section>
+
+            <section class="shedule mt-3 mt-md-4">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-10 offset-lg-1">
+                            <div class="d-flex justify-content-between">
+                                <h3 class="budget__h mt-3">Графік роботи</h3>
+
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-primary editiing-prof d-flex mt-3 justify-content-center" data-toggle="modal" data-target="#exampleModal">
+                                    <svg class="editiing-prof__svg d-block mr-2">
+                                        <use xlink:href="images/sprite.svg#edit-svg"></use>
+                                    </svg>
+                                    Редагувати профіль
+                                </button>
+  
+                                <!-- Modal -->
+                                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header shedule-popup-head">
+                                                <h5 class="modal-title" id="exampleModalLabel">Графік роботи</h5>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="row">
+                                                    <div class="col-12 m-auto">
+                                                        <div class="shedule-calendar  mt-4" id="calendarPopup">
+                                                            <div class="shedule-calendar__control d-flex justify-content-center">
+                                                                <button class="prevMonth shedule-calendar__control--btn mr-4" type="button">
+                                                                    <svg class="shedule-calendar__control--btn--svg d-block">
+                                                                        <use xlink:href="images/sprite.svg#calendar-arr"></use>
+                                                                    </svg>
+                                                                </button>
+                                                                <div>
+                                                                    <span class="month">Май</span>
+                                                                    <span class="year">2020</span>
+                                                                </div>
+                                                                <button class="nextMonth shedule-calendar__control--btn ml-4" type="button">
+                                                                    <svg class="shedule-calendar__control--btn--svg rotate d-block">
+                                                                        <use xlink:href="images/sprite.svg#calendar-arr"></use>
+                                                                    </svg>
+                                                                </button>
+                                                            </div>
+                    
+                                                            <table class="shedule-calendar__table shedule-calendar-popup__table w-100 mt-3">
+                                                                <tbody class="dates"></tbody>
+                                                            </table>
+                                                        </div>
+                                                        <div class="shedule-time">
+                                                            <div class="shedule-time__head budget__price mt-2 mb-2 d-flex">
+                                                                <p class="budget__price--p shedule-time__head--p mr-1">Години роботи</p>
+                                                                <span class="budget__price--span">11 мая</span>
+                                                            </div>
+
+                                                            <div class="shedule-time__status d-flex">
+                                                                <p class="shedule-time__status--points mt-3 d-flex mr-5 ">
+                                                                    <svg class="shedule-time__status--points--status free-place d-block mr-3">
+                                                                        <use xlink:href="images/sprite.svg#ellipse-status"></use>
+                                                                    </svg>
+                                                                    Вільні місця
+                                                                </p>
+
+                                                                <p class="shedule-time__status--points mt-3 d-flex">
+                                                                    <svg class="shedule-time__status--points--status d-block mr-3">
+                                                                        <use xlink:href="images/sprite.svg#ellipse-status"></use>
+                                                                    </svg>
+                                                                    Заброньовано
+                                                                </p>
+                                                            </div>
+
+
+                                                            <div class="shedule-time__body d-flex justify-content-center flex-wrap">
+                                                                <button  class="shedule-time__body--btn d-flex mr-3 mt-3">
+                                                                    09:00 
+                                                                    <span class="shedule-time__body--span d-md-block d-none ml-2">Видалити</span>
+                                                                    <svg class="shedule-time__body--svg d-block d-md-none ml-2">
+                                                                        <use xlink:href="images/sprite.svg#delete-btn"></use>
+                                                                    </svg>
+                                                                </button>
+                                                                <button  class="shedule-time__body--btn d-flex mr-3 mt-3">
+                                                                    09:00 
+                                                                    <span class="shedule-time__body--span d-md-block d-none ml-2">Видалити</span>
+                                                                    <svg class="shedule-time__body--svg d-block d-md-none ml-2">
+                                                                        <use xlink:href="images/sprite.svg#delete-btn"></use>
+                                                                    </svg>
+                                                                </button>
+                                                                <button  class="shedule-time__body--btn edit d-flex mr-3 mt-3">
+                                                                    09:00 
+                                                                    <span class="shedule-time__body--span edit d-md-block d-none ml-2">Видалити</span>
+                                                                    <svg class="shedule-time__body--svg edit d-block d-md-none ml-2">
+                                                                        <use xlink:href="images/sprite.svg#edit-svg"></use>
+                                                                    </svg>
+                                                                </button>
+                                                            </div>
+                                                            <div class="col-12 text-center pt-4 m-auto">
+                                                                <button class="edit-btn mt-6 d-block">Зберегти</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-sm-6 col-md-5 col-lg-4 m-auto">
+                                    <div class="shedule-calendar mt-4" id="calendar">
+                                        <div class="shedule-calendar__control d-flex justify-content-center">
+                                            <button class="prevMonth shedule-calendar__control--btn mr-4" type="button">
+                                                <svg class="shedule-calendar__control--btn--svg d-block">
+                                                    <use xlink:href="images/sprite.svg#calendar-arr"></use>
+                                                </svg>
+                                            </button>
+                                            <div>
+                                                <span class="month">Май</span>
+                                                <span class="year">2020</span>
+                                            </div>
+                                            <button class="nextMonth shedule-calendar__control--btn ml-4" type="button">
+                                                <svg class="shedule-calendar__control--btn--svg rotate d-block">
+                                                    <use xlink:href="images/sprite.svg#calendar-arr"></use>
+                                                </svg>
+                                            </button>
+                                        </div>
+
+                                        <table class="shedule-calendar__table w-100 mt-3">
+                                            <tbody class="dates"></tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="shedule-time">
+                                <div class="shedule-time__head budget__price mt-2 mb-2 d-flex">
+                                    <p class="budget__price--p shedule-time__head--p mr-1">Години роботи</p>
+                                    <span class="budget__price--span">11 мая</span>
+                                </div>
+                                <div class="shedule-time__body">
+                                    <button  class="shedule-time__body--btn">09:00</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+             <div class="push"></div>
+        </main>
+
+        <footer class="footer text-left mt-5">
+            <div class="container">
+                <div class="footer__contact">
+                    <p class="footer__contact--p">For callaboration:</p>
+                    <a class="footer__contact--a" href="tel:+30(225) 555-01-18">+30(225) 555-0118</a>
+                    <a class="footer__contact--a" href="#">StomSearch20@gmail.com</a>
+                </div>
+    
+                <div class="footer__span text-center">
+                    <p class="footer__span--p">2020 Стоматолог Search</p>
+                </div>
+            </div>
+    
+        </footer>
+    </div>
+
+
+	<!-- Scripts -->
+	<script src="js/libs/jquery-3.4.1.min.js"></script>
+	<script src="js/libs/slick/slick.min.js"></script>
+    <script src="js/libs/swiper.min.js"></script>
+    <script src="js/libs/jquery.nselect.min.js"></script>
+    <script src="js/libs/popper.min.js"></script>
+	<script src="js/libs/bootstrap.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
+

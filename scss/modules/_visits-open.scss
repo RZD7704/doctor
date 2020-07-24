@@ -32,6 +32,10 @@
         font-size: 18px;
         letter-spacing: 0.02em;
         color: #363636;
+        @media (max-width: 767px) {
+            font-size: 14px;
+        }
+
     }
 
     &__price {
@@ -40,6 +44,18 @@
             font-size: 16px;
             letter-spacing: 0.02em;
             color: #929292;
+            @media (max-width: 767px) {
+                font-size: 12px;
+            }
+        }
+
+        &--span {
+            font-size: 16px;
+            letter-spacing: 0.02em;
+            color: #01ECD2;
+            @media (max-width: 767px) {
+                font-size: 12px;
+            }
         }
     }
 }

@@ -118,3 +118,19 @@ body {
 .rotate {
 	transform: rotate(180deg);
 }
+
+.swiper-container {
+	height: 315px!important;
+} 
+
+.dropdown-item {
+	font-size: 14px;
+	line-height: 24px;
+	letter-spacing: 0.25px;
+	color: #0D0C0C;
+}
+
+.dropdown-item:hover {
+	background: #01ECD2;
+	color: #fff;
+}

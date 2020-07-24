@@ -1,0 +1,45 @@
+.list-edit {
+    &__head {
+        margin-top: 65px;
+
+        &--form {
+            width: 135px;
+        }
+
+        &--form .nselect__inner {
+            width: 100%!important;
+        }
+    }
+
+    &__body {
+        overflow: hidden;
+        &--link {
+
+            &--type {
+                border: 1px solid #E5E5E5;
+                border-radius: 5px;
+                width: 75%;
+                padding: 7px;
+                font-size: 16px;
+                letter-spacing: 0.02em;
+                color: #929292;
+                @media (max-width: 767px) {
+                    font-size: 12px;
+                }
+            }
+
+            &--price {
+                border: 1px solid #E5E5E5;
+                border-radius: 5px;
+                width: 50px;
+                font-size: 16px;
+                letter-spacing: 0.02em;
+                color: #929292;
+
+                @media (max-width: 767px) {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}
