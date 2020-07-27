@@ -24,18 +24,14 @@
 })(jQuery);
 
 var swiper = new Swiper('.swiper-container', {
-	slidesPerView: 4,
+	slidesPerView: 1,
 	spaceBetween: 30,
 	pagination: {
-	  el: '.swiper-pagination',
+	  el: '.swiper-pagination, .swiper-points',
 	  clickable: true,
 	},
 	breakpoints: {
 		// when window width is >= 320px
-		320: {
-		  slidesPerView: 1,
-		  spaceBetween: 20
-		},
 		400: {
 			slidesPerView: 2,
 			spaceBetween: 20
