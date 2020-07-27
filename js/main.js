@@ -332,12 +332,9 @@ var galleryPortfolio = new Gallery('gallery-portfolio', {
 });
 
 var galleryCabinet = new Gallery('gallery-cabinet', {
-
+	numItem: true,
+	description: true,
+	form: true,
+	fields: ['<div class="form-block"><textarea name="id" placeholder="Написати..."></textarea> <button type="submit"><svg class="form-block--svg"><use xlink:href="images/sprite.svg#arr-right"></use></svg></button></div>'],
+	// navItems: ['<button class="">vfdvcvc</button>', '<button class="">g</button>']
 });
-
-var obj = {ru:['Пн', 'Вт', 'Ср', 'Чт', 'Пт'], en: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri']};
-
-var lang = 'en';
-var day = 2;
-
-console.log(obj[lang][day]);

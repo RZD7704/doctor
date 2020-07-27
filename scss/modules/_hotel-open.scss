@@ -2,22 +2,19 @@
     margin-top: 90px;
 
     .top-img {
-        height: 400px!important;
+        height: auto!important;
         @media (max-width: 767px) {
             height: 200px!important;
         }
     }
 
     .bottom-img {
-        height: 200px!important;
-        @media (max-width: 767px) {
-            height: 100px!important;
-        }
+        background: auto!important;
     }
 
     .swiper-container {
         width: 100%!important;
-        height: 300px!important;
+        height: auto!important;
         margin-left: auto!important;
         margin-right: auto!important;
     }
