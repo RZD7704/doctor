@@ -137,3 +137,19 @@ body {
 		padding-bottom: 30px;
     }
 }
+
+.head-page {
+	padding-bottom: 30px;
+}
+
+.page-title {
+	font-size: 22px;
+	color: #090909;
+}
+
+.page-content {
+	padding-top: 85px;
+	@media (max-width: 767px) {
+		padding-top: 65px;
+    }
+}
