@@ -1,5 +1,4 @@
 .clinics {
-    margin-top: 55px;
     @media (max-width: 767px) {
         margin-top: 30px;
     }
@@ -9,7 +8,7 @@
         line-height: 20px;
         letter-spacing: 0.02em;
         color: #090909;
-        padding-bottom: 5px;
+        padding-bottom: 35px;
         @media (max-width: 767px) {
             font-size: 14px;
         }
@@ -25,10 +24,6 @@
             height: 35px;
             background: #FFFFFF;
             border-radius: 4px 0px 0px 4px;
-
-            &--a {
-
-            }
 
             &--icon {
                 width: 28px;
