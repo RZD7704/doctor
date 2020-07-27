@@ -34,11 +34,23 @@
             line-height: 20px;
             letter-spacing: 0.02em;
             color: #01ECD2;
-        }
+            background: #fff;
+            border: none;
+            padding: 0;
+            margin-bottom: 4px;
+      }
 
-        &--a:hover {
-            color: #01ECD2;
-            text-decoration: none;
+      &--a:hover {
+          color: #01ECD2;
+          text-decoration: none;
+          background: #fff;
+      }
+
+        &--a:focus {
+          color: #01ECD2;
+          text-decoration: none;
+          background: #fff;
+          box-shadow: none;
         }
 
         &--label {

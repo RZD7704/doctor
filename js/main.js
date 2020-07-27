@@ -113,6 +113,126 @@ var swiper = new Swiper('.swiper-doctors', {
 	// },
 });
 
+var swiper = new Swiper('.swiper-portfolio', {
+	slidesPerView: 1,
+	spaceBetween: 30,
+	// pagination: {
+	//   el: '.swiper-points',
+	//   clickable: true,
+	// },
+	breakpoints: {
+		// when window width is >= 320px
+		400: {
+			slidesPerView: 2,
+			spaceBetween: 20
+		  },
+		// when window width is >= 480px
+		768: {
+		  slidesPerView: 3,
+		  spaceBetween: 30
+		},
+		// when window width is >= 640px
+		992: {
+		  slidesPerView: 4,
+		  spaceBetween: 40
+		}
+	  }
+	// breakpoints: {
+    //     960: {
+	// 		slidesPerView: 3,
+	// },
+});
+
+var swiper = new Swiper('.swiper-kabinet', {
+	slidesPerView: 1,
+	spaceBetween: 30,
+	// pagination: {
+	//   el: '.swiper-points',
+	//   clickable: true,
+	// },
+	breakpoints: {
+		// when window width is >= 320px
+		400: {
+			slidesPerView: 2,
+			spaceBetween: 20
+		  },
+		// when window width is >= 480px
+		768: {
+		  slidesPerView: 3,
+		  spaceBetween: 30
+		},
+		// when window width is >= 640px
+		992: {
+		  slidesPerView: 4,
+		  spaceBetween: 40
+		}
+	  }
+	// breakpoints: {
+    //     960: {
+	// 		slidesPerView: 3,
+	// },
+});
+
+var swiper = new Swiper('.d-portfolio-container', {
+	slidesPerView: 1,
+	spaceBetween: 30,
+	// pagination: {
+	//   el: '.swiper-points',
+	//   clickable: true,
+	// },
+	breakpoints: {
+		// when window width is >= 320px
+		400: {
+			slidesPerView: 2,
+			spaceBetween: 20
+		  },
+		// when window width is >= 480px
+		768: {
+		  slidesPerView: 3,
+		  spaceBetween: 30
+		},
+		// when window width is >= 640px
+		992: {
+		  slidesPerView: 4,
+		  spaceBetween: 40
+		}
+	  }
+	// breakpoints: {
+    //     960: {
+	// 		slidesPerView: 3,
+	// },
+});
+
+var swiper = new Swiper('.portfolio-container', {
+	slidesPerView: 1,
+	spaceBetween: 30,
+	// pagination: {
+	//   el: '.swiper-points',
+	//   clickable: true,
+	// },
+	breakpoints: {
+		// when window width is >= 320px
+		400: {
+			slidesPerView: 2,
+			spaceBetween: 20
+		  },
+		// when window width is >= 480px
+		768: {
+		  slidesPerView: 3,
+		  spaceBetween: 30
+		},
+		// when window width is >= 640px
+		992: {
+		  slidesPerView: 4,
+		  spaceBetween: 40
+		}
+	  }
+	// breakpoints: {
+    //     960: {
+	// 		slidesPerView: 3,
+	// },
+});
+
 var galleryThumbs = new Swiper('.gallery-thumbs', {
 	spaceBetween: 10,
 	slidesPerView: 4,

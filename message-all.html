@@ -56,100 +56,90 @@
 
                 <div class="container">
                     <div class="row">
-                        <div class="col-lg-10 offset-lg-1">
-                            <div class="row">
-                                <div class="col-md-6 mt-2">
-                                    <h2 class="visits__h d-flex">
-                                        <svg class="visits__h--svg">
-                                            <use xlink:href="images/sprite.svg#clock-svg"></use>
+                        <div class="col-md-6 mt-2">
+                            <h2 class="visits__h d-flex">
+                                <svg class="visits__h--svg">
+                                    <use xlink:href="images/sprite.svg#clock-svg"></use>
+                                </svg>
+                                Мої повідомлення
+                                <p>(2)</p>
+                            </h2>
+                        </div>
+                        <div class="col-md-6 mt-3 mt-md-2">
+                            <div class="search-container mt-auto w-100">
+                                <form class="search-container__form d-flex" action="#">
+                                    <button class="search-container__form--btn" type="submit">
+                                        <svg class="search-container__form--btn--svg">
+                                            <use xlink:href="images/sprite.svg#search-svg"></use>
                                         </svg>
-                                        Мої повідомлення
-                                        <p>(2)</p>
-                                    </h2>
-                                </div>
-                                <div class="col-md-6 mt-3 mt-md-2">
-                                    <div class="search-container mt-auto w-100">
-                                        <form class="search-container__form d-flex" action="#">
-                                            <button class="search-container__form--btn" type="submit">
-                                                <svg class="search-container__form--btn--svg">
-                                                    <use xlink:href="images/sprite.svg#search-svg"></use>
-                                                </svg>
-                                            </button>
-                                            <input class="search-container__form--input w-100" type="text" placeholder="Шукати конкретного лікаря" name="search">
-                                        </form>
-                                    </div>
-                                </div>
+                                    </button>
+                                    <input class="search-container__form--input w-100" type="text" placeholder="Шукати конкретного лікаря" name="search">
+                                </form>
                             </div>
-
-
-                            <div class="message-block">
-                                <a href="#">
-                                    <div class="row mt-5 not-read">
-                                        <div class="col-3">
-                                            <div class="message-block__foto">
-                                                <img class="message-block__foto--img d-block m-auto" src="images/prifile-foto.png" alt="Profile">
-                                            </div>
-                                        </div>
-                                        <div class="col-9 d-flex justify-content-between flex-md-row flex-column ">
-                                            <div class="message-block__message">
-                                                <div class="message-block__message--name">
-                                                    <p class="message-block__message--name--p">Гвізджинська Катерина</p>
-                                                </div>
-                                                <div class="message-block__message--text mt-1">
-                                                    <p class="message-block__message--text--p">Доброго дня, Сергій, близько 4к, скільки у вас зубів?</p>
-                                                </div>
-                                            </div>
-    
-                                            <div class="message-block__message--time">
-                                                <p class="message-block__message--time--p">14:05</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-
-                            <div class="message-block">
-                                <a href="#">
-                                    <div class="row mt-3">
-                                        <div class="col-3">
-                                            <div class="message-block__foto">
-                                                <img class="message-block__foto--img d-block m-auto" src="images/prifile-foto.png" alt="Profile">
-                                            </div>
-                                        </div>
-                                        <div class="col-9 d-flex justify-content-between flex-md-row flex-column ">
-
-                                            <div class="d-flex justify-content-between w-100">
-                                                <div class="message-block__message">
-                                                    <div class="message-block__message--name">
-                                                        <p class="message-block__message--name--p">Шамрій Дмитрій</p>
-                                                    </div>
-                                                    <div class="message-block__message--text mt-1">
-                                                        <p class="message-block__message--text--p">Я їв горішок і поламав зуб</p>
-                                                    </div>
-                                                </div>
-    
-                                                <div class="message-block__status">
-                                                    <svg class="message-block__status--icon">
-                                                        <use xlink:href="images/sprite.svg#message-status"></use>
-                                                    </svg>
-                                                </div>
-                                            </div>
-
-    
-                                            <div class="message-block__message--time">
-                                                <p class="message-block__message--time--p">14:05</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-
                         </div>
                     </div>
+                    <div class="message-block not-read">
+                        <a href="#">
+                            <div class="row mt-5">
+                                <div class="col-3">
+                                    <div class="message-block__foto">
+                                        <img class="message-block__foto--img d-block m-auto" src="images/prifile-foto.png" alt="Profile">
+                                    </div>
+                                </div>
+                                <div class="col-9 d-flex justify-content-between flex-md-row flex-column ">
+                                    <div class="message-block__message">
+                                        <div class="message-block__message--name">
+                                            <p class="message-block__message--name--p">Гвізджинська Катерина</p>
+                                        </div>
+                                        <div class="message-block__message--text mt-1">
+                                            <p class="message-block__message--text--p">Доброго дня, Сергій, близько 4к, скільки у вас зубів?</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="message-block__message--time">
+                                        <p class="message-block__message--time--p">14:05</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="message-block">
+                        <a href="#">
+                            <div class="row mt-3">
+                                <div class="col-3">
+                                    <div class="message-block__foto">
+                                        <img class="message-block__foto--img d-block m-auto" src="images/prifile-foto.png" alt="Profile">
+                                    </div>
+                                </div>
+                                <div class="col-9 d-flex justify-content-between flex-md-row flex-column ">
+
+                                    <div class="d-flex justify-content-between w-100">
+                                        <div class="message-block__message">
+                                            <div class="message-block__message--name">
+                                                <p class="message-block__message--name--p">Шамрій Дмитрій</p>
+                                            </div>
+                                            <div class="message-block__message--text mt-1">
+                                                <p class="message-block__message--text--p">Я їв горішок і поламав зуб</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="message-block__status">
+                                            <svg class="message-block__status--icon">
+                                                <use xlink:href="images/sprite.svg#message-status"></use>
+                                            </svg>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="message-block__message--time">
+                                        <p class="message-block__message--time--p">14:05</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
                 </div>
-
             </section>
-
 
             <div class="push"></div>
         </main>

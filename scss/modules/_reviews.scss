@@ -23,8 +23,19 @@
             width: 100%;
             border: 1px solid #DCDCDC;
             border-radius: 5px;
-            padding-left: 10px;
-            padding-right: 10px;
+            padding: 5px 10px;
         }
     }
+}
+
+.message-form__download--reviews {
+    bottom: 5px;
+    left: 0;
+    margin-left: 0;
+    margin-top: 0;
+}
+
+.visits-block__info--rate--info-comment {
+    width: 14px;
+    height: 14px;
 }

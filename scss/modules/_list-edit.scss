@@ -18,13 +18,14 @@
             &--type {
                 border: 1px solid #E5E5E5;
                 border-radius: 5px;
-                width: 75%;
+                width: 90%;
                 padding: 7px;
                 font-size: 16px;
                 letter-spacing: 0.02em;
                 color: #929292;
                 @media (max-width: 767px) {
                     font-size: 12px;
+                    width: 75%;
                 }
             }
 

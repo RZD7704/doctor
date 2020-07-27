@@ -52,7 +52,7 @@
 
     <div class="wrapper">
         <main class="main content">
-            <section class="profile">
+            <section class="profile section-page">
                 <div class="container">
                     <div class="profile-head">
                         <div class="row">
@@ -83,48 +83,80 @@
                 </div>
             </section>
 
-            <section class="gallery-photos mt-3">
+            <section class="gallery-photos pb-4">
                 <div class="container">
-                    <div class="head-text mt-5">
-                        <h2 class="head-text__h2">Альбом (кабінет)</h2>
+                    <div class="portfolio-head d-flex justify-content-between justify-content-md-start">
+                        <h2 class="clinics__h2 mr-md-5 pb-4">Портфоліо</h2>
+                        <div class="return mt-0">
+                            <a class="return__a d-flex" href="d-gallery.html">
+                                <p class="return__a--p">Більше фото</p>
+                                <svg class="return__a--icon rotate">
+                                    <use xlink:href="images/sprite.svg#return-back"></use>
+                                </svg>
+                            </a>
+                        </div>
                     </div>
-                    <div class="row mt-4 gallery-photos__content">
-                        <div class="col-6 col-md-4 mt-3">
-                            <div class="slide position-relative h-100 d-prof-slider__block">
-                                <div class="profile-head__left--download h-100">
-                                    <input type="file" name="file" id="file" class="inputfile personefile" />
-                                    <label class="d-flex p-0 justify-content-center align-items-center h-100" for="file">
-                                        <svg class="upload-icon d-block mr-0">
-                                            <use xlink:href="images/sprite.svg#upload"></use>
-                                        </svg>
-                                    </label>
+                    <div id="gallery-portfolio" class="d-gallery-portfolio">
+                        <div class="row gallery-photos__content">
+                            <div class="col-6 col-md-4 mt-0">
+                                <div class="slide position-relative h-100 d-prof-slider__block">
+                                    <div class="profile-head__left--download h-100">
+                                        <input type="file" name="file" id="file" class="inputfile personefile" />
+                                        <label class="d-flex p-0 justify-content-center align-items-center h-100" for="file">
+                                            <svg class="upload-icon d-block mr-0">
+                                                <use xlink:href="images/sprite.svg#upload"></use>
+                                            </svg>
+                                        </label>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-6 col-md-4 mt-3">
-                            <img class="img-fluid" src="images/portfolio.png" alt="clinic">
-                        </div>
-                        <div class="col-6 col-md-4 mt-3">
-                            <img class="img-fluid" src="images/portfolio.png" alt="clinic">
-                        </div>
-                        <div class="col-6 col-md-4 mt-3">
-                            <img class="img-fluid" src="images/portfolio.png" alt="clinic">
-                        </div>
-                        <div class="col-6 col-md-4 mt-3">
-                            <img class="img-fluid" src="images/portfolio.png" alt="clinic">
+                            <div class="col-6 col-md-4">
+                                <a class="gallery-portfolio__item" href="images/portfolio.png" data-desc="На этой челюсти был выполнен ряд фасадных работ, которые заметно улучшили зубы владельца2">
+                                    <img class="img-fluid" src="images/portfolio.png" alt="clinic">
+                                </a>
+                            </div>
+                            <div class="col-6 col-md-4">
+                                <a class="gallery-portfolio__item" href="images/portfolio.png" data-desc="На этой челюсти был выполнен ряд фасадных работ, которые заметно улучшили зубы владельца2">
+                                    <img class="img-fluid" src="images/portfolio.png" alt="clinic">
+                                </a>
+                            </div>
+                            <div class="col-6 col-md-4">
+                                <a class="gallery-portfolio__item" href="images/portfolio.png" data-desc="На этой челюсти был выполнен ряд фасадных работ, которые заметно улучшили зубы владельца3">
+                                    <img class="img-fluid" src="images/portfolio.png" alt="clinic">
+                                </a>
+                            </div>
+                            <div class="col-6 col-md-4">
+                                <a class="gallery-portfolio__item" href="images/portfolio.png" data-desc="На этой челюсти был выполнен ряд фасадных работ, которые заметно улучшили зубы владельца4">
+                                    <img class="img-fluid" src="images/portfolio.png" alt="clinic">
+                                </a>
+                            </div>
+                            <div class="col-6 col-md-4">
+                                <a class="gallery-portfolio__item" href="images/portfolio.png" data-desc="На этой челюсти был выполнен ряд фасадных работ, которые заметно улучшили зубы владельца5">
+                                    <img class="img-fluid" src="images/portfolio.png" alt="clinic">
+                                </a>
+                            </div>
                         </div>
                     </div>
+
                 </div>
             </section>
 
-            <section class="clinics portfolio">
+            <section class="kabinet">
                 <div class="container">
-                    <div class="portfolio-head">
-                        <h2 class="clinics__h2 mr-md-5">Альбом (кабінет)</h2>
+                    <div class="portfolio-head d-flex justify-content-between justify-content-md-start">
+                        <h2 class="clinics__h2 mr-md-5 pb-4">Кабінет</h2>
+                        <div class="return mt-0">
+                            <a class="return__a d-flex" href="d-gallery.html">
+                                <p class="return__a--p">Більше фото</p>
+                                <svg class="return__a--icon rotate">
+                                    <use xlink:href="images/sprite.svg#return-back"></use>
+                                </svg>
+                            </a>
+                        </div>
                     </div>
-                    <div class="swiper-container portfolio-container mt-3">
-                        <div class="swiper-wrapper d-prof-slider">
-                            <div class="swiper-slide  d-flex flex-column h-auto">
+                    <div class="swiper-container d-portfolio-container">
+                        <div class="swiper-wrapper d-portfolio-container-wrapper" id="gallery-cabinet">
+                            <div class="swiper-slide d-flex flex-column h-auto">
                                 <div class="slide position-relative h-100 d-prof-slider__block">
                                     <div class="profile-head__left--download h-100">
                                         <input type="file" name="file" id="file" class="inputfile personefile" />
@@ -139,35 +171,45 @@
     
                             <div class="swiper-slide  d-flex flex-column">
                                 <div class="slide position-relative">
-                                    <img class="img-fluid" src="images/clinic-slider-2.png" alt="clinic">
+                                    <a class="gallery-portfolio__item" href="images/portfolio.png" data-desc="На этой челюсти был выполнен ряд фасадных работ, которые заметно улучшили зубы владельца2"></a>
+                                        <img class="img-fluid" src="images/portfolio.png" alt="clinic">
+                                    </a>
                                 </div>
                             </div>
     
                             <div class="swiper-slide  d-flex flex-column">
                                 <div class="slide position-relative">
-                                    <img class="img-fluid" src="images/clinic-slider.png" alt="clinic">
+                                    <a class="gallery-portfolio__item" href="images/portfolio.png" data-desc="На этой челюсти был выполнен ряд фасадных работ, которые заметно улучшили зубы владельца2">
+                                        <img class="img-fluid" src="images/portfolio.png" alt="clinic">
+                                    </a>
                                 </div>
                             </div>
     
                             <div class="swiper-slide  d-flex flex-column">
                                 <div class="slide position-relative">
-                                    <img class="img-fluid" src="images/clinic-slider-2.png" alt="clinic">
+                                    <a class="gallery-portfolio__item" href="images/portfolio.png" data-desc="На этой челюсти был выполнен ряд фасадных работ, которые заметно улучшили зубы владельца2">
+                                        <img class="img-fluid" src="images/portfolio.png" alt="clinic">
+                                    </a>
                                 </div>
                             </div>
     
                             <div class="swiper-slide  d-flex flex-column">
                                 <div class="slide position-relative">
-                                    <img class="img-fluid" src="images/clinic-slider.png" alt="clinic">
+                                    <a class="gallery-portfolio__item" href="images/portfolio.png" data-desc="На этой челюсти был выполнен ряд фасадных работ, которые заметно улучшили зубы владельца2">
+                                        <img class="img-fluid" src="images/portfolio.png" alt="clinic">
+                                    </a>
                                 </div>
                             </div>
     
                             <div class="swiper-slide  d-flex flex-column">
                                 <div class="slide position-relative">
-                                    <img class="img-fluid" src="images/clinic-slider-2.png" alt="clinic">
+                                    <a class="gallery-portfolio__item" href="images/portfolio.png" data-desc="На этой челюсти был выполнен ряд фасадных работ, которые заметно улучшили зубы владельца2">
+                                        <img class="img-fluid" src="images/portfolio.png" alt="clinic">
+                                    </a>
                                 </div>
                             </div>
                         </div>
-                      </div>
+                    </div>
                 </div>
             </section>
 
