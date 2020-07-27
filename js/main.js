@@ -23,11 +23,71 @@
 	});
 })(jQuery);
 
-var swiper = new Swiper('.swiper-container', {
+var swiper = new Swiper('.swiper-our-clinics', {
 	slidesPerView: 1,
 	spaceBetween: 30,
 	pagination: {
-	  el: '.swiper-pagination, .swiper-points',
+	  el: '.swiper-points',
+	  clickable: true,
+	},
+	breakpoints: {
+		// when window width is >= 320px
+		400: {
+			slidesPerView: 2,
+			spaceBetween: 20
+		  },
+		// when window width is >= 480px
+		768: {
+		  slidesPerView: 3,
+		  spaceBetween: 30
+		},
+		// when window width is >= 640px
+		992: {
+		  slidesPerView: 4,
+		  spaceBetween: 40
+		}
+	  }
+	// breakpoints: {
+    //     960: {
+	// 		slidesPerView: 3,
+	// },
+});
+
+var swiper = new Swiper('.swiper-clinics', {
+	slidesPerView: 1,
+	spaceBetween: 30,
+	pagination: {
+	  el: '.swiper-pagination-clinics',
+	  clickable: true,
+	},
+	breakpoints: {
+		// when window width is >= 320px
+		400: {
+			slidesPerView: 2,
+			spaceBetween: 20
+		  },
+		// when window width is >= 480px
+		768: {
+		  slidesPerView: 3,
+		  spaceBetween: 30
+		},
+		// when window width is >= 640px
+		992: {
+		  slidesPerView: 4,
+		  spaceBetween: 40
+		}
+	  }
+	// breakpoints: {
+    //     960: {
+	// 		slidesPerView: 3,
+	// },
+});
+
+var swiper = new Swiper('.swiper-doctors', {
+	slidesPerView: 1,
+	spaceBetween: 30,
+	pagination: {
+	  el: '.swiper-pagination-doctors',
 	  clickable: true,
 	},
 	breakpoints: {

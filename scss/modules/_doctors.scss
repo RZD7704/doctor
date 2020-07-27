@@ -1,17 +1,6 @@
-.clinics {
+.doctors {
     @media (max-width: 767px) {
         margin-top: 30px;
-    }
-
-    &__h2 {
-        font-size: 22px;
-        line-height: 20px;
-        letter-spacing: 0.02em;
-        color: #090909;
-        padding-bottom: 35px;
-        @media (max-width: 767px) {
-            font-size: 14px;
-        }
     }
 
     .slide {
@@ -103,8 +92,4 @@
         padding-top: 15px;
     }
 
-}
-
-.swiper-pagination-clinics, .swiper-pagination-doctors {
-    padding-top: 15px;
 }
