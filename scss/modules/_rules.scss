@@ -1,4 +1,9 @@
 .rules {
+
+    &__blocks {
+        overflow: hidden;
+    }
+
     .points {
         display: flex;
         background: #01ECD2;

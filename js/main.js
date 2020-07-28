@@ -18,10 +18,77 @@
 	// Select
 	$('.nselect-1, .nselect-2, .nselect-3, .nselect-4, .nselect-5, .nselect-6').nSelect();
 	
+	
 
-	// $('.nselect-6').addClass('data-select');
 	});
 })(jQuery);
+
+jQuery( document ).ready(function() {
+	var parentRules = jQuery('.rules__blocks');
+	var rulesBlock = jQuery('.rules__block');
+	var readMoreBtn = jQuery('.rules__other--a');
+	var defaultHeight = jQuery( parentRules ).height();
+
+	var height = 0;
+
+	jQuery( rulesBlock ).each(function( index, elem ) {
+		height += jQuery( elem ).outerHeight();
+
+		if(index == 2) {
+			return false;
+		}
+		
+	});
+
+	jQuery( parentRules ).css('height', height);
+
+	jQuery( readMoreBtn ).click(function(e){
+		e.preventDefault();
+		if(jQuery( parentRules ).hasClass('active')) {
+			jQuery( parentRules ).removeClass('active');
+			jQuery( parentRules ).animate({ height : height }, 1000);
+		} else {
+			jQuery( parentRules ).addClass('active');
+			jQuery( parentRules ).animate({ height : defaultHeight }, 1000);
+		}
+
+	  });
+
+
+
+});
+
+jQuery( document ).ready(function() {
+	var parentRules = jQuery('.budget-block');
+	var rulesBlock = jQuery('.budget');
+	var readMoreBtn = jQuery('.budget__a');
+	var defaultHeight = jQuery( parentRules ).height();
+
+	var height = 0;
+
+	jQuery( rulesBlock ).each(function( index, elem ) {
+		height += jQuery( elem ).outerHeight();
+
+		if(index == 4) {
+			return false;
+		}
+		
+	});
+
+	jQuery( parentRules ).css('height', height);
+
+	jQuery( readMoreBtn ).click(function(e){
+		e.preventDefault();
+		if(jQuery( parentRules ).hasClass('active')) {
+			jQuery( parentRules ).removeClass('active');
+			jQuery( parentRules ).animate({ height : height }, 1000);
+		} else {
+			jQuery( parentRules ).addClass('active');
+			jQuery( parentRules ).animate({ height : defaultHeight }, 1000);
+		}
+
+	});
+});
 
 var swiper = new Swiper('.swiper-our-clinics', {
 	slidesPerView: 1,

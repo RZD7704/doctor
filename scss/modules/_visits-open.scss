@@ -15,8 +15,11 @@
     }
 }
 
-.budget:last-child {
-    background: #fff;
+// .budget:last-child {
+//     background: #fff;
+// }
+.budget-block {
+    overflow: hidden;
 }
 
 .budget.link:hover {
