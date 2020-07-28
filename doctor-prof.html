@@ -72,26 +72,96 @@
                                         </svg>
                                         Була в мережі 10 годин тому
                                     </div>
-                                    <a class="d-md-flex profile-head__right--points mt-2" href="patient-message.html">
-                                        <svg class="profile-head__right--points--svg">
-                                            <use xlink:href="images/sprite.svg#message-btn"></use>
-                                        </svg>
-                                        Написати повідомлення
-                                    </a>
-                                    <a class="d-flex profile-head__right--points mt-2 " href="reviews.html">
-                                        <svg class="profile-head__right--points--svg">
-                                            <use xlink:href="images/sprite.svg#comments-doc"></use>
-                                        </svg>
-                                        Відгуки  
-                                    </a>
-                                    <a class="d-flex profile-head__right--points mt-2 " href="profile-editing.html">
-                                        <svg class="profile-head__right--points--svg">
-                                            <use xlink:href="images/sprite.svg#heart-select"></use>
-                                        </svg>
-                                        Додати в список  
-                                    </a>
+ 
+
+                                    <div class="modal fade" id="shareModal" tabindex="-1" role="dialog" aria-labelledby="shareModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog share-modal-popup">
+                                            <div class="modal-content">
+                                                <div class="modal-body share-modal">
+                                                    <div class="share-modal__head d-flex justify-content-between pb-4">
+                                                        <h2 class="share-modal__head--h">Поділитися через:</h2>
+                                                        <button type="button" class="close share-modal__head--close" data-dismiss="modal" aria-label="Close">
+                                                            <span aria-hidden="true">&times;</span>
+                                                        </button>
+                                                    </div>
+
+                                                    <div class="share-modal__body d-flex justify-content-between flex-wrap">
+                                                        <div class="share-modal__body--act d-flex flex-column pb-3 w-25">
+                                                            <svg class="share-modal__body--act--svg d-block mx-auto">
+                                                                <use xlink:href="images/sprite.svg#telegram-popup"></use>
+                                                            </svg>
+                                                            <p class="share-modal__body--act--p text-center">Telegram</p>
+                                                        </div>
+
+                                                        <div class="share-modal__body--act d-flex flex-column pb-3 w-25">
+                                                            <svg class="share-modal__body--act--svg d-block mx-auto">
+                                                                <use xlink:href="images/sprite.svg#viber-popup"></use>
+                                                            </svg>
+                                                            <p class="share-modal__body--act--p text-center">Viber</p>
+                                                        </div>
+
+                                                        <div class="share-modal__body--act d-flex flex-column pb-3 w-25">
+                                                            <svg class="share-modal__body--act--svg d-block mx-auto">
+                                                                <use xlink:href="images/sprite.svg#instagram-popup"></use>
+                                                            </svg>
+                                                            <p class="share-modal__body--act--p text-center">Instagram</p>
+                                                        </div>
+
+                                                        <div class="share-modal__body--act d-flex flex-column pb-3 w-25">
+                                                            <svg class="share-modal__body--act--svg d-block mx-auto">
+                                                                <use xlink:href="images/sprite.svg#WhatsApp-popup"></use>
+                                                            </svg>
+                                                            <p class="share-modal__body--act--p text-center">WhatsApp</p>
+                                                        </div>
+
+                                                        <div class="share-modal__body--act d-flex flex-column pb-3 w-25">
+                                                            <svg class="share-modal__body--act--svg d-block mx-auto">
+                                                                <use xlink:href="images/sprite.svg#copy-popup"></use>
+                                                            </svg>
+                                                            <p class="share-modal__body--act--p text-center">Скопіювати</p>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
 
                                     <div class="profile-head__contact desktop-block">
+
+                                        <div class="d-flex">
+                                            <div class="d-flex flex-column mr-4">
+                                                <a class="d-md-flex profile-head__right--points mt-2" href="patient-message.html">
+                                                    <svg class="profile-head__right--points--svg">
+                                                        <use xlink:href="images/sprite.svg#message-btn"></use>
+                                                    </svg>
+                                                    Написати повідомлення
+                                                </a>
+    
+                                                <a class="d-flex profile-head__right--points mt-2 " href="reviews.html">
+                                                    <svg class="profile-head__right--points--svg">
+                                                        <use xlink:href="images/sprite.svg#comments-doc"></use>
+                                                    </svg>
+                                                    Відгуки  
+                                                </a>
+                                            </div>
+        
+                                            <div class="d-flex flex-column">
+                                                <button type="button" class="btn d-md-flex profile-head__right--points mt-2 p-0" data-toggle="modal" data-target="#shareModal">
+                                                    <svg class="profile-head__right--points--svg">
+                                                        <use xlink:href="images/sprite.svg#share-arr"></use>
+                                                    </svg>
+                                                    Поділитися
+                                                </button>
+                                                <a class="d-flex profile-head__right--points mt-2 " href="profile-editing.html">
+                                                    <svg class="profile-head__right--points--svg">
+                                                        <use xlink:href="images/sprite.svg#heart-select"></use>
+                                                    </svg>
+                                                    Додати в список  
+                                                </a>
+                                            </div>
+                                        </div>
+
                                         <div class="mt-4">
                                             <div class="d-flex row mt-2">
                                                 <p class="profile-head__right--type col-lg-4">Країна</p>
@@ -117,6 +187,38 @@
 
                             </div>
                             <div class="profile-head__contact mobile-block col-lg-8 offset-lg-4 mt-2">
+                                <div class="d-flex">
+                                    <div class="d-flex flex-column mr-4">
+                                        <a class="d-md-flex profile-head__right--points mt-2" href="patient-message.html">
+                                            <svg class="profile-head__right--points--svg">
+                                                <use xlink:href="images/sprite.svg#message-btn"></use>
+                                            </svg>
+                                            Написати повідомлення
+                                        </a>
+
+                                        <a class="d-flex profile-head__right--points mt-2 " href="reviews.html">
+                                            <svg class="profile-head__right--points--svg">
+                                                <use xlink:href="images/sprite.svg#comments-doc"></use>
+                                            </svg>
+                                            Відгуки  
+                                        </a>
+                                    </div>
+
+                                    <div class="d-flex flex-column">
+                                        <button type="button" class="btn d-md-flex profile-head__right--points mt-2 p-0" data-toggle="modal" data-target="#shareModal">
+                                            <svg class="profile-head__right--points--svg">
+                                                <use xlink:href="images/sprite.svg#share-arr"></use>
+                                            </svg>
+                                            Поділитися
+                                        </button>
+                                        <a class="d-flex profile-head__right--points mt-2 " href="profile-editing.html">
+                                            <svg class="profile-head__right--points--svg">
+                                                <use xlink:href="images/sprite.svg#heart-select"></use>
+                                            </svg>
+                                            Додати в список  
+                                        </a>
+                                    </div>
+                                </div>
                                 <div class="mt-0">
                                     <div class="d-flex row mt-2">
                                         <p class="profile-head__right--type col-lg-4">Країна</p>
@@ -243,102 +345,105 @@
                 </div>
             </section>
 
+
             <section class="budget-price">
                 <div class="budget mt-3">
                     <div class="container">
                         <div class="row">
-                            <div class="col-lg-10 offset-lg-1">
+                            <div class="col-lg-10 mx-auto d-flex justify-content-between">
                                 <h3 class="budget__h mt-3">Список послуг</h3>
                             </div>
                         </div>
                     </div>
                 </div>
-    
-                <div class="budget link">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-lg-10 offset-lg-1">
-                                <div class="budget__price mt-2 mb-2 d-flex justify-content-between">
-                                    <p class="budget__price--p">Локальный рентген</p>
-                                    <p class="budget__price--p">30$</p>
+                <div class="budget-block">
+                    <div class="budget link">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-10 mx-auto">
+                                    <div class="budget__price mt-2 mb-2 d-flex justify-content-between">
+                                        <p class="budget__price--p">Локальный рентген</p>
+                                        <p class="budget__price--p">20$</p>
+                                    </div>
                                 </div>
                             </div>
+        
                         </div>
-    
                     </div>
-                </div>
-    
-                <div class="budget link">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-lg-10 offset-lg-1">
-                                <div class="budget__price mt-2 mb-2 d-flex justify-content-between">
-                                    <p class="budget__price--p">Ортопанорама</p>
-                                    <p class="budget__price--p">30$</p>
+        
+                    <div class="budget link">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-10 mx-auto">
+                                    <div class="budget__price mt-2 mb-2 d-flex justify-content-between">
+                                        <p class="budget__price--p">Ортопанорама</p>
+                                        <p class="budget__price--p">30$</p>
+                                    </div>
                                 </div>
                             </div>
+        
                         </div>
-    
                     </div>
-                </div>
-    
-                <div class="budget link">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-lg-10 offset-lg-1">
-                                <div class="budget__price mt-2 mb-2 d-flex justify-content-between">
-                                    <p class="budget__price--p">Консультация хирурга-имплантолога</p>
-                                    <p class="budget__price--p">30$</p>
+        
+                    <div class="budget link">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-10 offset-lg-1">
+                                    <div class="budget__price mt-2 mb-2 d-flex justify-content-between">
+                                        <p class="budget__price--p">Консультация хирурга-имплантолога</p>
+                                        <p class="budget__price--p">30$</p>
+                                    </div>
                                 </div>
                             </div>
+        
                         </div>
-    
                     </div>
-                </div>
-    
-                <div class="budget link">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-lg-10 offset-lg-1">
-                                <div class="budget__price mt-2 mb-2 d-flex justify-content-between">
-                                    <p class="budget__price--p">Ортопанорама</p>
-                                    <p class="budget__price--p">30$</p>
+        
+                    <div class="budget link">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-10 mx-auto">
+                                    <div class="budget__price mt-2 mb-2 d-flex justify-content-between">
+                                        <p class="budget__price--p">Ортопанорама</p>
+                                        <p class="budget__price--p">30$</p>
+                                    </div>
                                 </div>
                             </div>
+        
                         </div>
-    
+                    </div>
+
+                    <div class="budget link">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-10 mx-auto">
+                                    <div class="budget__price mt-2 mb-2 d-flex justify-content-between">
+                                        <p class="budget__price--p">Консультация хирурга-имплантолога</p>
+                                        <p class="budget__price--p">30$</p>
+                                    </div>
+                                </div>
+                            </div>
+        
+                        </div>
+                    </div>
+        
+                    <div class="budget link">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-10 mx-auto">
+                                    <div class="budget__price mt-2 mb-2 d-flex justify-content-between">
+                                        <p class="budget__price--p">Номер стандарт</p>
+                                        <p class="budget__price--p">50$</p>
+                                    </div>
+                                </div>
+                            </div>
+        
+                        </div>
                     </div>
                 </div>
 
-                <div class="budget link">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-lg-10 offset-lg-1">
-                                <div class="budget__price mt-2 mb-2 d-flex justify-content-between">
-                                    <p class="budget__price--p">Консультация хирурга-имплантолога</p>
-                                    <p class="budget__price--p">30$</p>
-                                </div>
-                            </div>
-                        </div>
-    
-                    </div>
-                </div>
-    
-                <div class="budget link">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-lg-10 offset-lg-1">
-                                <div class="budget__price mt-2 mb-2 d-flex justify-content-between">
-                                    <p class="budget__price--p">Номер стандарт</p>
-                                    <p class="budget__price--p">50$</p>
-                                </div>
-                            </div>
-                        </div>
-    
-                    </div>
-                </div>
 
-                <div class="budget link">
+                <div class="budget-btn">
                     <div class="container d-flex justify-content-center">
                         <a class="budget__a" href="#">
                             <svg class="budget__a--points">
@@ -353,10 +458,6 @@
                         </a>
     
                     </div>
-                </div>
-
-                <div class="text-center mt-4">
-                    <a class="edit-btn " href="#">Написати повідомлення</a>
                 </div>
             </section>
 

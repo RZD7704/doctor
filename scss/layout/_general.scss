@@ -83,10 +83,13 @@ body {
 	}
 }
 
+
 .return {
 	margin-top: 15px;
 	&__a:hover {
 		text-decoration: none;
+
+
 	}
 
 	&__a {
@@ -107,6 +110,11 @@ body {
 			@media (max-width: 767px) {
 				font-size: 14px;
 			}
+		}
+
+		&--p:hover {
+			color: #363636;
+
 		}
 	}
 }
@@ -152,4 +160,73 @@ body {
 	@media (max-width: 767px) {
 		padding-top: 65px;
     }
+}
+
+.slide:hover {
+	background: rgba(207, 255, 250, 0.26);
+	transition: all .3s;
+}
+
+.profile-head__right--points {
+	border: none!important;
+	box-shadow: none!important;
+}
+
+.profile-head__right--points:hover {
+	color: #363636!important;
+	text-decoration: none;
+	box-shadow: none!important;
+}
+
+.profile-head__right--points:active {
+	box-shadow: none!important;
+	border: none!important;
+}
+
+.editiing-prof:hover {
+	color: #363636!important;
+
+}
+
+.shedule-time__body--btn:hover {
+	border: 1px solid #00EFD1;
+}
+
+.shedule-time__body--btn:active {
+	border: 1px solid #00EFD1;
+}
+
+.edit-btn:hover {
+	background: #48B9AC!important;
+	transition: all .3s;
+}
+
+.confirm__btn:hover {
+	background: #48B9AC!important;
+	transition: all .3s;
+}
+
+.form-container__btn:hover {
+	border: 1px solid #00EFD1;
+}
+
+.further__a:hover  {
+	color: #48B9AC!important;
+}
+
+.d-reg__checkbox--a:hover {
+	color: #48B9AC!important;
+}
+
+.visits-block__info--more:hover {
+	color: #363636!important;
+}
+
+.message-form__submit:hover {
+	background: #48B9AC!important;
+} 
+
+.message-container__head--svg:hover {
+
+	fill: #48B9AC!important;
 }

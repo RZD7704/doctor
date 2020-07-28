@@ -53,3 +53,41 @@
         border: 1px dashed #929292;
     }
 }
+
+.share-modal-popup {
+    max-width: 400px;
+}
+
+.share-modal {
+    padding: 0;
+
+    &__head {
+        padding: 15px;
+
+        &--h {
+            font-size: 16px;
+            letter-spacing: 0.02em;
+            color: #929292;
+            
+        }
+    }
+
+    &__body {
+        background-color: #F3FFFE;
+        padding-top: 10px;
+
+        &--act {
+
+            &--svg {
+                width: 33px;
+                height: 33px;
+            }
+
+            &--p {
+                font-size: 14px;
+                letter-spacing: 0.02em;
+                color: #AAAFBE;
+            }
+        }
+    }
+}

@@ -24,71 +24,42 @@
 })(jQuery);
 
 jQuery( document ).ready(function() {
-	var parentRules = jQuery('.rules__blocks');
-	var rulesBlock = jQuery('.rules__block');
-	var readMoreBtn = jQuery('.rules__other--a');
+	function openHeight(parent, children, btn, numElems){
+	var parentRules = jQuery(parent);
+	var rulesBlock = jQuery(children);
+	var readMoreBtn = jQuery(btn);
 	var defaultHeight = jQuery( parentRules ).height();
-
+  
 	var height = 0;
-
+  
 	jQuery( rulesBlock ).each(function( index, elem ) {
-		height += jQuery( elem ).outerHeight();
-
-		if(index == 2) {
-			return false;
-		}
-		
+	  height += jQuery( elem ).outerHeight();
+  
+	  if(index == numElems) {
+		return false;
+	  }
+	  
 	});
-
+  
 	jQuery( parentRules ).css('height', height);
-
-	jQuery( readMoreBtn ).click(function(e){
-		e.preventDefault();
-		if(jQuery( parentRules ).hasClass('active')) {
-			jQuery( parentRules ).removeClass('active');
-			jQuery( parentRules ).animate({ height : height }, 1000);
-		} else {
-			jQuery( parentRules ).addClass('active');
-			jQuery( parentRules ).animate({ height : defaultHeight }, 1000);
-		}
-
+	openClick(parentRules, readMoreBtn, defaultHeight, height);
+	}
+	function openClick(parent, btn, defaultHeight, height){
+	jQuery( btn ).click(function(e){
+	  e.preventDefault();
+	  if(jQuery( parent ).hasClass('active')) {
+		jQuery( parent ).removeClass('active');
+		jQuery( parent ).animate({ height : height }, 1000);
+	  } else {
+		jQuery( parent ).addClass('active');
+		jQuery( parent ).animate({ height : defaultHeight }, 1000);
+	  }
+  
 	  });
-
-
-
-});
-
-jQuery( document ).ready(function() {
-	var parentRules = jQuery('.budget-block');
-	var rulesBlock = jQuery('.budget');
-	var readMoreBtn = jQuery('.budget__a');
-	var defaultHeight = jQuery( parentRules ).height();
-
-	var height = 0;
-
-	jQuery( rulesBlock ).each(function( index, elem ) {
-		height += jQuery( elem ).outerHeight();
-
-		if(index == 4) {
-			return false;
-		}
-		
-	});
-
-	jQuery( parentRules ).css('height', height);
-
-	jQuery( readMoreBtn ).click(function(e){
-		e.preventDefault();
-		if(jQuery( parentRules ).hasClass('active')) {
-			jQuery( parentRules ).removeClass('active');
-			jQuery( parentRules ).animate({ height : height }, 1000);
-		} else {
-			jQuery( parentRules ).addClass('active');
-			jQuery( parentRules ).animate({ height : defaultHeight }, 1000);
-		}
-
-	});
-});
+	}
+	openHeight('.rules__blocks', '.rules__block', '.rules__other--a', 2);
+	openHeight('.budget-block', '.budget', '.budget__a', 4);
+  });
 
 var swiper = new Swiper('.swiper-our-clinics', {
 	slidesPerView: 1,
