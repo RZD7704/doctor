@@ -46,7 +46,7 @@
             line-height: 14px;
             letter-spacing: 0.02em;
             color: #858585;
-
+            margin-top: 5px;
         }
 
         &--adv-name {
@@ -108,7 +108,7 @@
             font-size: 18px;
 
             @media (max-width: 767px) {
-                min-height: 35px;
+                // min-height: 35px;
                 font-size: 14px;
             }
         }
