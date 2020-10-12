@@ -1,55 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<meta name="description" content="Starter">
-	<meta name="author" content="Admin">
-	<title>Starter</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Starter">
+    <meta name="author" content="Admin">
+    <title>Starter</title>
 
-	<link rel="icon" href="images/favicon.png">
+    <link rel="icon" href="images/favicon.png">
 
-	<link rel="stylesheet" href="js/libs/slick/slick.css">
-	<link rel="stylesheet" href="js/libs/slick/slick-theme.css">
+    <link rel="stylesheet" href="js/libs/slick/slick.css">
+    <link rel="stylesheet" href="js/libs/slick/slick-theme.css">
     <link rel="stylesheet" href="css/libs/swiper.min.css">
     <link rel="stylesheet" href="css/libs/jquery.nselect.css">
-	<link rel="stylesheet" href="css/libs/bootstrap.min.css">
-	<link rel="stylesheet" href="css/styles.min.css">
+    <link rel="stylesheet" href="css/libs/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.min.css">
 
 
-	<!--[if lt IE 9]>
+    <!--[if lt IE 9]>
 	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
 </head>
+
 <body>
-	<header class="header">
-		<div class="container d-flex justify-content-between">
-			<div class="message-icon">
-				<a class="message__a" href="message-all.html">
-					<svg class="message__a--icon">
-						<use xlink:href="images/sprite.svg#message-svg"></use>
+    <header class="header">
+        <div class="container d-flex justify-content-between">
+            <div class="message-icon">
+                <a class="message__a" href="message-all.html">
+                    <svg class="message__a--icon">
+                        <use xlink:href="images/sprite.svg#message-svg"></use>
                     </svg>
                     <span class="message__a--num">1</span>
-				</a>
-			</div>
-			<div class="logo">
-				<a class="logo__a" href="index.html">
-					<img class="logo__a--img" src="images/logo.png" alt="Logo">
-				</a>
-			</div>
-			<div class="dropdown show persone">
-				<a class="btn btn-secondary dropdown-toggle persone__a" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                </a>
+            </div>
+            <div class="logo">
+                <a class="logo__a" href="index.html">
+                    <img class="logo__a--img" src="images/logo.png" alt="Logo">
+                </a>
+            </div>
+            <div class="dropdown show persone">
+                <a class="btn btn-secondary dropdown-toggle persone__a" href="#" role="button" id="dropdownMenuLink"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     <img class="persone__a--img" src="images/prifile-foto.png" alt="Profile">
-				</a>
-			  
-				<div class="dropdown-menu persone__menu" aria-labelledby="dropdownMenuLink">
-				  <a class="dropdown-item persone__menu--item" href="log.html">Вийти</a>
-				  <a class="dropdown-item persone__menu--item" href="reg.html">Змінити профіль</a>
-				</div>
-			</div>
-		</div>
-	</header>
+                </a>
+
+                <div class="dropdown-menu persone__menu" aria-labelledby="dropdownMenuLink">
+                    <a class="dropdown-item persone__menu--item" href="log.html">Вийти</a>
+                    <a class="dropdown-item persone__menu--item" href="reg.html">Змінити профіль</a>
+                </div>
+            </div>
+        </div>
+    </header>
 
     <div class="wrapper">
         <main class="main content">
@@ -72,62 +75,85 @@
                                         </svg>
                                         Була в мережі 10 годин тому
                                     </div>
- 
 
-                                    <div class="modal fade" id="shareModal" tabindex="-1" role="dialog" aria-labelledby="shareModalLabel" aria-hidden="true">
+
+                                    <div class="modal fade" id="shareModal" tabindex="-1" role="dialog"
+                                        aria-labelledby="shareModalLabel" aria-hidden="true">
                                         <div class="modal-dialog share-modal-popup">
                                             <div class="modal-content">
                                                 <div class="modal-body share-modal">
                                                     <div class="share-modal__head d-flex justify-content-between pb-4">
                                                         <h2 class="share-modal__head--h">Поділитися через:</h2>
-                                                        <button type="button" class="close share-modal__head--close" data-dismiss="modal" aria-label="Close">
+                                                        <button type="button" class="close share-modal__head--close"
+                                                            data-dismiss="modal" aria-label="Close">
                                                             <span aria-hidden="true">&times;</span>
                                                         </button>
                                                     </div>
 
-                                                    <div class="share-modal__body d-flex justify-content-between flex-wrap">
-                                                        <div class="share-modal__body--act d-flex flex-column pb-3 w-25">
+                                                    <div
+                                                        class="share-modal__body d-flex justify-content-between flex-wrap">
+                                                        <div
+                                                            class="share-modal__body--act d-flex flex-column pb-3 w-25">
                                                             <a href="#" class="text-decoration-none">
-                                                                <svg class="share-modal__body--act--svg d-block mx-auto">
-                                                                    <use xlink:href="images/sprite.svg#telegram-popup"></use>
+                                                                <svg
+                                                                    class="share-modal__body--act--svg d-block mx-auto">
+                                                                    <use xlink:href="images/sprite.svg#telegram-popup">
+                                                                    </use>
                                                                 </svg>
-                                                                <p class="share-modal__body--act--p text-center">Telegram</p>
+                                                                <p class="share-modal__body--act--p text-center">
+                                                                    Telegram</p>
                                                             </a>
                                                         </div>
 
-                                                        <div class="share-modal__body--act d-flex flex-column pb-3 w-25">
+                                                        <div
+                                                            class="share-modal__body--act d-flex flex-column pb-3 w-25">
                                                             <a href="#" class="text-decoration-none">
-                                                                <svg class="share-modal__body--act--svg d-block mx-auto">
-                                                                    <use xlink:href="images/sprite.svg#viber-popup"></use>
+                                                                <svg
+                                                                    class="share-modal__body--act--svg d-block mx-auto">
+                                                                    <use xlink:href="images/sprite.svg#viber-popup">
+                                                                    </use>
                                                                 </svg>
-                                                                <p class="share-modal__body--act--p text-center">Viber</p>
+                                                                <p class="share-modal__body--act--p text-center">Viber
+                                                                </p>
                                                             </a>
                                                         </div>
 
-                                                        <div class="share-modal__body--act d-flex flex-column pb-3 w-25">
+                                                        <div
+                                                            class="share-modal__body--act d-flex flex-column pb-3 w-25">
                                                             <a href="#" class="text-decoration-none">
-                                                                <svg class="share-modal__body--act--svg d-block mx-auto">
-                                                                    <use xlink:href="images/sprite.svg#instagram-popup"></use>
+                                                                <svg
+                                                                    class="share-modal__body--act--svg d-block mx-auto">
+                                                                    <use xlink:href="images/sprite.svg#instagram-popup">
+                                                                    </use>
                                                                 </svg>
-                                                                <p class="share-modal__body--act--p text-center">Instagram</p>
+                                                                <p class="share-modal__body--act--p text-center">
+                                                                    Instagram</p>
                                                             </a>
                                                         </div>
 
-                                                        <div class="share-modal__body--act d-flex flex-column pb-3 w-25">
+                                                        <div
+                                                            class="share-modal__body--act d-flex flex-column pb-3 w-25">
                                                             <a href="#" class="text-decoration-none">
-                                                                <svg class="share-modal__body--act--svg d-block mx-auto">
-                                                                    <use xlink:href="images/sprite.svg#WhatsApp-popup"></use>
+                                                                <svg
+                                                                    class="share-modal__body--act--svg d-block mx-auto">
+                                                                    <use xlink:href="images/sprite.svg#WhatsApp-popup">
+                                                                    </use>
                                                                 </svg>
-                                                                <p class="share-modal__body--act--p text-center">WhatsApp</p>
+                                                                <p class="share-modal__body--act--p text-center">
+                                                                    WhatsApp</p>
                                                             </a>
                                                         </div>
 
-                                                        <div class="share-modal__body--act d-flex flex-column pb-3 w-25">
+                                                        <div
+                                                            class="share-modal__body--act d-flex flex-column pb-3 w-25">
                                                             <a href="#" class="text-decoration-none">
-                                                                <svg class="share-modal__body--act--svg d-block mx-auto">
-                                                                    <use xlink:href="images/sprite.svg#copy-popup"></use>
+                                                                <svg
+                                                                    class="share-modal__body--act--svg d-block mx-auto">
+                                                                    <use xlink:href="images/sprite.svg#copy-popup">
+                                                                    </use>
                                                                 </svg>
-                                                                <p class="share-modal__body--act--p text-center">Скопіювати</p>
+                                                                <p class="share-modal__body--act--p text-center">
+                                                                    Скопіювати</p>
                                                             </a>
                                                         </div>
                                                     </div>
@@ -141,33 +167,37 @@
 
                                         <div class="d-flex">
                                             <div class="d-flex flex-column mr-4">
-                                                <a class="d-md-flex profile-head__right--points mt-2" href="patient-message.html">
+                                                <a class="d-md-flex profile-head__right--points mt-2"
+                                                    href="patient-message.html">
                                                     <svg class="profile-head__right--points--svg">
                                                         <use xlink:href="images/sprite.svg#message-btn"></use>
                                                     </svg>
                                                     Написати повідомлення
                                                 </a>
-    
+
                                                 <a class="d-flex profile-head__right--points mt-2 " href="reviews.html">
                                                     <svg class="profile-head__right--points--svg">
                                                         <use xlink:href="images/sprite.svg#comments-doc"></use>
                                                     </svg>
-                                                    Відгуки  
+                                                    Відгуки
                                                 </a>
                                             </div>
-        
+
                                             <div class="d-flex flex-column">
-                                                <button type="button" class="btn d-md-flex profile-head__right--points mt-2 p-0" data-toggle="modal" data-target="#shareModal">
+                                                <button type="button"
+                                                    class="btn d-md-flex profile-head__right--points mt-2 p-0"
+                                                    data-toggle="modal" data-target="#shareModal">
                                                     <svg class="profile-head__right--points--svg">
                                                         <use xlink:href="images/sprite.svg#share-arr"></use>
                                                     </svg>
                                                     Поділитися
                                                 </button>
-                                                <a class="d-flex profile-head__right--points mt-2 " href="profile-editing.html">
+                                                <a class="d-flex profile-head__right--points mt-2 "
+                                                    href="profile-editing.html">
                                                     <svg class="profile-head__right--points--svg">
                                                         <use xlink:href="images/sprite.svg#heart-select"></use>
                                                     </svg>
-                                                    Додати в список  
+                                                    Додати в список
                                                 </a>
                                             </div>
                                         </div>
@@ -199,7 +229,8 @@
                             <div class="profile-head__contact mobile-block col-lg-8 offset-lg-4 mt-2">
                                 <div class="d-flex">
                                     <div class="d-flex flex-column mr-4">
-                                        <a class="d-md-flex profile-head__right--points mt-2" href="patient-message.html">
+                                        <a class="d-md-flex profile-head__right--points mt-2"
+                                            href="patient-message.html">
                                             <svg class="profile-head__right--points--svg">
                                                 <use xlink:href="images/sprite.svg#message-btn"></use>
                                             </svg>
@@ -210,12 +241,14 @@
                                             <svg class="profile-head__right--points--svg">
                                                 <use xlink:href="images/sprite.svg#comments-doc"></use>
                                             </svg>
-                                            Відгуки  
+                                            Відгуки
                                         </a>
                                     </div>
 
                                     <div class="d-flex flex-column">
-                                        <button type="button" class="btn d-md-flex profile-head__right--points text-left mt-2 p-0" data-toggle="modal" data-target="#shareModal">
+                                        <button type="button"
+                                            class="btn d-md-flex profile-head__right--points text-left mt-2 p-0"
+                                            data-toggle="modal" data-target="#shareModal">
                                             <svg class="profile-head__right--points--svg">
                                                 <use xlink:href="images/sprite.svg#share-arr"></use>
                                             </svg>
@@ -225,7 +258,7 @@
                                             <svg class="profile-head__right--points--svg">
                                                 <use xlink:href="images/sprite.svg#heart-select"></use>
                                             </svg>
-                                            Додати в список  
+                                            Додати в список
                                         </a>
                                     </div>
                                 </div>
@@ -266,36 +299,36 @@
                             </a>
                         </div>
                     </div>
-    
+
                     <div class="swiper-container swiper-portfolio">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide  d-flex flex-column">
                                 <div class="slide position-relative">
-                                    <img class="img-fluid" src="images/portfolio.png" alt="clinic">                                    
-                                </div>
-                            </div>
-    
-                            <div class="swiper-slide  d-flex flex-column">
-                                <div class="slide position-relative">
-                                    <img class="img-fluid" src="images/portfolio.png" alt="clinic">                                    
-                                </div>
-                            </div>
-    
-                            <div class="swiper-slide  d-flex flex-column">
-                                <div class="slide position-relative">
-                                    <img class="img-fluid" src="images/portfolio.png" alt="clinic">                                    
+                                    <img class="img-fluid" src="images/portfolio.png" alt="clinic">
                                 </div>
                             </div>
 
                             <div class="swiper-slide  d-flex flex-column">
                                 <div class="slide position-relative">
-                                    <img class="img-fluid" src="images/portfolio.png" alt="clinic">                                    
+                                    <img class="img-fluid" src="images/portfolio.png" alt="clinic">
                                 </div>
                             </div>
 
                             <div class="swiper-slide  d-flex flex-column">
                                 <div class="slide position-relative">
-                                    <img class="img-fluid" src="images/portfolio.png" alt="clinic">                                    
+                                    <img class="img-fluid" src="images/portfolio.png" alt="clinic">
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide  d-flex flex-column">
+                                <div class="slide position-relative">
+                                    <img class="img-fluid" src="images/portfolio.png" alt="clinic">
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide  d-flex flex-column">
+                                <div class="slide position-relative">
+                                    <img class="img-fluid" src="images/portfolio.png" alt="clinic">
                                 </div>
                             </div>
                         </div>
@@ -317,7 +350,7 @@
                             </a>
                         </div>
                     </div>
-    
+
                     <div class="swiper-container swiper-kabinet">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide  d-flex flex-column">
@@ -325,13 +358,13 @@
                                     <img class="img-fluid" src="images/clinic-slider-2.png" alt="clinic">
                                 </div>
                             </div>
-    
+
                             <div class="swiper-slide  d-flex flex-column">
                                 <div class="slide position-relative">
                                     <img class="img-fluid" src="images/clinic-slider-2.png" alt="clinic">
                                 </div>
                             </div>
-    
+
                             <div class="swiper-slide  d-flex flex-column">
                                 <div class="slide position-relative">
                                     <img class="img-fluid" src="images/clinic-slider-2.png" alt="clinic">
@@ -377,10 +410,8 @@
                                     </div>
                                 </div>
                             </div>
-        
                         </div>
                     </div>
-        
                     <div class="budget link">
                         <div class="container">
                             <div class="row">
@@ -391,10 +422,9 @@
                                     </div>
                                 </div>
                             </div>
-        
+
                         </div>
                     </div>
-        
                     <div class="budget link">
                         <div class="container">
                             <div class="row">
@@ -405,10 +435,9 @@
                                     </div>
                                 </div>
                             </div>
-        
+
                         </div>
                     </div>
-        
                     <div class="budget link">
                         <div class="container">
                             <div class="row">
@@ -419,10 +448,9 @@
                                     </div>
                                 </div>
                             </div>
-        
+
                         </div>
                     </div>
-
                     <div class="budget link">
                         <div class="container">
                             <div class="row">
@@ -433,10 +461,9 @@
                                     </div>
                                 </div>
                             </div>
-        
+
                         </div>
                     </div>
-        
                     <div class="budget link">
                         <div class="container">
                             <div class="row">
@@ -447,12 +474,10 @@
                                     </div>
                                 </div>
                             </div>
-        
+
                         </div>
                     </div>
                 </div>
-
-
                 <div class="budget-btn">
                     <div class="container d-flex justify-content-center">
                         <a class="budget__a" href="#">
@@ -466,12 +491,11 @@
                                 <use xlink:href="images/sprite.svg#ellipse-status"></use>
                             </svg>
                         </a>
-    
                     </div>
                 </div>
             </section>
 
-            <div class="sign-form"> 
+            <div class="sign-form">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-6 offset-md-3 col-lg-4 offset-lg-4">
@@ -508,7 +532,7 @@
                                         <button class="sign-form__time--btn">09:30</button>
                                         <button class="sign-form__time--btn">10:30</button>
                                     </div>
-            
+
                                     <div class="col-12 text-center pt-4 m-auto">
                                         <button class="edit-btn mt-6 d-block">Записатися</button>
                                     </div>
@@ -532,7 +556,7 @@
                     </div>
                 </div>
 
-                <div class="visits-block mt-3 position-relative">       
+                <div class="visits-block mt-3 position-relative">
                     <div class="row">
                         <div class="col-6 col-md-4">
                             <img class="img-fluid" src="images/stop-place.png" alt="Doctor">
@@ -565,13 +589,20 @@
                                     <div class="row">
                                         <div class="col-12 wpcf7-form">
                                             <p><label class="">Ім’я та прізвище</label><br>
-                                                <span class="wpcf7-form-control-wrap your-name"><input name="your-name" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" type="text"></span></p>
+                                                <span class="wpcf7-form-control-wrap your-name"><input name="your-name"
+                                                        value="" size="40"
+                                                        class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
+                                                        aria-required="true" aria-invalid="false" type="text"></span>
+                                            </p>
                                         </div>
 
                                         <div class="col-12 wpcf7-form">
                                             <p><label class="">Введіть номер телефону</label><br>
-                                                <span class="wpcf7-form-control-wrap your-subject"><input name="your-subject" value="" size="40" class="wpcf7-form-control wpcf7-text" aria-invalid="false" type="number"></span></p>
-                                        </div>  
+                                                <span class="wpcf7-form-control-wrap your-subject"><input
+                                                        name="your-subject" value="" size="40"
+                                                        class="wpcf7-form-control wpcf7-text" aria-invalid="false"
+                                                        type="number"></span></p>
+                                        </div>
 
                                         <div class="col-6 wpcf7-form sign-form__select">
                                             <select class="nselect-3 city" name="city" data-title="Бажана дата">
@@ -634,24 +665,24 @@
                     <a class="footer__contact--a" href="tel:+30(225) 555-01-18">+30(225) 555-0118</a>
                     <a class="footer__contact--a" href="#">StomSearch20@gmail.com</a>
                 </div>
-    
+
                 <div class="footer__span text-center">
                     <p class="footer__span--p">2020 Стоматолог Search</p>
                 </div>
             </div>
-    
+
         </footer>
     </div>
 
 
-	<!-- Scripts -->
-	<script src="js/libs/jquery-3.4.1.min.js"></script>
-	<script src="js/libs/slick/slick.min.js"></script>
+    <!-- Scripts -->
+    <script src="js/libs/jquery-3.4.1.min.js"></script>
+    <script src="js/libs/slick/slick.min.js"></script>
     <script src="js/libs/swiper.min.js"></script>
     <script src="js/libs/jquery.nselect.min.js"></script>
     <script src="js/libs/popper.min.js"></script>
-	<script src="js/libs/bootstrap.min.js"></script>
-	<script src="js/main.js"></script>
+    <script src="js/libs/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
-</html>
 
+</html>
