@@ -1,0 +1,140 @@
+button,
+button:active,
+button:focus {
+    outline: none !important;
+}
+
+.background-transparent {
+    background: transparent;
+}
+
+.cancel-btn {
+    display: none;
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: 0.02em;
+    color: red;
+    position: absolute;
+    right: 5px;
+    top: -20px;
+}
+
+.cancel-btn.active {
+    display: block;
+}
+
+.btn-other {
+    background-color: transparent;
+
+    &:focus {
+        outline: none !important;
+    }
+}
+
+.slide-select-btn {
+    background-color: transparent;
+}
+
+.reg-head {
+    &__btn {
+        font-size: 18px;
+        line-height: 20px;
+        letter-spacing: 0.02em;
+        color: #01ECD2;
+
+        &:hover {
+            color: #01ECD2;
+            text-decoration: none;
+        }
+    }
+}
+
+.rules-modal-popup {
+    @media (min-width: 768px) {
+        max-width: 650px;
+    }
+}
+
+.scroll-block {
+    height: 200px;
+    overflow-y: scroll;
+
+    @media (min-width: 992px) {
+        height: 400px;
+    }
+
+}
+
+// #block {
+//     height: 100px;
+//     overflow: auto;
+//     width: 200px;
+// }
+
+.scroll-block::-webkit-scrollbar-track {
+    border-radius: 4px;
+}
+
+.scroll-block::-webkit-scrollbar {
+    width: 6px;
+}
+
+.scroll-block::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background: #f0f2f5;
+}
+
+.scroll-block:hover::-webkit-scrollbar-thumb {
+    background: #01ECD2;
+}
+
+.list-edit__body--link {
+    &:hover {
+        @media (min-width: 992px) {
+            .delete {
+                content: '';
+                display: block;
+                position: absolute;
+                right: 10px;
+                top: 17px;
+                transform: translateY(-50%);
+                width: 14px;
+                height: 14px;
+                background: url('../../images/trash.png') center (center / cover) no-repeat;
+                cursor: pointer;
+            }
+        }
+
+    }
+}
+
+.delete {
+    @media (max-width: 991px) {
+        content: '';
+        display: block;
+        position: absolute;
+        right: 10px;
+        top: 17px;
+        transform: translateY(-50%);
+        width: 14px;
+        height: 14px;
+        background: url('../../images/trash.png') center (center / cover) no-repeat;
+        cursor: pointer;
+    }
+}
+
+.visit-arrange-js {
+    display: none;
+}
+
+.visit-arrange-btn-js {
+    &__icon {
+        width: 30px;
+        height: 20px;
+        margin-left: 5px;
+    }
+}
+
+.login-icon-fill {
+    fill: #01ECD2;
+}

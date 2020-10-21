@@ -63,8 +63,8 @@
                                 Мій візит
                                 <p>(2)</p>
                             </h2>
-                            <div class="visits-block__status mob-visit">
-                                <p class="visits-block__status--p">Підтвержено</p>
+                            <div class="visits-block__status mob-visit unconfirmed">
+                                <button type="button" class="visits-block__status--p background-transparent d-flex align-items-center pb-1 pt-1">Підтвердити</button>
                             </div>
                             <div class="visits-block">
                                 <div class="row">
@@ -89,8 +89,8 @@
                                             </p>
                                         </div>
 
-                                        <div class="visits-block__status desktop">
-                                            <p class="visits-block__status--p">Підтвержено</p>
+                                        <div class="visits-block__status desktop unconfirmed">
+                                            <button type="button" class="visits-block__status--p background-transparent">Підтвердити</и>
                                         </div>
                                     </div>
                                 </div>
@@ -100,7 +100,7 @@
                                     <svg class="editiing-prof__svg d-block mr-2">
                                         <use xlink:href="images/sprite.svg#edit-svg"></use>
                                     </svg>
-                                    Редагування часу і процедури
+                                    Редагування дати процедури
                                 </button>
                                 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                     <div class="modal-dialog" role="document">
@@ -194,11 +194,11 @@
                                     </div>
                                 </div>
                                 <div class="row pb-4">
-                                    <div class="d-flex mt-2 col-12">
-                                        <button class="form-container__btn mr-3">18.07</button>
-                                        <button class="form-container__btn mr-3">18.07</button>
-                                        <button class="form-container__btn mr-3">18.07</button>
-                                        <button class="form-container__btn mr-3">18.07</button>
+                                    <div class="d-flex mt-2 col-12 time-btn-wrapper-js">
+                                        <button class="form-container__btn mr-3" type="button">18.07</button>
+                                        <button class="form-container__btn mr-3" type="button">18.07</button>
+                                        <button class="form-container__btn mr-3" type="button">18.07</button>
+                                        <button class="form-container__btn mr-3" type="button">18.07</button>
                                     </div>
 
                                     <div class="col-md-6 wpcf7-form sign-form__select">

@@ -15,17 +15,26 @@
     }
 }
 
-// .budget:last-child {
-//     background: #fff;
-// }
 .budget-block {
     overflow: hidden;
 }
 
-.budget.link:hover {
-    background: #fff;
-    transition: .3s all;
-}
+// .budget.link:hover {
+//     background: #fff;
+//     transition: .3s all;
+
+//     .delete {
+//         content: '';
+//         display: block;
+//         transform: translateY(-50%);
+//         right: -35px;
+//         top: 9px;
+//         width: 20px;
+//         height: 20px;
+//         background: url('../../images/trash.png') center (center / cover) no-repeat;
+//         cursor: pointer;
+//     }
+// }
 
 .budget {
     background: rgba(207, 255, 250, 0.28);
@@ -34,6 +43,7 @@
         font-size: 18px;
         letter-spacing: 0.02em;
         color: #363636;
+
         @media (max-width: 767px) {
             font-size: 14px;
         }
@@ -46,6 +56,7 @@
             font-size: 16px;
             letter-spacing: 0.02em;
             color: #929292;
+
             @media (max-width: 767px) {
                 font-size: 12px;
             }
@@ -55,6 +66,7 @@
             font-size: 16px;
             letter-spacing: 0.02em;
             color: #01ECD2;
+
             @media (max-width: 767px) {
                 font-size: 12px;
             }
@@ -64,7 +76,7 @@
 
 .route-info.desktop {
     @media (max-width: 767px) {
-        display: none!important;
+        display: none !important;
     }
 }
 
@@ -84,9 +96,9 @@
     &__svg:last-child {
         width: 18px;
         height: 18px;
-        
+
     }
-    
+
     &__text {
 
         &--name {
@@ -125,7 +137,7 @@
     color: #01ECD2;
 
     @media (min-width: 768px) {
-        display: none!important;
+        display: none !important;
     }
 }
 

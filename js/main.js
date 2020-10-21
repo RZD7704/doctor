@@ -1,9 +1,39 @@
 'use strict';
+function deleteServices () {
+	document.querySelectorAll('.delete').forEach((btn) => {
+		btn.addEventListener('click', () => {
+			btn.parentElement.parentElement.remove();
+		});
+	});
+}
+deleteServices();
+
+$('.visit-arrange-btn-js').click(function() {
+	$('.visit-arrange-js').slideToggle( "slow" );
+  });
+
+var block = $('.scroll-block');
+block.scrollTop(block.prop('scrollHeight'));
+
+let	parent,
+	textContent,
+	textArea = $('.message-form__textarea'),
+	cancelBtn = $('.cancel-btn');
+
+$('.message-item-js__btn').click(function() {
+	parent = $(this).closest('.message-container');
+	textContent = $(parent).find('.message-item-js__txt').text();
+	textArea.text(textContent);
+	cancelBtn.addClass('active');
+});
+
+$(cancelBtn).click(function() {
+	textArea.text('');
+	cancelBtn.removeClass('active');
+});
 
 (function ($) {
 	$(document).ready(function () {
-
-		// on focus
 		$(".wpcf7-form input").focus(function () {
 				$(this).parent().siblings('label').addClass('has-value');
 			})
@@ -14,12 +44,7 @@
 					$(this).parent().siblings('label').removeClass('has-value');
 				}
 			});
-
-		// Select
 		$('.nselect-1, .nselect-2, .nselect-3, .nselect-4, .nselect-5, .nselect-6').nSelect();
-
-
-
 	});
 })(jQuery);
 
@@ -74,26 +99,19 @@ var swiper = new Swiper('.swiper-our-clinics', {
 		clickable: true,
 	},
 	breakpoints: {
-		// when window width is >= 320px
 		400: {
 			slidesPerView: 2,
 			spaceBetween: 20
 		},
-		// when window width is >= 480px
 		768: {
 			slidesPerView: 3,
 			spaceBetween: 30
 		},
-		// when window width is >= 640px
 		992: {
 			slidesPerView: 4,
 			spaceBetween: 40
 		}
 	}
-	// breakpoints: {
-	//     960: {
-	// 		slidesPerView: 3,
-	// },
 });
 
 var swiper = new Swiper('.swiper-clinics', {
@@ -104,26 +122,19 @@ var swiper = new Swiper('.swiper-clinics', {
 		clickable: true,
 	},
 	breakpoints: {
-		// when window width is >= 320px
 		400: {
 			slidesPerView: 2,
 			spaceBetween: 20
 		},
-		// when window width is >= 480px
 		768: {
 			slidesPerView: 3,
 			spaceBetween: 30
 		},
-		// when window width is >= 640px
 		992: {
 			slidesPerView: 4,
 			spaceBetween: 40
 		}
 	}
-	// breakpoints: {
-	//     960: {
-	// 		slidesPerView: 3,
-	// },
 });
 
 var swiper = new Swiper('.swiper-doctors', {
@@ -134,146 +145,95 @@ var swiper = new Swiper('.swiper-doctors', {
 		clickable: true,
 	},
 	breakpoints: {
-		// when window width is >= 320px
 		400: {
 			slidesPerView: 2,
 			spaceBetween: 20
 		},
-		// when window width is >= 480px
 		768: {
 			slidesPerView: 3,
 			spaceBetween: 30
 		},
-		// when window width is >= 640px
 		992: {
 			slidesPerView: 4,
 			spaceBetween: 40
 		}
 	}
-	// breakpoints: {
-	//     960: {
-	// 		slidesPerView: 3,
-	// },
 });
 
 var swiper = new Swiper('.swiper-portfolio', {
 	slidesPerView: 1,
 	spaceBetween: 30,
-	// pagination: {
-	//   el: '.swiper-points',
-	//   clickable: true,
-	// },
 	breakpoints: {
-		// when window width is >= 320px
 		400: {
 			slidesPerView: 2,
 			spaceBetween: 20
 		},
-		// when window width is >= 480px
 		768: {
 			slidesPerView: 3,
 			spaceBetween: 30
 		},
-		// when window width is >= 640px
 		992: {
 			slidesPerView: 4,
 			spaceBetween: 40
 		}
 	}
-	// breakpoints: {
-	//     960: {
-	// 		slidesPerView: 3,
-	// },
 });
 
 var swiper = new Swiper('.swiper-kabinet', {
 	slidesPerView: 1,
 	spaceBetween: 30,
-	// pagination: {
-	//   el: '.swiper-points',
-	//   clickable: true,
-	// },
 	breakpoints: {
-		// when window width is >= 320px
 		400: {
 			slidesPerView: 2,
 			spaceBetween: 20
 		},
-		// when window width is >= 480px
 		768: {
 			slidesPerView: 3,
 			spaceBetween: 30
 		},
-		// when window width is >= 640px
 		992: {
 			slidesPerView: 4,
 			spaceBetween: 40
 		}
 	}
-	// breakpoints: {
-	//     960: {
-	// 		slidesPerView: 3,
-	// },
 });
 
 var swiper = new Swiper('.d-portfolio-container', {
 	slidesPerView: 1,
 	spaceBetween: 30,
-	// pagination: {
-	//   el: '.swiper-points',
-	//   clickable: true,
-	// },
 	breakpoints: {
-		// when window width is >= 320px
 		400: {
 			slidesPerView: 2,
 			spaceBetween: 20
 		},
-		// when window width is >= 480px
 		768: {
 			slidesPerView: 3,
 			spaceBetween: 30
 		},
-		// when window width is >= 640px
 		992: {
 			slidesPerView: 4,
 			spaceBetween: 40
 		}
 	}
-	// breakpoints: {
-	//     960: {
-	// 		slidesPerView: 3,
-	// },
 });
 
 var swiper = new Swiper('.portfolio-container', {
 	slidesPerView: 1,
 	spaceBetween: 30,
-	// pagination: {
-	//   el: '.swiper-points',
-	//   clickable: true,
-	// },
 	breakpoints: {
-		// when window width is >= 320px
 		400: {
 			slidesPerView: 2,
 			spaceBetween: 20
 		},
-		// when window width is >= 480px
 		768: {
 			slidesPerView: 3,
 			spaceBetween: 30
 		},
-		// when window width is >= 640px
 		992: {
 			slidesPerView: 4,
 			spaceBetween: 40
 		}
 	}
-	// breakpoints: {
-	//     960: {
-	// 		slidesPerView: 3,
-	// },
 });
 
 var galleryThumbs = new Swiper('.gallery-thumbs', {
